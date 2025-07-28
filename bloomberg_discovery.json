@@ -1,0 +1,24 @@
+{
+  "discovered_at": "2025-07-25T12:40:13.370526",
+  "valid_tickers": [
+    "EURUSDVON Curncy",
+    "EURUSDV1W BGN Curncy",
+    "EURUSD25R1W BGN Curncy",
+    "EURUSD25B1W BGN Curncy",
+    "EURUSDV1M BGN Curncy",
+    "EURUSD25R1M BGN Curncy",
+    "EURUSD25B1M BGN Curncy",
+    "GBPUSDVON Curncy",
+    "GBPUSDV1W BGN Curncy",
+    "GBPUSD25R1W BGN Curncy",
+    "GBPUSD25B1W BGN Curncy",
+    "GBPUSDV1M BGN Curncy",
+    "GBPUSD25R1M BGN Curncy",
+    "GBPUSD25B1M BGN Curncy"
+  ],
+  "endpoints": {
+    "/health": "API health check",
+    "/api/bloomberg/reference": "Real-time market data",
+    "/api/bloomberg/historical": "Historical time series"
+  }
+}

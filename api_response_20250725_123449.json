@@ -1,0 +1,44 @@
+{
+  "request": {
+    "endpoint": "/health",
+    "method": "GET",
+    "data": null,
+    "params": null,
+    "headers": null,
+    "base_url": "http://20.172.249.92:8080"
+  },
+  "response": {
+    "success": true,
+    "data": {
+      "api_status": "healthy",
+      "bloomberg_terminal_running": true,
+      "bloomberg_service_available": true,
+      "supported_fx_pairs": [
+        "EURUSD",
+        "GBPUSD",
+        "USDJPY",
+        "USDCHF",
+        "AUDUSD",
+        "USDCAD",
+        "NZDUSD"
+      ],
+      "supported_tenors": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "2Y"
+      ],
+      "server_time": "2025-07-25T09:34:49.503423",
+      "is_using_mock_data": false
+    },
+    "error": null,
+    "timestamp": "2025-07-25T09:34:49.503423",
+    "query_id": "health_20250725_093449_473109"
+  },
+  "timestamp": "20250725_123449"
+}

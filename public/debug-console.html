@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Console</title>
+    <style>
+        body { font-family: monospace; background: #1a1a1a; color: #0f0; padding: 20px; }
+        #console { background: #000; padding: 10px; height: 600px; overflow-y: auto; border: 1px solid #0f0; }
+        .log { margin: 2px 0; }
+        .error { color: #f00; }
+        .warn { color: #ff0; }
+        button { background: #0f0; color: #000; border: none; padding: 5px 10px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Debug Console for Volatility Surface</h2>
+    <div>
+        <button onclick="inspectDOM()">Inspect DOM</button>
+        <button onclick="checkBloombergData()">Check Bloomberg Feed</button>
+        <button onclick="analyzeProblem()">Analyze Term Structure Issue</button>
+        <button onclick="clearLogs()">Clear</button>
+    </div>
+    <div id="console"></div>
+    
+    <script>
+        const consoleDiv = document.getElementById('console');
+        
+        function log(message, type = 'log') {
+            const entry = document.createElement('div');
+            entry.className = `log ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            consoleDiv.appendChild(entry);
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        }
+        
+        function clearLogs() {
+            consoleDiv.innerHTML = '';
+        }
+        
+        async function inspectDOM() {
+            log('Opening app to inspect DOM structure...');
+            const win = window.open('http://localhost:3501', 'app_window');
+            log('App opened. Use browser DevTools to inspect:');
+            log('1. Open DevTools (F12)');
+            log('2. Look for elements with ref="termChartRef"');
+            log('3. Check if SVG exists inside');
+            log('4. Check Console tab for errors');
+        }
+        
+        async function checkBloombergData() {
+            log('Checking Bloomberg data flow...');
+            
+            try {
+                // Check gateway
+                const gatewayHealth = await fetch('http://localhost:8000/health');
+                const health = await gatewayHealth.json();
+                log(`Gateway status: ${health.status}, Bloomberg API: ${health.bloomberg_api}`);
+                
+                // Fetch real EUR/USD volatility
+                const volResponse = await fetch('http://localhost:8000/api/bloomberg/reference', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer test',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        securities: ['EURUSDV1M BGN Curncy', 'EURUSD25R1M BGN Curncy'],
+                        fields: ['PX_LAST', 'PX_BID', 'PX_ASK']
+                    })
+                });
+                
+                const volData = await volResponse.json();
+                if (volData.success) {
+                    log('Bloomberg data received successfully:');
+                    volData.data.securities_data.forEach(sec => {
+                        log(`  ${sec.security}: ${JSON.stringify(sec.fields)}`);
+                    });
+                } else {
+                    log('Bloomberg data fetch failed', 'error');
+                }
+                
+            } catch (e) {
+                log(`Error: ${e.message}`, 'error');
+            }
+        }
+        
+        async function analyzeProblem() {
+            log('Analyzing Term Structure rendering issue...');
+            log('');
+            log('KNOWN FACTS:');
+            log('✓ Volatility Smile chart works (shows data)');
+            log('✓ 3D Surface works (shows data)');
+            log('✗ Term Structure chart empty');
+            log('');
+            log('POTENTIAL ISSUES:');
+            log('1. Chart container has 0 height');
+            log('2. Data not reaching drawTermStructureChart()');
+            log('3. D3.js error during rendering');
+            log('4. Wrong data structure after type fixes');
+            log('');
+            log('DEBUGGING STEPS:');
+            log('1. Open browser DevTools');
+            log('2. Go to Console tab');
+            log('3. Look for "Term Structure data:" log');
+            log('4. Look for "Term Structure Chart dimensions:" log');
+            log('5. Check for any red errors');
+            log('');
+            log('Share console output for diagnosis.');
+        }
+        
+        log('Debug console ready.');
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "request": {
+    "endpoint": "/api/bloomberg/reference",
+    "method": "POST",
+    "data": {
+      "securities": [
+        "EURUSDVON Curncy",
+        "EURUSDV1M BGN Curncy",
+        "EURUSD25R1M BGN Curncy"
+      ],
+      "fields": [
+        "PX_LAST",
+        "PX_BID",
+        "PX_ASK"
+      ]
+    },
+    "params": null,
+    "headers": null,
+    "base_url": "http://localhost:3501"
+  },
+  "response": {
+    "success": true,
+    "data": {
+      "securities_data": [
+        {
+          "security": "EURUSDVON Curncy",
+          "fields": {
+            "PX_LAST": 4.8625,
+            "PX_BID": 3.635,
+            "PX_ASK": 6.09
+          },
+          "success": true
+        },
+        {
+          "security": "EURUSDV1M BGN Curncy",
+          "fields": {
+            "PX_LAST": 7.4275,
+            "PX_BID": 7.29,
+            "PX_ASK": 7.565
+          },
+          "success": true
+        },
+        {
+          "security": "EURUSD25R1M BGN Curncy",
+          "fields": {
+            "PX_LAST": 0.39,
+            "PX_BID": 0.295,
+            "PX_ASK": 0.485
+          },
+          "success": true
+        }
+      ],
+      "source": "Bloomberg Terminal"
+    }
+  },
+  "timestamp": "20250725_123451"
+}

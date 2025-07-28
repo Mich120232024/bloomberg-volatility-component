@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MLLM Tab Direct Test</title>
+    <style>
+        body { margin: 20px; font-family: Arial, sans-serif; }
+        .error { color: red; background: #ffe6e6; padding: 10px; }
+        .success { color: green; background: #e6ffe6; padding: 10px; }
+        .info { color: blue; background: #e6f3ff; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>MLLM Tab Direct Test</h1>
+    <div id="status">Testing...</div>
+    <div id="results"></div>
+    
+    <script>
+        async function testMLLMTab() {
+            const statusDiv = document.getElementById('status');
+            const resultsDiv = document.getElementById('results');
+            
+            try {
+                statusDiv.innerHTML = '<div class="info">Step 1: Loading main app...</div>';
+                
+                // Load the main app
+                const response = await fetch('http://localhost:3501');
+                const html = await response.text();
+                
+                if (!html.includes('MLLM Analysis')) {
+                    throw new Error('MLLM Analysis tab not found in HTML');
+                }
+                
+                statusDiv.innerHTML = '<div class="success">Step 1: ✅ MLLM tab found in HTML</div>';
+                
+                // Check for JavaScript errors by examining the HTML structure
+                if (html.includes('import { VolatilityAnalysisMLLM }')) {
+                    resultsDiv.innerHTML += '<div class="success">✅ Component import found</div>';
+                } else {
+                    resultsDiv.innerHTML += '<div class="error">❌ Component import not found</div>';
+                }
+                
+                // Test Bloomberg API connectivity
+                statusDiv.innerHTML += '<div class="info">Step 2: Testing Bloomberg API...</div>';
+                
+                const bloombergResponse = await fetch('http://localhost:8000/health');
+                const bloombergHealth = await bloombergResponse.json();
+                
+                if (bloombergHealth.status === 'healthy') {
+                    resultsDiv.innerHTML += '<div class="success">✅ Bloomberg API healthy</div>';
+                } else {
+                    resultsDiv.innerHTML += '<div class="error">❌ Bloomberg API unhealthy</div>';
+                }
+                
+                statusDiv.innerHTML += '<div class="success">All tests completed</div>';
+                
+            } catch (error) {
+                statusDiv.innerHTML = '<div class="error">ERROR: ' + error.message + '</div>';
+                console.error('Test error:', error);
+            }
+        }
+        
+        testMLLMTab();
+    </script>
+</body>
+</html>

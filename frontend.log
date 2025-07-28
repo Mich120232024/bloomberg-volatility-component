@@ -1,0 +1,18 @@
+
+> gzc-volatility-surface@0.0.1 dev
+> NODE_OPTIONS='--max-old-space-size=8192' vite
+
+6:06:42 AM [vite] (client) Forced re-optimization of dependencies
+
+  VITE v7.0.4  ready in 112 ms
+
+  ➜  Local:   http://localhost:3501/
+  ➜  Network: http://192.168.178.63:3501/
+7:06:44 AM [vite] (client) hmr update /src/components/VolatilityAnalysisMLLM.tsx, /src/styles/globals.css
+7:06:44 AM [vite] (client) page reload src/api/VolatilityExpertAgent.ts
+7:06:44 AM [vite] (client) page reload src/api/BloombergExpertAgent.ts
+7:06:44 AM [vite] (client) Pre-transform error: Failed to load url /src/components/VolatilityAnalysisMLLM.tsx (resolved id: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisMLLM.tsx) in /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/MainAppContainer.tsx. Does the file exist?
+7:07:01 AM [vite] (client) hmr update /src/components/MainAppContainer.tsx, /src/styles/globals.css
+7:07:06 AM [vite] (client) hmr update /src/components/MainAppContainer.tsx, /src/styles/globals.css
+7:07:14 AM [vite] (client) hmr update /src/components/MainAppContainer.tsx, /src/styles/globals.css
+7:07:19 AM [vite] (client) hmr update /src/components/MainAppContainer.tsx, /src/styles/globals.css

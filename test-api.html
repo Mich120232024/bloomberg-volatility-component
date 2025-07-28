@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Bloomberg API Test</h1>
+    <pre id="output"></pre>
+    <script>
+        async function testAPI() {
+            const output = document.getElementById('output');
+            try {
+                output.textContent = 'Testing API...\n';
+                
+                const response = await fetch('http://localhost:3501/api/bloomberg/reference', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer test',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        securities: ['EURUSDVON Curncy', 'EURUSDV1M BGN Curncy'],
+                        fields: ['PX_LAST', 'PX_BID', 'PX_ASK']
+                    })
+                });
+                
+                const data = await response.json();
+                output.textContent += 'Response: ' + JSON.stringify(data, null, 2);
+            } catch (error) {
+                output.textContent += 'Error: ' + error.message;
+            }
+        }
+        
+        testAPI();
+    </script>
+</body>
+</html>

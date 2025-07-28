@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Status Check</title>
+    <script>
+        async function checkTabs() {
+            try {
+                const response = await fetch('http://localhost:3501');
+                const html = await response.text();
+                
+                console.log('=== TAB STATUS CHECK ===');
+                console.log('MLLM Analysis found:', html.includes('MLLM Analysis'));
+                console.log('Volatility Analysis found:', html.includes('Volatility Analysis'));
+                console.log('Volatility Surface found:', html.includes('Volatility Surface'));
+                console.log('Rate Curves found:', html.includes('Rate Curves'));
+                
+                document.body.innerHTML = `
+                    <h1>Bloomberg App Tab Status</h1>
+                    <p>MLLM Analysis: ${html.includes('MLLM Analysis') ? '✅' : '❌'}</p>
+                    <p>Volatility Analysis: ${html.includes('Volatility Analysis') ? '✅' : '❌'}</p>
+                    <p>Volatility Surface: ${html.includes('Volatility Surface') ? '✅' : '❌'}</p>
+                    <p>Rate Curves: ${html.includes('Rate Curves') ? '✅' : '❌'}</p>
+                    <p>App responding: ✅</p>
+                    <hr>
+                    <h2>Real Issue Investigation</h2>
+                    <p>All tabs use same Bloomberg API. If MLLM fails but others work, 
+                    the issue is component-specific, not API-specific.</p>
+                `;
+            } catch (error) {
+                document.body.innerHTML = '<h1>Error: ' + error.message + '</h1>';
+            }
+        }
+        
+        checkTabs();
+    </script>
+</head>
+<body>
+    <p>Loading...</p>
+</body>
+</html>

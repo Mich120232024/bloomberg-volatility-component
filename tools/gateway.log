@@ -1,0 +1,11 @@
+2025-07-26 06:06:43,046 - __main__ - INFO - Loaded 3001 tickers from repository
+INFO:     Started server process [36501]
+INFO:     Waiting for application startup.
+2025-07-26 06:06:43,114 - __main__ - INFO - Bloomberg Gateway starting up...
+2025-07-26 06:06:43,114 - __main__ - INFO - Cache enabled: False
+2025-07-26 06:06:43,114 - __main__ - INFO - Bloomberg API: http://20.172.249.92:8080
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+2025-07-26 06:06:43,116 - __main__ - INFO - Bloomberg Gateway shutting down...
+INFO:     Application shutdown complete.

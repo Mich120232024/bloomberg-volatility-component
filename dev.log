@@ -1,0 +1,346 @@
+
+> gzc-volatility-surface@0.0.1 dev
+> NODE_OPTIONS='--max-old-space-size=8192' vite
+
+12:17:24 AM [vite] (client) Forced re-optimization of dependencies
+
+  VITE v7.0.4  ready in 96 ms
+
+  ➜  Local:   http://localhost:3501/
+  ➜  Network: http://192.168.178.63:3501/
+12:23:21 AM [vite] (client) page reload public/test-api.html
+12:23:21 AM [vite] (client) page reload public/test-api.html
+12:23:57 AM [vite] (client) hmr update /src/components/Header.tsx, /src/styles/globals.css, /src/components/VolatilitySurfaceContainer.tsx, /src/components/VolatilityAnalysisTab.tsx, /src/components/VolatilityHistoricalTable.tsx
+12:25:30 AM [vite] (client) hmr update /src/components/VolatilitySurfaceContainer.tsx, /src/styles/globals.css
+12:26:48 AM [vite] (client) hmr update /src/components/Header.tsx, /src/styles/globals.css, /src/components/VolatilitySurfaceContainer.tsx, /src/components/VolatilityAnalysisTab.tsx, /src/components/VolatilityHistoricalTable.tsx
+12:27:18 AM [vite] (client) hmr update /src/components/VolatilitySurfaceContainer.tsx, /src/styles/globals.css
+12:30:00 AM [vite] (client) hmr update /src/components/Header.tsx, /src/styles/globals.css, /src/components/VolatilitySurfaceContainer.tsx, /src/components/VolatilityAnalysisTab.tsx, /src/components/VolatilityHistoricalTable.tsx
+12:30:17 AM [vite] (client) hmr update /src/components/VolatilitySurfaceContainer.tsx, /src/styles/globals.css
+12:30:38 AM [vite] (client) hmr update /src/components/VolatilitySurfaceTable.tsx, /src/styles/globals.css
+12:32:02 AM [vite] (client) hmr update /src/components/VolatilitySurfaceContainer.tsx, /src/styles/globals.css
+12:32:27 AM [vite] (client) hmr update /src/components/VolatilitySurfaceContainer.tsx, /src/styles/globals.css
+12:32:49 AM [vite] (client) hmr update /src/components/VolatilitySurfaceContainer.tsx, /src/styles/globals.css
+12:33:02 AM [vite] (client) page reload test-browser-api.html
+12:34:23 AM [vite] (client) hmr update /src/components/Header.tsx, /src/styles/globals.css, /src/components/VolatilitySurfaceContainer.tsx, /src/components/VolatilityAnalysisTab.tsx, /src/components/VolatilityHistoricalTable.tsx
+12:42:36 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+12:42:56 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+12:43:06 AM [vite] (client) hmr update /src/components/OptionsPricingTab.tsx, /src/styles/globals.css
+12:43:27 AM [vite] (client) hmr update /src/components/OptionsPricingTab.tsx, /src/styles/globals.css
+12:43:38 AM [vite] (client) hmr update /src/components/OptionsPricingTab.tsx, /src/styles/globals.css
+12:43:48 AM [vite] (client) hmr update /src/components/OptionsPricingTab.tsx, /src/styles/globals.css
+12:45:24 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+12:54:12 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+12:54:31 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+12:54:40 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+12:55:13 AM [vite] (client) hmr update /src/components/PlotlyVolatilitySurface.tsx, /src/styles/globals.css
+12:55:53 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+12:55:56 AM [vite] (client) hmr update /src/components/PlotlyVolatilitySurface.tsx, /src/styles/globals.css
+1:09:16 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:09:25 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:16:55 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:16:55 AM [vite] Internal server error: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx: Identifier 'tenorToYears' has already been declared. (209:10)
+
+  207 |
+  208 |     // Convert tenor to actual time in years
+> 209 |     const tenorToYears = (tenor: string): number => {
+      |           ^
+  210 |       const map: Record<string, number> = {
+  211 |         'ON': 1/365,    // Overnight = 1 day
+  212 |         '1W': 7/365,    // 1 week
+  Plugin: vite:react-babel
+  File: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx:209:10
+  207|  
+  208|      // Convert tenor to actual time in years
+  209|      const tenorToYears = (tenor: string): number => {
+     |            ^
+  210|        const map: Record<string, number> = {
+  211|          'ON': 1/365,    // Overnight = 1 day
+      at constructor (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1644:19)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1610:12)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4910:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7591:16)
+      at TypeScriptParserMixin.checkIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7587:12)
+      at TypeScriptParserMixin.checkLVal (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7526:12)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13412:10)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9767:11)
+      at TypeScriptParserMixin.parseVar (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13383:12)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9493:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9527:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12101:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12076:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11686:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9801:20)
+      at /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseExprListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12176:18)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11247:22)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11181:29)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11115:19)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9353:18)
+      at TypeScriptParserMixin.parseSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11089:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11080:17)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+1:16:55 AM [vite] Internal server error: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx: Identifier 'tenorToYears' has already been declared. (209:10)
+
+  207 |
+  208 |     // Convert tenor to actual time in years
+> 209 |     const tenorToYears = (tenor: string): number => {
+      |           ^
+  210 |       const map: Record<string, number> = {
+  211 |         'ON': 1/365,    // Overnight = 1 day
+  212 |         '1W': 7/365,    // 1 week
+  Plugin: vite:react-babel
+  File: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx:209:10
+  207|  
+  208|      // Convert tenor to actual time in years
+  209|      const tenorToYears = (tenor: string): number => {
+     |            ^
+  210|        const map: Record<string, number> = {
+  211|          'ON': 1/365,    // Overnight = 1 day
+      at constructor (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1644:19)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1610:12)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4910:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7591:16)
+      at TypeScriptParserMixin.checkIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7587:12)
+      at TypeScriptParserMixin.checkLVal (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7526:12)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13412:10)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9767:11)
+      at TypeScriptParserMixin.parseVar (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13383:12)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9493:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9527:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12101:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12076:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11686:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9801:20)
+      at /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseExprListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12176:18)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11247:22)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11181:29)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11115:19)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9353:18)
+      at TypeScriptParserMixin.parseSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11089:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11080:17)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+1:16:55 AM [vite] Internal server error: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx: Identifier 'tenorToYears' has already been declared. (209:10)
+
+  207 |
+  208 |     // Convert tenor to actual time in years
+> 209 |     const tenorToYears = (tenor: string): number => {
+      |           ^
+  210 |       const map: Record<string, number> = {
+  211 |         'ON': 1/365,    // Overnight = 1 day
+  212 |         '1W': 7/365,    // 1 week
+  Plugin: vite:react-babel
+  File: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx:209:10
+  207|  
+  208|      // Convert tenor to actual time in years
+  209|      const tenorToYears = (tenor: string): number => {
+     |            ^
+  210|        const map: Record<string, number> = {
+  211|          'ON': 1/365,    // Overnight = 1 day
+      at constructor (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1644:19)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1610:12)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4910:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7591:16)
+      at TypeScriptParserMixin.checkIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7587:12)
+      at TypeScriptParserMixin.checkLVal (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7526:12)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13412:10)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9767:11)
+      at TypeScriptParserMixin.parseVar (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13383:12)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9493:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9527:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12101:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12076:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11686:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9801:20)
+      at /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseExprListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12176:18)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11247:22)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11181:29)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11115:19)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9353:18)
+      at TypeScriptParserMixin.parseSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11089:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11080:17)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+1:16:55 AM [vite] Internal server error: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx: Identifier 'tenorToYears' has already been declared. (209:10)
+
+  207 |
+  208 |     // Convert tenor to actual time in years
+> 209 |     const tenorToYears = (tenor: string): number => {
+      |           ^
+  210 |       const map: Record<string, number> = {
+  211 |         'ON': 1/365,    // Overnight = 1 day
+  212 |         '1W': 7/365,    // 1 week
+  Plugin: vite:react-babel
+  File: /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/src/components/VolatilityAnalysisTab.tsx:209:10
+  207|  
+  208|      // Convert tenor to actual time in years
+  209|      const tenorToYears = (tenor: string): number => {
+     |            ^
+  210|        const map: Record<string, number> = {
+  211|          'ON': 1/365,    // Overnight = 1 day
+      at constructor (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:6627:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1644:19)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:1610:12)
+      at TypeScriptScopeHandler.declareName (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4910:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7591:16)
+      at TypeScriptParserMixin.checkIdentifier (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7587:12)
+      at TypeScriptParserMixin.checkLVal (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:7526:12)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13412:10)
+      at TypeScriptParserMixin.parseVarId (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9767:11)
+      at TypeScriptParserMixin.parseVar (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13383:12)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13230:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9493:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12851:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9527:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12767:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12747:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13316:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13309:10)
+      at TypeScriptParserMixin.parseBlock (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:13297:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12101:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12076:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11686:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11326:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:4794:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11076:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10876:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10826:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9801:20)
+      at /Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:39
+      at TypeScriptParserMixin.allowInAnd (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12427:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10795:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12494:17)
+      at TypeScriptParserMixin.parseExprListItem (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:12176:18)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11247:22)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11181:29)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11115:19)
+      at TypeScriptParserMixin.parseSubscript (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9353:18)
+      at TypeScriptParserMixin.parseSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11089:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11080:17)
+      at TypeScriptParserMixin.parseUpdate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11061:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:11041:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:9852:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10894:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/mikaeleage/Projects Container/bloomberg-volatility-component/gzc-volatility-surface/node_modules/@babel/parser/lib/index.js:10899:23)
+1:17:21 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:19:07 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:19:16 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:19:42 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:22:15 AM [vite] (client) page reload public/debug-console.html
+1:22:15 AM [vite] (client) page reload public/debug-console.html
+1:22:44 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:23:16 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:27:35 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:32:41 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:32:48 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:32:54 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:34:50 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:35:30 AM [vite] (client) hmr update /src/components/VolatilityAnalysisTab.tsx, /src/styles/globals.css
+1:35:55 AM [vite] (client) hmr update /src/components/PlotlyVolatilitySurface.tsx, /src/styles/globals.css
+1:53:54 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:54:06 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:54:30 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:54:42 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:54:52 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:55:26 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:57:32 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:57:50 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:58:03 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:58:26 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:58:43 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+1:59:40 AM [vite] vite.config.js changed, restarting server...
+1:59:40 AM [vite] (client) Forced re-optimization of dependencies
+1:59:40 AM [vite] server restarted.
+1:59:51 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:00:02 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:00:48 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:01:02 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:01:18 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:01:30 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:01:42 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:01:53 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css
+2:02:07 AM [vite] (client) hmr update /src/components/RateCurvesTab.tsx, /src/styles/globals.css

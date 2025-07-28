@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug MLLM Tab</title>
+</head>
+<body>
+    <h1>Debug Console</h1>
+    <button onclick="testMLLMTab()">Test MLLM Tab Click</button>
+    <div id="output"></div>
+    
+    <script>
+        async function testMLLMTab() {
+            try {
+                // Open the main app
+                const response = await fetch('http://localhost:3501');
+                const html = await response.text();
+                document.getElementById('output').innerHTML = 'App loaded: ' + html.length + ' characters';
+                
+                // Try to simulate clicking the MLLM tab
+                console.log('App HTML loaded successfully');
+            } catch (error) {
+                document.getElementById('output').innerHTML = 'ERROR: ' + error.message;
+                console.error('Error:', error);
+            }
+        }
+        
+        // Check if app is responding
+        fetch('http://localhost:3501')
+            .then(response => response.text())
+            .then(html => {
+                if (html.includes('MLLM Analysis')) {
+                    console.log('✅ MLLM tab found in HTML');
+                } else {
+                    console.log('❌ MLLM tab NOT found in HTML');
+                }
+            })
+            .catch(error => {
+                console.error('❌ Cannot reach app:', error);
+            });
+    </script>
+</body>
+</html>

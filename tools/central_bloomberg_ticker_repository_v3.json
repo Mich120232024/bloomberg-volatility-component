@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "version": "3.0",
+    "created": "2025-07-25T23:50:00Z",
+    "updated": "2025-07-25T23:50:00Z",
+    "author": "SOFTWARE_MANAGER",
+    "description": "Central Bloomberg Ticker Repository - 50 Currencies Coverage",
+    "total_valid_tickers": 3001,
+    "api": {
+      "endpoint": "http://20.172.249.92:8080",
+      "methods": {
+        "reference": "/api/bloomberg/reference",
+        "historical": "/api/bloomberg/historical"
+      },
+      "auth": "Bearer test"
+    }
+  },
+  
+  "summary": {
+    "currencies_covered": 50,
+    "fx_pairs_covered": 40,
+    "data_categories": {
+      "money_market_rates": 257,
+      "overnight_rates": 42,
+      "swap_ois_rates": 168,
+      "government_bonds": 26,
+      "fx_spot": 44,
+      "fx_volatility": 566,
+      "fx_forwards": 108,
+      "fx_options": 1011
+    },
+    "discovery_stages": {
+      "initial": 281,
+      "swap_ois": 75,
+      "remaining_20": 489,
+      "additional_25": 2156
+    }
+  },
+
+  "top_coverage": {
+    "best_currencies": [
+      {"currency": "USD", "count": 45, "strength": "Complete MM, SOFR, bonds"},
+      {"currency": "EUR", "count": 38, "strength": "Complete MM, EESWE OIS"},
+      {"currency": "JPY", "count": 32, "strength": "Complete MM, JYSO OIS"},
+      {"currency": "GBP", "count": 28, "strength": "Good MM, limited swaps"},
+      {"currency": "CHF", "count": 25, "strength": "SFSNT OIS working"},
+      {"currency": "ISK", "count": 57, "strength": "Best emerging market coverage"},
+      {"currency": "HRK", "count": 51, "strength": "Strong MM and OIS"},
+      {"currency": "BDT", "count": 47, "strength": "Good local rates"},
+      {"currency": "SAR", "count": 42, "strength": "Complete MM curve"},
+      {"currency": "PEN", "count": 34, "strength": "Good regional coverage"}
+    ],
+    "best_fx_pairs": [
+      {"pair": "EURUSD", "count": 85, "products": "Full vol surface"},
+      {"pair": "GBPUSD", "count": 82, "products": "Complete options"},
+      {"pair": "USDJPY", "count": 80, "products": "All tenors"},
+      {"pair": "USDAED", "count": 77, "products": "Strong EM pair"},
+      {"pair": "USDSAR", "count": 77, "products": "Good Middle East"},
+      {"pair": "EURRON", "count": 77, "products": "CEE coverage"},
+      {"pair": "EURTRY", "count": 77, "products": "EM volatility"},
+      {"pair": "AUDCAD", "count": 77, "products": "Commodity cross"}
+    ]
+  },
+
+  "yield_curve_construction": {
+    "USD": {
+      "money_market": {
+        "overnight": ["USDON Index", "SOFRRATE Index"],
+        "term": ["US0001M Index", "US0003M Index", "US0006M Index", "US0012M Index"],
+        "reference_rate": "SOFRRATE Index"
+      },
+      "swaps": {
+        "sofr": ["USOSFR1 Curncy", "USOSFR2 Curncy", "USOSFR3 Curncy", "USOSFR5 Curncy", "USOSFR7 Curncy", "USOSFR10 Curncy"],
+        "ois": ["USSO1 Curncy", "USSO2 Curncy", "USSO3 Curncy", "USSO5 Curncy", "USSO10 Curncy"]
+      },
+      "government_bonds": {
+        "short": ["USGG3M Index", "USGG6M Index"],
+        "medium": ["USGG2Y Index", "USGG3Y Index", "USGG7Y Index"],
+        "long": ["USGG10Y Index", "USGG20Y Index", "USGG30Y Index"]
+      }
+    },
+    
+    "EUR": {
+      "money_market": {
+        "overnight": ["EURON Index", "ESTR Index"],
+        "term": ["EUR001M Index", "EUR003M Index", "EUR006M Index", "EUR012M Index"],
+        "reference_rate": "ESTR Index"
+      },
+      "swaps": {
+        "ois": ["EESWE1 Curncy", "EESWE2 Curncy", "EESWE3 Curncy", "EESWE5 Curncy", "EESWE10 Curncy"]
+      },
+      "government_bonds": {
+        "germany": ["GDBR2 Index", "GDBR5 Index", "GDBR10 Index", "GDBR30 Index"],
+        "france": ["GFRN2 Index", "GFRN5 Index", "GFRN10 Index"]
+      }
+    },
+
+    "emerging_markets": {
+      "AED": {
+        "money_market": ["AEDON Index", "AED1M Index", "AED3M Index", "AED6M Index"],
+        "swaps": ["AESO3 Curncy"]
+      },
+      "SAR": {
+        "money_market": ["SARON Index", "SAR1M Index", "SAR3M Index", "SAR6M Index"],
+        "swaps": ["SASO1 Curncy", "SASO2 Curncy", "SASO5 Curncy"]
+      },
+      "ISK": {
+        "money_market": ["ISKON Index", "ISK1M Index", "ISK3M Index"],
+        "swaps": ["ISSO1 Curncy", "ISSO2 Curncy", "ISSO3 Curncy"],
+        "government_bonds": ["GISK5Y Index", "GISK10Y Index"]
+      }
+    }
+  },
+
+  "fx_volatility_surfaces": {
+    "major_pairs": {
+      "EURUSD": {
+        "atm": ["EURUSDV1M Curncy", "EURUSDV3M Curncy", "EURUSDV6M Curncy", "EURUSDV1Y Curncy"],
+        "25d_rr": ["EURUSD25R1M Curncy", "EURUSD25R3M Curncy", "EURUSD25R6M Curncy"],
+        "25d_bf": ["EURUSD25B1M Curncy", "EURUSD25B3M Curncy", "EURUSD25B6M Curncy"],
+        "forwards": ["EURUSD1M Curncy", "EURUSD3M Curncy", "EURUSD6M Curncy"]
+      }
+    },
+    "emerging_pairs": {
+      "USDAED": {
+        "atm": ["USDAEDV1M Curncy", "USDAEDV3M Curncy", "USDAEDV6M Curncy"],
+        "options": ["USDAED25R1M Curncy", "USDAED25B1M Curncy"]
+      },
+      "USDSAR": {
+        "atm": ["USDSARV1M Curncy", "USDSARV3M Curncy"],
+        "forwards": ["USDSAR1M Curncy", "USDSAR3M Curncy", "USDSAR6M Curncy"]
+      }
+    }
+  },
+
+  "working_patterns": {
+    "money_market": {
+      "pattern": "{CCY}{TENOR} Index or {CCY}00{TENOR} Index",
+      "examples": ["USD0003M Index", "EUR003M Index", "AUD3M Index"],
+      "coverage": "All 50 currencies"
+    },
+    "overnight_rates": {
+      "patterns": ["{CCY}ON Index", "{CCY}ONIA Index"],
+      "examples": ["USDON Index", "EURON Index", "GBPON Index"],
+      "coverage": "42 currencies"
+    },
+    "ois_swaps": {
+      "patterns": {
+        "USD": "USSO{TENOR} Curncy, USOSFR{TENOR} Curncy",
+        "EUR": "EESWE{TENOR} Curncy",
+        "CHF": "SFSNT{TENOR} Curncy",
+        "JPY": "JYSO{TENOR} Curncy",
+        "others": "{CCY}SO{TENOR} Curncy"
+      }
+    },
+    "fx_volatility": {
+      "atm": "{PAIR}V{TENOR} Curncy",
+      "risk_reversal": "{PAIR}25R{TENOR} Curncy",
+      "butterfly": "{PAIR}25B{TENOR} Curncy"
+    }
+  },
+
+  "gaps_and_limitations": {
+    "missing_data": [
+      "FRA rates - all patterns invalid",
+      "Generic swap screens (USSW, EUSW) don't work as tickers",
+      "Limited credit spreads data",
+      "Cross-currency basis swaps limited"
+    ],
+    "low_coverage_currencies": [
+      "BRL - Only 2 tickers (access restrictions)",
+      "TWD - Only 3 tickers",
+      "INR - Only 6 tickers",
+      "ARS - Only 8 tickers"
+    ],
+    "workarounds": {
+      "fra_rates": "Use money market rates and interpolate",
+      "swap_screens": "Use individual tenor tickers instead",
+      "missing_tenors": "Interpolate between available points"
+    }
+  },
+
+  "usage_examples": {
+    "get_usd_curve": {
+      "money_market": ["US0001M Index", "US0003M Index", "US0006M Index"],
+      "swaps": ["USOSFR1 Curncy", "USOSFR2 Curncy", "USOSFR5 Curncy", "USOSFR10 Curncy"],
+      "bonds": ["USGG2Y Index", "USGG5Y Index", "USGG10Y Index", "USGG30Y Index"]
+    },
+    "get_fx_vol_surface": {
+      "pair": "EURUSD",
+      "atm": ["EURUSDV1M Curncy", "EURUSDV3M Curncy", "EURUSDV6M Curncy"],
+      "25d_rr": ["EURUSD25R1M Curncy", "EURUSD25R3M Curncy"],
+      "25d_bf": ["EURUSD25B1M Curncy", "EURUSD25B3M Curncy"]
+    }
+  },
+
+  "implementation_notes": {
+    "batch_size": "Maximum 20 tickers per API call",
+    "rate_limiting": "100ms delay between calls recommended",
+    "error_handling": "Skip missing tenors, don't throw",
+    "data_validation": "Check for null values before using",
+    "caching": "Consider caching frequently used tickers"
+  }
+}

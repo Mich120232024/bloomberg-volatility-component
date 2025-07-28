@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bloomberg API Test</title>
+    <style>
+        body { font-family: monospace; padding: 20px; background: #1a1a1a; color: #fff; }
+        pre { background: #2a2a2a; padding: 10px; overflow: auto; }
+        button { padding: 10px; margin: 10px 0; background: #4a4a4a; color: #fff; border: none; cursor: pointer; }
+        button:hover { background: #5a5a5a; }
+    </style>
+</head>
+<body>
+    <h1>Bloomberg API Test</h1>
+    <button onclick="testAPI()">Test Volatility API</button>
+    <button onclick="testDirectGateway()">Test Direct Gateway</button>
+    <div id="output"></div>
+
+    <script>
+        async function testAPI() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Testing via Dev Server Proxy...</p>';
+
+            try {
+                const response = await fetch('/api/bloomberg/reference', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        securities: [
+                            "EURUSDVON BGN Curncy",
+                            "EURUSDV1M BGN Curncy",
+                            "EURUSD25R1M BGN Curncy",
+                            "EURUSD25B1M BGN Curncy"
+                        ],
+                        fields: ["PX_BID", "PX_ASK", "PX_LAST"]
+                    })
+                });
+
+                const data = await response.json();
+                output.innerHTML = '<h2>Raw API Response:</h2><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            } catch (error) {
+                output.innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+            }
+        }
+
+        async function testDirectGateway() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Testing Direct Gateway...</p>';
+
+            try {
+                const response = await fetch('http://localhost:8000/api/bloomberg/reference', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        securities: [
+                            "EURUSDVON BGN Curncy",
+                            "EURUSDV1M BGN Curncy"
+                        ],
+                        fields: ["PX_BID", "PX_ASK"]
+                    })
+                });
+
+                const data = await response.json();
+                output.innerHTML = '<h2>Direct Gateway Response:</h2><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            } catch (error) {
+                output.innerHTML = '<p style="color: red;">Error: ' + error.message + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>

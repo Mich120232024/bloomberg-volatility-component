@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct API Test</title>
+</head>
+<body>
+    <h1>Direct Bloomberg API Test</h1>
+    <button onclick="testDirect()">Test Direct Bloomberg API</button>
+    <button onclick="testProxy()">Test Through Proxy</button>
+    <pre id="output"></pre>
+    
+    <script>
+        const output = document.getElementById('output');
+        
+        async function log(msg) {
+            output.textContent += msg + '\n';
+            console.log(msg);
+        }
+        
+        // Test direct Bloomberg API
+        async function testDirect() {
+            output.textContent = '';
+            try {
+                log('Testing direct Bloomberg API...');
+                
+                const response = await fetch('http://20.172.249.92:8080/api/bloomberg/reference', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer test',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        securities: ['EURUSDVON Curncy', 'EURUSDV1M BGN Curncy'],
+                        fields: ['PX_LAST', 'PX_BID', 'PX_ASK']
+                    })
+                });
+                
+                const data = await response.json();
+                log('Success! Data received:');
+                log(JSON.stringify(data, null, 2));
+                
+            } catch (error) {
+                log('ERROR: ' + error.message);
+            }
+        }
+        
+        // Test through proxy
+        async function testProxy() {
+            output.textContent = '';
+            try {
+                log('Testing through Vite proxy...');
+                
+                const response = await fetch('/api/bloomberg/reference', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer test',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        securities: ['EURUSDVON Curncy', 'EURUSDV1M BGN Curncy'],
+                        fields: ['PX_LAST', 'PX_BID', 'PX_ASK']
+                    })
+                });
+                
+                const data = await response.json();
+                log('Success! Data received:');
+                log(JSON.stringify(data, null, 2));
+                
+            } catch (error) {
+                log('ERROR: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html>

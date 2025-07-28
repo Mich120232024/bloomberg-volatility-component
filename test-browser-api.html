@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Browser API</title>
+</head>
+<body>
+    <h1>Testing Browser API Call</h1>
+    <button onclick="testAPI()">Test API</button>
+    <pre id="output"></pre>
+    
+    <script>
+    async function testAPI() {
+        const output = document.getElementById('output');
+        output.textContent = 'Testing...\n';
+        
+        try {
+            // Test the same API call the app makes
+            const response = await fetch('http://localhost:8000/api/bloomberg/reference', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer test',
+                    'X-API-Key': 'test'
+                },
+                body: JSON.stringify({
+                    securities: ["EURUSDV1M BGN Curncy", "EURUSD25R1M BGN Curncy"],
+                    fields: ["PX_LAST", "PX_BID", "PX_ASK"]
+                })
+            });
+            
+            const data = await response.json();
+            output.textContent += 'Response:\n' + JSON.stringify(data, null, 2);
+            
+        } catch (error) {
+            output.textContent += 'Error: ' + error.message;
+        }
+    }
+    </script>
+</body>
+</html>

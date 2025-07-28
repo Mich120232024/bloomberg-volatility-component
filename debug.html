@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Bloomberg API</title>
+</head>
+<body>
+    <h1>Debug Bloomberg API</h1>
+    <button onclick="testVolatility()">Test Volatility API</button>
+    <pre id="output"></pre>
+    
+    <script>
+        const output = document.getElementById('output');
+        
+        async function log(msg) {
+            output.textContent += msg + '\n';
+            console.log(msg);
+        }
+        
+        async function testVolatility() {
+            try {
+                log('Starting test...');
+                
+                // Test the volatility endpoint that the app uses
+                const response = await fetch('http://localhost:3501/api/bloomberg/reference', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer test',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        securities: [
+                            'EURUSDVON Curncy',
+                            'EURUSDV1W BGN Curncy', 
+                            'EURUSDV1M BGN Curncy',
+                            'EURUSD25R1M BGN Curncy',
+                            'EURUSD25B1M BGN Curncy'
+                        ],
+                        fields: ['PX_LAST', 'PX_BID', 'PX_ASK']
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                log('Response: ' + JSON.stringify(data, null, 2));
+                
+                // Check each security
+                if (data.success && data.data?.securities_data) {
+                    data.data.securities_data.forEach(sec => {
+                        if (!sec.success) {
+                            log(`FAILED: ${sec.security} - ${sec.error}`);
+                        } else if (!sec.fields?.PX_LAST) {
+                            log(`NO DATA: ${sec.security}`);
+                        } else {
+                            log(`SUCCESS: ${sec.security} = ${sec.fields.PX_LAST}`);
+                        }
+                    });
+                }
+                
+            } catch (error) {
+                log('ERROR: ' + error.message);
+                console.error(error);
+            }
+        }
+        
+        // Auto-run on load
+        testVolatility();
+    </script>
+</body>
+</html>

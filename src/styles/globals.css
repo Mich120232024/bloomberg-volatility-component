@@ -1,0 +1,109 @@
+/* GZC Volatility Surface Global Styles - Matching GZC Intel App */
+
+/* Bootstrap import - must come first */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Tailwind base */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for Theming */
+:root {
+  /* GZC Brand Colors */
+  --gzc-primary: #8FB377;
+  --gzc-secondary: #7A9E65;
+  --gzc-success: #ABD38F;
+  --gzc-danger: #DD8B8B;
+  --gzc-warning: #E6D690;
+  --gzc-info: #8BB4DD;
+  --gzc-dark: #2D2D2D;
+  --gzc-light: #F8F9FA;
+
+  /* Default Theme (Professional Dark) */
+  --gzc-background: #1A1A1A;
+  --gzc-surface: #2A2A2A;
+  --gzc-text: #f8f6f0;
+  --gzc-text-muted: #c8c0b0;
+  --gzc-border: #3a3632;
+  
+  /* Theme variables that will be set dynamically */
+  --theme-primary: #7A9E65;
+  --theme-secondary: #95BD78;
+  --theme-accent: #ABD38F;
+  --theme-background: #1A1A1A;
+  --theme-surface: #2A2A2A;
+  --theme-surface-alt: #3A3A3A;
+  --theme-text: #f8f6f0;
+  --theme-text-secondary: #c8c0b0;
+  --theme-text-tertiary: #9a9488;
+  --theme-border: #3a3632;
+  --theme-border-light: #3a363266;
+  --theme-success: #95BD78;
+  --theme-danger: #D69A82;
+  --theme-warning: #E6D690;
+  --theme-info: #8BB4DD;
+}
+
+/* Global Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gzc-background);
+  color: var(--gzc-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom Utility Classes */
+.gzc-surface {
+  background-color: var(--gzc-surface);
+}
+
+.gzc-text {
+  color: var(--gzc-text);
+}
+
+.gzc-text-muted {
+  color: var(--gzc-text-muted);
+}
+
+.gzc-border {
+  border-color: var(--gzc-border);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gzc-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gzc-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gzc-primary);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Data Flow</title>
+</head>
+<body>
+    <h1>Check Bloomberg Data Flow</h1>
+    <button onclick="checkData()">Check Data Flow</button>
+    <pre id="output"></pre>
+    
+    <script type="module">
+        import { bloombergAPI } from './src/api/bloomberg.ts'
+        
+        window.checkData = async function() {
+            const output = document.getElementById('output');
+            output.textContent = 'Checking data flow...\n\n';
+            
+            try {
+                // Call the exact method the app uses
+                const data = await bloombergAPI.getVolatilitySurface('EURUSD');
+                
+                output.textContent += 'Data received: ' + data.length + ' items\n\n';
+                
+                if (data.length > 0) {
+                    output.textContent += 'First item structure:\n';
+                    output.textContent += JSON.stringify(data[0], null, 2);
+                } else {
+                    output.textContent += 'NO DATA RETURNED';
+                }
+                
+            } catch (error) {
+                output.textContent += 'ERROR: ' + error.message + '\n';
+                output.textContent += 'Stack: ' + error.stack;
+            }
+        }
+    </script>
+</body>
+</html>

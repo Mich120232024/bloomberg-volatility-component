@@ -1,0 +1,24 @@
+
+> gzc-volatility-surface@0.0.1 dev
+> NODE_OPTIONS='--max-old-space-size=8192' vite
+
+3:07:43 AM [vite] (client) Forced re-optimization of dependencies
+
+  VITE v7.0.4  ready in 100 ms
+
+  ➜  Local:   http://localhost:3501/
+  ➜  Network: http://192.168.178.63:3501/
+3:09:59 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:10:25 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:10:38 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:12:03 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:12:11 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:13:25 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:13:32 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:16:35 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:16:45 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:16:54 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:18:13 AM [vite] (client) hmr update /src/components/RateCurvesTabD3.tsx, /src/styles/globals.css
+3:28:51 AM [vite] (client) hmr update /src/components/MainAppContainer.tsx, /src/styles/globals.css
+3:29:00 AM [vite] (client) hmr update /src/components/MainAppContainer.tsx, /src/styles/globals.css
+3:29:06 AM [vite] (client) hmr update /src/components/MainAppContainer.tsx, /src/styles/globals.css

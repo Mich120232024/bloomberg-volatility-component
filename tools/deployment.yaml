@@ -1,0 +1,66 @@
+# Kubernetes Deployment for Bloomberg Gateway
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bloomberg-gateway
+  labels:
+    app: bloomberg-gateway
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bloomberg-gateway
+  template:
+    metadata:
+      labels:
+        app: bloomberg-gateway
+    spec:
+      containers:
+      - name: bloomberg-gateway
+        image: ${ACR_NAME}.azurecr.io/bloomberg-gateway:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: BLOOMBERG_API_URL
+          value: "http://20.172.249.92:8080"
+        - name: ENABLE_CACHE
+          value: "true"
+        - name: REDIS_CONNECTION
+          valueFrom:
+            secretKeyRef:
+              name: bloomberg-secrets
+              key: redis-connection-string
+        - name: CACHE_TTL
+          value: "900"
+        livenessProbe:
+          httpGet:
+            path: /live
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 5
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bloomberg-gateway
+spec:
+  selector:
+    app: bloomberg-gateway
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: LoadBalancer
