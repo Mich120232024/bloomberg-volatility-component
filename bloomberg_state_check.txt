@@ -1,0 +1,15 @@
+BLOOMBERG API STATE CHECK
+========================
+
+BEFORE TERMINAL LOAD (Wed Jul 30 08:42:30 EEST 2025):
+- USDCNHV1M: 2.9575 (Last Update: 07:41:22 UTC)
+- EURUSDV1M: 7.3375 (Last Update: 07:41:11 UTC)
+
+HYPOTHESIS: 
+The API server maintains its own Bloomberg connection independent of Terminal UI.
+Possibly using Bloomberg Server API (SAPI) or B-PIPE which don't require Terminal.
+
+TO VERIFY:
+1. Load Bloomberg Terminal
+2. Check if values change
+3. Compare timestamps

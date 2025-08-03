@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-08-03T11:43:11.114826",
+  "currencies_with_ois": {
+    "AUD": 36,
+    "CAD": 36,
+    "CHF": 18,
+    "EUR": 18,
+    "GBP": 18,
+    "JPY": 36,
+    "NOK": 9,
+    "NZD": 9,
+    "SEK": 9,
+    "USD": 18
+  },
+  "total_ois_tickers": 207,
+  "currencies_covered": 10
+}

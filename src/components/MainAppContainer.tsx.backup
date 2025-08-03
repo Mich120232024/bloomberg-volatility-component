@@ -3,12 +3,10 @@ import { useTheme } from '../contexts/ThemeContext'
 import { VolatilitySurfaceContainer } from './VolatilitySurfaceContainer'
 import { VolatilityHistoricalTable } from './VolatilityHistoricalTable'
 import { VolatilityAnalysisTab } from './VolatilityAnalysisTab'
-import { YieldCurvesTab } from './YieldCurvesTab'
-import { FXForwardCurvesTab } from './FXForwardCurvesTab'
-import { GZCOptionPricerTab } from './GZCOptionPricerTab'
-import { PortfolioTab } from './PortfolioTab'
+import { RateCurvesTab } from './RateCurvesTabD3'
+import { OptionsPricingTab } from './OptionsPricingTab'
 
-type TabType = 'surface' | 'historical' | 'analysis' | 'yield' | 'fx' | 'options' | 'portfolio'
+type TabType = 'surface' | 'historical' | 'analysis' | 'ratecurves' | 'options'
 
 export function MainAppContainer() {
   const { currentTheme } = useTheme()
@@ -78,36 +76,20 @@ export function MainAppContainer() {
           Volatility Analysis
         </button>
         <button
-          onClick={() => setActiveTab('yield')}
+          onClick={() => setActiveTab('ratecurves')}
           style={{
             backgroundColor: 'transparent',
             border: 'none',
             padding: '16px 0',
-            color: activeTab === 'yield' ? currentTheme.primary : currentTheme.textSecondary,
+            color: activeTab === 'ratecurves' ? currentTheme.primary : currentTheme.textSecondary,
             fontSize: '14px',
             fontWeight: '600',
             cursor: 'pointer',
-            borderBottom: activeTab === 'yield' ? `2px solid ${currentTheme.primary}` : '2px solid transparent',
+            borderBottom: activeTab === 'ratecurves' ? `2px solid ${currentTheme.primary}` : '2px solid transparent',
             transition: 'all 0.2s ease'
           }}
         >
-          Yield Curves
-        </button>
-        <button
-          onClick={() => setActiveTab('fx')}
-          style={{
-            backgroundColor: 'transparent',
-            border: 'none',
-            padding: '16px 0',
-            color: activeTab === 'fx' ? currentTheme.primary : currentTheme.textSecondary,
-            fontSize: '14px',
-            fontWeight: '600',
-            cursor: 'pointer',
-            borderBottom: activeTab === 'fx' ? `2px solid ${currentTheme.primary}` : '2px solid transparent',
-            transition: 'all 0.2s ease'
-          }}
-        >
-          FX Forwards
+          Rate Curves
         </button>
         <button
           onClick={() => setActiveTab('options')}
@@ -123,23 +105,7 @@ export function MainAppContainer() {
             transition: 'all 0.2s ease'
           }}
         >
-          Option Pricing
-        </button>
-        <button
-          onClick={() => setActiveTab('portfolio')}
-          style={{
-            backgroundColor: 'transparent',
-            border: 'none',
-            padding: '16px 0',
-            color: activeTab === 'portfolio' ? currentTheme.primary : currentTheme.textSecondary,
-            fontSize: '14px',
-            fontWeight: '600',
-            cursor: 'pointer',
-            borderBottom: activeTab === 'portfolio' ? `2px solid ${currentTheme.primary}` : '2px solid transparent',
-            transition: 'all 0.2s ease'
-          }}
-        >
-          Portfolio
+          Options Pricing
         </button>
       </div>
       
@@ -151,14 +117,10 @@ export function MainAppContainer() {
           <VolatilityHistoricalTable />
         ) : activeTab === 'analysis' ? (
           <VolatilityAnalysisTab />
-        ) : activeTab === 'yield' ? (
-          <YieldCurvesTab />
-        ) : activeTab === 'fx' ? (
-          <FXForwardCurvesTab />
+        ) : activeTab === 'ratecurves' ? (
+          <RateCurvesTab />
         ) : activeTab === 'options' ? (
-          <GZCOptionPricerTab />
-        ) : activeTab === 'portfolio' ? (
-          <PortfolioTab />
+          <OptionsPricingTab />
         ) : null}
       </div>
     </div>
