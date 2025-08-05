@@ -1134,3 +1134,65 @@ INFO:     127.0.0.1:54899 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54904 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
 2025-08-05 11:51:45,627 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
 INFO:     127.0.0.1:54899 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56159 - "OPTIONS /api/bloomberg/reference HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56160 - "OPTIONS /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:34,955 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+2025-08-05 12:13:35,402 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+2025-08-05 12:13:35,842 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56167 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:36,272 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56168 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:36,781 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56167 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:37,191 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56168 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:37,580 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56167 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:38,006 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56168 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:38,874 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+2025-08-05 12:13:39,445 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56167 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56168 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:40,222 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56167 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:13:40,877 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56168 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:14:05,598 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56176 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:14:06,101 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56178 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:14:06,682 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56176 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:14:07,297 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56178 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:14:07,705 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56176 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:14:08,201 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56178 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:14:09,037 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56176 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:15:12,260 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56253 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56275 - "POST /api/bloomberg/validate-tickers HTTP/1.1" 404 Not Found
+2025-08-05 12:15:27,774 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56301 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:33,862 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56474 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:43,504 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56497 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56535 - "OPTIONS /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:50,639 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56539 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:51,067 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56535 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:51,547 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56539 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:52,060 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56535 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:52,375 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56539 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:16:52,884 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56535 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
+2025-08-05 12:17:14,771 - httpx - INFO - HTTP Request: POST http://20.172.249.92:8080/api/bloomberg/reference "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56601 - "POST /api/bloomberg/reference HTTP/1.1" 200 OK
