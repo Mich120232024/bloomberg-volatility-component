@@ -1,0 +1,234 @@
+{
+  "timestamp": "2025-08-03T11:47:14.799636",
+  "summary": {
+    "total_currencies_tested": 28,
+    "currencies_with_ois": 10,
+    "total_ois_tickers": 207,
+    "g10_coverage": 10,
+    "em_coverage": 0
+  },
+  "currencies_with_ois": {
+    "AUD": {
+      "ticker_count": 36,
+      "tenor_coverage_pct": 50.0,
+      "main_patterns": [
+        "Other",
+        "AUD AONIA10",
+        "AUD AONIA15",
+        "AUD AONIA1",
+        "AUD AONIA1M",
+        "AUD AONIA1W",
+        "AUD AONIA20",
+        "AUD AONIA2",
+        "AUD AONIA2M",
+        "AUD AONIA2W",
+        "AUD AONIA30",
+        "AUD AONIA3",
+        "AUD AONIA3M",
+        "AUD AONIA3W",
+        "AUD AONIA5",
+        "AUD AONIA6M",
+        "AUD AONIA7",
+        "AUD AONIA9M",
+        "AUD AONIAON"
+      ]
+    },
+    "CAD": {
+      "ticker_count": 36,
+      "tenor_coverage_pct": 90.0,
+      "main_patterns": [
+        "CAD CORRA10",
+        "CAD CORRA15",
+        "CAD CORRA1",
+        "CAD CORRA1M",
+        "CAD CORRA1W",
+        "CAD CORRA20",
+        "CAD CORRA2",
+        "CAD CORRA2M",
+        "CAD CORRA2W",
+        "CAD CORRA30",
+        "CAD CORRA3",
+        "CAD CORRA3M",
+        "CAD CORRA3W",
+        "CAD CORRA5",
+        "CAD CORRA6M",
+        "CAD CORRA7",
+        "CAD CORRA9M",
+        "CAD CORRAON",
+        "Other"
+      ]
+    },
+    "CHF": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 5.0,
+      "main_patterns": [
+        "CHF SARON10",
+        "CHF SARON15",
+        "CHF SARON1",
+        "CHF SARON1M",
+        "CHF SARON1W",
+        "CHF SARON20",
+        "CHF SARON2",
+        "CHF SARON2M",
+        "CHF SARON2W",
+        "CHF SARON30",
+        "CHF SARON3",
+        "CHF SARON3M",
+        "CHF SARON3W",
+        "CHF SARON5",
+        "CHF SARON6M",
+        "CHF SARON7",
+        "CHF SARON9M",
+        "CHF SARONON"
+      ]
+    },
+    "EUR": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 90.0,
+      "main_patterns": [
+        "EUR ESTR10",
+        "EUR ESTR15",
+        "EUR ESTR1",
+        "EUR ESTR1M",
+        "EUR ESTR1W",
+        "EUR ESTR20",
+        "EUR ESTR2",
+        "EUR ESTR2M",
+        "EUR ESTR2W",
+        "EUR ESTR30",
+        "EUR ESTR3",
+        "EUR ESTR3M",
+        "EUR ESTR3W",
+        "EUR ESTR5",
+        "EUR ESTR6M",
+        "EUR ESTR7",
+        "EUR ESTR9M",
+        "EUR ESTRON"
+      ]
+    },
+    "GBP": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 5.0,
+      "main_patterns": [
+        "GBP SONIA10",
+        "GBP SONIA15",
+        "GBP SONIA1",
+        "GBP SONIA1M",
+        "GBP SONIA1W",
+        "GBP SONIA20",
+        "GBP SONIA2",
+        "GBP SONIA2M",
+        "GBP SONIA2W",
+        "GBP SONIA30",
+        "GBP SONIA3",
+        "GBP SONIA3M",
+        "GBP SONIA3W",
+        "GBP SONIA5",
+        "GBP SONIA6M",
+        "GBP SONIA7",
+        "GBP SONIA9M",
+        "GBP SONIAON"
+      ]
+    },
+    "JPY": {
+      "ticker_count": 36,
+      "tenor_coverage_pct": 50.0,
+      "main_patterns": [
+        "JPY TONAR10",
+        "JPY TONAR15",
+        "JPY TONAR1",
+        "JPY TONAR1M",
+        "JPY TONAR1W",
+        "JPY TONAR20",
+        "JPY TONAR2",
+        "JPY TONAR2M",
+        "JPY TONAR2W",
+        "JPY TONAR30",
+        "JPY TONAR3",
+        "JPY TONAR3M",
+        "JPY TONAR3W",
+        "JPY TONAR5",
+        "JPY TONAR6M",
+        "JPY TONAR7",
+        "JPY TONAR9M",
+        "JPY TONARON",
+        "Other"
+      ]
+    },
+    "NOK": {
+      "ticker_count": 9,
+      "tenor_coverage_pct": 45.0,
+      "main_patterns": [
+        "NOK NOWA10",
+        "NOK NOWA15",
+        "NOK NOWA1",
+        "NOK NOWA20",
+        "NOK NOWA2",
+        "NOK NOWA30",
+        "NOK NOWA3",
+        "NOK NOWA5",
+        "NOK NOWA7"
+      ]
+    },
+    "NZD": {
+      "ticker_count": 9,
+      "tenor_coverage_pct": 45.0,
+      "main_patterns": [
+        "NZD OCR10",
+        "NZD OCR15",
+        "NZD OCR1",
+        "NZD OCR20",
+        "NZD OCR2",
+        "NZD OCR30",
+        "NZD OCR3",
+        "NZD OCR5",
+        "NZD OCR7"
+      ]
+    },
+    "SEK": {
+      "ticker_count": 9,
+      "tenor_coverage_pct": 45.0,
+      "main_patterns": [
+        "SEK STINA10",
+        "SEK STINA15",
+        "SEK STINA1",
+        "SEK STINA20",
+        "SEK STINA2",
+        "SEK STINA30",
+        "SEK STINA3",
+        "SEK STINA5",
+        "SEK STINA7"
+      ]
+    },
+    "USD": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 45.0,
+      "main_patterns": [
+        "Other"
+      ]
+    }
+  },
+  "currencies_without_ois": {
+    "G10": [],
+    "EM": [
+      "MXN",
+      "ZAR",
+      "TRY",
+      "CNH",
+      "INR",
+      "KRW",
+      "TWD",
+      "SGD",
+      "HKD",
+      "THB",
+      "ILS",
+      "PLN",
+      "CZK",
+      "HUF",
+      "RUB",
+      "PHP",
+      "DKK",
+      "BRL"
+    ]
+  }
+}

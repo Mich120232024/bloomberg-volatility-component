@@ -1,0 +1,16 @@
+{
+  "USD": {
+    "1Y": [
+      "USSO1 Curncy"
+    ],
+    "2Y": [
+      "USSO2 Curncy"
+    ],
+    "5Y": [
+      "USSO5 Curncy"
+    ],
+    "10Y": [
+      "USSO10 Curncy"
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-01-29",
+    "description": "Comprehensive list of all currencies and FX pairs supported in the GZC Volatility Surface application",
+    "bloomberg_conventions": {
+      "g10_pairs": "USD as quote currency for EUR, GBP, AUD, NZD; USD as base for others",
+      "em_pairs": "USD always as base currency",
+      "metals": "USD as quote currency (e.g., XAUUSD means XAU per USD)"
+    }
+  },
+  
+  "currencies": {
+    "g10": {
+      "count": 10,
+      "list": ["USD", "EUR", "GBP", "JPY", "CHF", "AUD", "CAD", "NOK", "SEK", "NZD"],
+      "description": "Group of Ten major currencies"
+    },
+    
+    "emerging_markets": {
+      "count": 24,
+      "list": [
+        "BRL", "CNH", "CZK", "HUF", "ILS", "INR", "KRW", "MXN", "PLN", "RUB", 
+        "SGD", "THB", "TRY", "TWD", "ZAR", "AED", "SAR", "CLP", "COP", "IDR", 
+        "MYR", "PHP", "HKD", "DKK"
+      ],
+      "regions": {
+        "latam": ["BRL", "MXN", "CLP", "COP"],
+        "asia": ["CNH", "INR", "KRW", "SGD", "THB", "TWD", "IDR", "MYR", "PHP", "HKD"],
+        "ceemea": ["CZK", "HUF", "PLN", "RUB", "TRY", "ZAR", "ILS"],
+        "middle_east": ["AED", "SAR"],
+        "europe": ["DKK"]
+      }
+    },
+    
+    "precious_metals": {
+      "count": 2,
+      "list": ["XAU", "XAG"],
+      "names": {
+        "XAU": "Gold",
+        "XAG": "Silver"
+      }
+    },
+    
+    "total_currencies": 36
+  },
+  
+  "fx_pairs": {
+    "g10_usd_pairs": {
+      "count": 9,
+      "pairs": [
+        "EURUSD", "GBPUSD", "AUDUSD", "NZDUSD", 
+        "USDJPY", "USDCHF", "USDCAD", "USDSEK", "USDNOK"
+      ]
+    },
+    
+    "em_usd_pairs": {
+      "count": 24,
+      "major": [
+        "USDBRL", "USDMXN", "USDZAR", "USDTRY", "USDINR", 
+        "USDCNH", "USDKRW", "USDTWD", "USDSGD", "USDHKD", "USDTHB"
+      ],
+      "ceemea": [
+        "USDPLN", "USDCZK", "USDHUF", "USDRUB", "USDILS", "USDAED", "USDSAR"
+      ],
+      "latam_asia": [
+        "USDCLP", "USDCOP", "USDIDR", "USDMYR", "USDPHP", "USDDKK"
+      ]
+    },
+    
+    "metal_pairs": {
+      "count": 2,
+      "pairs": ["XAUUSD", "XAGUSD"]
+    },
+    
+    "eur_crosses": {
+      "count": 12,
+      "pairs": [
+        "EURGBP", "EURJPY", "EURCHF", "EURAUD", "EURCAD", "EURNZD",
+        "EURSEK", "EURNOK", "EURPLN", "EURCZK", "EURHUF", "EURTRY"
+      ]
+    },
+    
+    "gbp_crosses": {
+      "count": 7,
+      "pairs": [
+        "GBPJPY", "GBPCHF", "GBPAUD", "GBPCAD", "GBPNZD", "GBPSEK", "GBPNOK"
+      ]
+    },
+    
+    "jpy_crosses": {
+      "count": 11,
+      "pairs": [
+        "EURJPY", "GBPJPY", "AUDJPY", "NZDJPY", "CADJPY", "CHFJPY",
+        "NOKJPY", "SEKJPY", "ZARJPY", "MXNJPY", "TRYJPY"
+      ]
+    },
+    
+    "other_crosses": {
+      "count": 6,
+      "pairs": [
+        "AUDCAD", "AUDCHF", "AUDNZD", "NZDCAD", "NZDCHF", "CADCHF"
+      ]
+    },
+    
+    "total_fx_pairs": 71
+  },
+  
+  "bloomberg_tickers": {
+    "spot": {
+      "format": "{PAIR} Curncy",
+      "example": "EURUSD Curncy"
+    },
+    "volatility": {
+      "atm": {
+        "overnight": "{PAIR}VON Curncy",
+        "term": "{PAIR}V{TENOR} BGN Curncy"
+      },
+      "risk_reversal": "{PAIR}{DELTA}R{TENOR} BGN Curncy",
+      "butterfly": "{PAIR}{DELTA}B{TENOR} BGN Curncy",
+      "examples": {
+        "atm_1m": "EURUSDV1M BGN Curncy",
+        "25d_rr_1m": "EURUSD25R1M BGN Curncy",
+        "25d_bf_1m": "EURUSD25B1M BGN Curncy"
+      }
+    },
+    "forwards": {
+      "format": "{PAIR}{TENOR} Curncy",
+      "example": "EURUSD1M Curncy"
+    }
+  },
+  
+  "coverage_by_component": {
+    "volatility_surface": "All 71 FX pairs + 2 metal pairs",
+    "fx_forwards": "All 71 FX pairs + 2 metal pairs",
+    "option_pricer": "All 71 FX pairs + 2 metal pairs",
+    "yield_curves": "14 currencies (USD, EUR, GBP, JPY, CHF, AUD, CAD, NZD, SEK, NOK, DKK, AED, SAR, ISK)",
+    "historical_analysis": "All 71 FX pairs + 2 metal pairs"
+  },
+  
+  "summary": {
+    "total_currencies": 36,
+    "total_fx_pairs": 71,
+    "total_metal_pairs": 2,
+    "total_tradable_pairs": 73,
+    "g10_currencies": 10,
+    "em_currencies": 24,
+    "precious_metals": 2
+  }
+}

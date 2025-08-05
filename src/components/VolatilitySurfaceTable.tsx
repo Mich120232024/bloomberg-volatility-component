@@ -1,3 +1,4 @@
+import React from 'react'
 import { useTheme } from '../contexts/ThemeContext'
 import { VolatilityData } from '../api/bloomberg'
 
@@ -76,7 +77,7 @@ export function VolatilitySurfaceTable({ data }: Props) {
                 textAlign: 'center',
                 borderBottom: `1px solid ${currentTheme.border}`
               }}>
-                {delta}
+                {delta} Strike
               </th>
             ))}
           </tr>
@@ -92,12 +93,12 @@ export function VolatilitySurfaceTable({ data }: Props) {
             <th style={headerStyle(currentTheme)}>Bid</th>
             <th style={headerStyle(currentTheme)}>Ask</th>
             {['5D', '10D', '15D', '25D', '35D'].map(delta => (
-              <>
+              <React.Fragment key={delta}>
                 <th key={`${delta}-rr-bid`} style={headerStyle(currentTheme)}>RR Bid</th>
                 <th key={`${delta}-rr-ask`} style={headerStyle(currentTheme)}>RR Ask</th>
                 <th key={`${delta}-bf-bid`} style={headerStyle(currentTheme)}>BF Bid</th>
                 <th key={`${delta}-bf-ask`} style={headerStyle(currentTheme)}>BF Ask</th>
-              </>
+              </React.Fragment>
             ))}
           </tr>
         </thead>

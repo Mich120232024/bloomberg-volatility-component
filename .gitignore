@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+*.log
+
+# Environment variables - DO NOT COMMIT
+.env
+.env.local
+.env.production
+.env.staging
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# API responses (temporary files)
+api_response_*.json

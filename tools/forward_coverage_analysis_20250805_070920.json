@@ -1,0 +1,1586 @@
+{
+  "timestamp": "2025-08-05T07:09:20.596622",
+  "summary": {
+    "total_pairs": 45,
+    "categories": {
+      "full_5y": 32,
+      "full_3y": 1,
+      "partial_long": 2,
+      "partial_short": 3,
+      "spot_only": 7,
+      "no_data": 0
+    }
+  },
+  "categories": {
+    "full_5y": [
+      "EURUSD",
+      "GBPUSD",
+      "USDJPY",
+      "USDCHF",
+      "AUDUSD",
+      "USDCAD",
+      "NZDUSD",
+      "USDSEK",
+      "USDNOK",
+      "USDDKK",
+      "USDHKD",
+      "USDCNH",
+      "USDMXN",
+      "USDZAR",
+      "USDTRY",
+      "USDRUB",
+      "USDPLN",
+      "USDHUF",
+      "USDCZK",
+      "USDILS",
+      "USDAED",
+      "USDSAR",
+      "EURGBP",
+      "EURJPY",
+      "GBPJPY",
+      "EURCHF",
+      "AUDJPY",
+      "CADJPY",
+      "EURAUD",
+      "EURNZD",
+      "GBPAUD",
+      "GBPNZD"
+    ],
+    "full_3y": [
+      "USDSGD"
+    ],
+    "partial_long": [
+      "USDTHB",
+      "USDCOP"
+    ],
+    "partial_short": [
+      "USDKRW",
+      "USDPHP",
+      "USDMYR"
+    ],
+    "spot_only": [
+      "USDINR",
+      "USDTWD",
+      "USDIDR",
+      "USDBRL",
+      "USDCLP",
+      "USDPEN",
+      "USDARS"
+    ],
+    "no_data": []
+  },
+  "detailed_results": {
+    "EURUSD": {
+      "pair": "EURUSD",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 391.68,
+        "3Y": 527.25,
+        "5Y": 802.88,
+        "SPOT": 1.1555,
+        "1W": 5.32,
+        "2W": 10.65,
+        "1M": 24.52,
+        "2M": 45.94,
+        "3M": 67.89,
+        "6M": 131.14,
+        "9M": 184.16,
+        "18M": 320.35
+      }
+    },
+    "GBPUSD": {
+      "pair": "GBPUSD",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -34.25,
+        "3Y": -77.59,
+        "5Y": -151.0,
+        "SPOT": 1.3282,
+        "1W": 0.99,
+        "2W": 2.0,
+        "1M": 4.46,
+        "2M": 7.33,
+        "3M": 9.31,
+        "6M": 13.01,
+        "9M": 13.69,
+        "18M": -8.5
+      }
+    },
+    "USDJPY": {
+      "pair": "USDJPY",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -872.46,
+        "3Y": -1229.95,
+        "5Y": -1956.15,
+        "SPOT": 147.13,
+        "1W": -11.19,
+        "2W": -22.46,
+        "1M": -52.06,
+        "2M": -98.51,
+        "3M": -145.98,
+        "6M": -283.1,
+        "9M": -394.4,
+        "18M": -696.44
+      }
+    },
+    "USDCHF": {
+      "pair": "USDCHF",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -583.73,
+        "3Y": -821.05,
+        "5Y": -1277.37,
+        "SPOT": 0.8096,
+        "1W": -7.06,
+        "2W": -14.1,
+        "1M": -32.41,
+        "2M": -60.88,
+        "3M": -90.65,
+        "6M": -177.03,
+        "9M": -251.02,
+        "18M": -459.67
+      }
+    },
+    "AUDUSD": {
+      "pair": "AUDUSD",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 25.39,
+        "3Y": 9.81,
+        "5Y": -43.0,
+        "SPOT": 0.6461,
+        "1W": 0.65,
+        "2W": 1.57,
+        "1M": 4.01,
+        "2M": 7.25,
+        "3M": 10.55,
+        "6M": 20.35,
+        "9M": 27.26,
+        "18M": 31.28
+      }
+    },
+    "USDCAD": {
+      "pair": "USDCAD",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -265.95,
+        "3Y": -335.6,
+        "5Y": -460.94,
+        "SPOT": 1.3789,
+        "1W": -4.7,
+        "2W": -9.43,
+        "1M": -22.35,
+        "2M": -40.38,
+        "3M": -59.16,
+        "6M": -110.5,
+        "9M": -151.32,
+        "18M": -234.55
+      }
+    },
+    "NZDUSD": {
+      "pair": "NZDUSD",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 63.5,
+        "3Y": 51.33,
+        "5Y": 1.72,
+        "SPOT": 0.5896,
+        "1W": 1.29,
+        "2W": 2.61,
+        "1M": 6.65,
+        "2M": 12.56,
+        "3M": 18.66,
+        "6M": 34.88,
+        "9M": 47.05,
+        "18M": 65.14
+      }
+    },
+    "USDSEK": {
+      "pair": "USDSEK",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -3008.84,
+        "3Y": -3981.38,
+        "5Y": -5744.27,
+        "SPOT": 9.6765,
+        "1W": -44.3,
+        "2W": -88.42,
+        "1M": -203.87,
+        "2M": -380.5,
+        "3M": -563.54,
+        "6M": -1091.93,
+        "9M": -1519.58,
+        "18M": -2542.88
+      }
+    },
+    "USDNOK": {
+      "pair": "USDNOK",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 94.98,
+        "3Y": 200.0,
+        "5Y": 173.45,
+        "SPOT": 10.2806,
+        "1W": -3.66,
+        "2W": -7.57,
+        "1M": -18.81,
+        "2M": -35.01,
+        "3M": -48.94,
+        "6M": -61.0,
+        "9M": -51.21,
+        "18M": 15.6
+      }
+    },
+    "USDDKK": {
+      "pair": "USDDKK",
+      "category": "G10",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -2474.66,
+        "3Y": -3216.85,
+        "5Y": -4652.42,
+        "SPOT": 6.4578,
+        "1W": -34.49,
+        "2W": -69.0,
+        "1M": -157.11,
+        "2M": -295.0,
+        "3M": -437.84,
+        "6M": -843.02,
+        "9M": -1182.0,
+        "18M": -2035.0
+      }
+    },
+    "USDSGD": {
+      "pair": "USDSGD",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y",
+        "5Y"
+      ],
+      "longest_tenor": "3Y",
+      "data_points": {
+        "2Y": -539.8,
+        "3Y": -761.8,
+        "SPOT": 1.288,
+        "1W": -6.43,
+        "2W": -13.19,
+        "1M": -30.47,
+        "2M": -57.91,
+        "3M": -86.23,
+        "6M": -168.95,
+        "9M": -237.9,
+        "18M": -432.81
+      }
+    },
+    "USDHKD": {
+      "pair": "USDHKD",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -1807.93,
+        "3Y": -2435.54,
+        "5Y": -3752.94,
+        "SPOT": 7.8499,
+        "1W": -61.0,
+        "2W": -117.08,
+        "1M": -237.25,
+        "2M": -402.01,
+        "3M": -541.75,
+        "6M": -822.5,
+        "9M": -1015.0,
+        "18M": -1455.15
+      }
+    },
+    "USDCNH": {
+      "pair": "USDCNH",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -2730.0,
+        "3Y": -3841.68,
+        "5Y": -6215.88,
+        "SPOT": 7.1844,
+        "1W": -40.52,
+        "2W": -80.2,
+        "1M": -174.55,
+        "2M": -336.5,
+        "3M": -484.89,
+        "6M": -923.67,
+        "9M": -1288.01,
+        "18M": -2220.15
+      }
+    },
+    "USDINR": {
+      "pair": "USDINR",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": null,
+      "data_points": {
+        "SPOT": 87.8038
+      }
+    },
+    "USDKRW": {
+      "pair": "USDKRW",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [
+        "1W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M"
+      ],
+      "missing_forwards": [
+        "2W",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": "9M",
+      "data_points": {
+        "SPOT": 1388.85,
+        "1W": -0.48,
+        "1M": -2.35,
+        "2M": -4.8,
+        "3M": -7.05,
+        "6M": -14.4,
+        "9M": -20.6
+      }
+    },
+    "USDTWD": {
+      "pair": "USDTWD",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": null,
+      "data_points": {
+        "SPOT": 29.927
+      }
+    },
+    "USDTHB": {
+      "pair": "USDTHB",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": "2Y",
+      "data_points": {
+        "2Y": -147.7,
+        "SPOT": 32.37,
+        "1W": -1.36,
+        "2W": -2.87,
+        "1M": -6.2,
+        "2M": -12.5,
+        "3M": -19.71,
+        "6M": -40.5,
+        "9M": -58.6,
+        "18M": -114.19
+      }
+    },
+    "USDPHP": {
+      "pair": "USDPHP",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M"
+      ],
+      "missing_forwards": [
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": "9M",
+      "data_points": {
+        "SPOT": 57.37,
+        "1W": 0.0108,
+        "2W": 0.023,
+        "1M": 0.0485,
+        "2M": 0.088,
+        "3M": 0.1315,
+        "6M": 0.2425,
+        "9M": 0.3388
+      }
+    },
+    "USDIDR": {
+      "pair": "USDIDR",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": null,
+      "data_points": {
+        "SPOT": 16388.0
+      }
+    },
+    "USDMYR": {
+      "pair": "USDMYR",
+      "category": "EM_ASIA",
+      "has_spot": true,
+      "available_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M"
+      ],
+      "missing_forwards": [
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": "9M",
+      "data_points": {
+        "SPOT": 4.2292,
+        "1W": -11.25,
+        "2W": -22.5,
+        "1M": -51.25,
+        "2M": -100.0,
+        "3M": -150.0,
+        "6M": -293.0,
+        "9M": -407.5
+      }
+    },
+    "USDMXN": {
+      "pair": "USDMXN",
+      "category": "EM_LATAM",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 16714.2,
+        "3Y": 26450.0,
+        "5Y": 49071.8,
+        "SPOT": 18.9034,
+        "1W": 148.04,
+        "2W": 292.83,
+        "1M": 664.34,
+        "2M": 1224.0,
+        "3M": 1857.5,
+        "6M": 3770.0,
+        "9M": 5688.0,
+        "18M": 12341.05
+      }
+    },
+    "USDBRL": {
+      "pair": "USDBRL",
+      "category": "EM_LATAM",
+      "has_spot": true,
+      "available_forwards": [],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": null,
+      "data_points": {
+        "SPOT": 5.499
+      }
+    },
+    "USDCLP": {
+      "pair": "USDCLP",
+      "category": "EM_LATAM",
+      "has_spot": true,
+      "available_forwards": [],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": null,
+      "data_points": {
+        "SPOT": 966.13
+      }
+    },
+    "USDCOP": {
+      "pair": "USDCOP",
+      "category": "EM_LATAM",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "2M",
+        "3M",
+        "6M",
+        "9M"
+      ],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "1Y",
+        "18M",
+        "5Y"
+      ],
+      "longest_tenor": "3Y",
+      "data_points": {
+        "2Y": 437.13,
+        "3Y": 740.29,
+        "SPOT": 4097.52,
+        "2M": 23.5,
+        "3M": 41.9,
+        "6M": 93.57,
+        "9M": 142.89
+      }
+    },
+    "USDPEN": {
+      "pair": "USDPEN",
+      "category": "EM_LATAM",
+      "has_spot": true,
+      "available_forwards": [],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": null,
+      "data_points": {
+        "SPOT": 3.5648
+      }
+    },
+    "USDARS": {
+      "pair": "USDARS",
+      "category": "EM_LATAM",
+      "has_spot": true,
+      "available_forwards": [],
+      "missing_forwards": [
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "5Y"
+      ],
+      "longest_tenor": null,
+      "data_points": {
+        "SPOT": 1359.082
+      }
+    },
+    "USDZAR": {
+      "pair": "USDZAR",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 11725.0,
+        "3Y": 18660.0,
+        "5Y": 35856.0,
+        "SPOT": 17.9457,
+        "1W": 87.0,
+        "2W": 174.0,
+        "1M": 396.0,
+        "2M": 767.0,
+        "3M": 1167.0,
+        "6M": 2484.0,
+        "9M": 3781.0,
+        "18M": 8458.0
+      }
+    },
+    "USDTRY": {
+      "pair": "USDTRY",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 301944.0,
+        "3Y": 468179.0,
+        "5Y": 800891.81,
+        "SPOT": 40.6825,
+        "1W": 2335.27,
+        "2W": 4800.78,
+        "1M": 11635.0,
+        "2M": 22427.81,
+        "3M": 34028.5,
+        "6M": 68923.4,
+        "9M": 103426.0,
+        "18M": 218104.7
+      }
+    },
+    "USDRUB": {
+      "pair": "USDRUB",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 227335.0,
+        "3Y": 343994.0,
+        "5Y": 478620.0,
+        "SPOT": 118.6895,
+        "1W": 2776.0,
+        "2W": 5544.0,
+        "1M": 11986.0,
+        "2M": 22235.0,
+        "3M": 32958.0,
+        "6M": 63296.0,
+        "9M": 91612.0,
+        "18M": 177260.0
+      }
+    },
+    "USDPLN": {
+      "pair": "USDPLN",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M"
+      ],
+      "missing_forwards": [
+        "1Y",
+        "18M"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 505.43,
+        "3Y": 833.89,
+        "5Y": 1543.0,
+        "SPOT": 3.7002,
+        "1W": 4.33,
+        "2W": 8.83,
+        "1M": 21.44,
+        "2M": 37.12,
+        "3M": 53.95,
+        "6M": 111.6,
+        "9M": 160.8
+      }
+    },
+    "USDHUF": {
+      "pair": "USDHUF",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M"
+      ],
+      "missing_forwards": [
+        "1Y",
+        "18M"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 1520.0,
+        "3Y": 2396.48,
+        "5Y": 4165.0,
+        "SPOT": 345.35,
+        "1W": 13.28,
+        "2W": 27.69,
+        "1M": 60.03,
+        "2M": 114.36,
+        "3M": 174.0,
+        "6M": 344.38,
+        "9M": 540.56
+      }
+    },
+    "USDCZK": {
+      "pair": "USDCZK",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -142.95,
+        "3Y": -140.64,
+        "5Y": -160.63,
+        "SPOT": 21.276,
+        "1W": -4.1,
+        "2W": -8.1,
+        "1M": -19.49,
+        "2M": -35.38,
+        "3M": -51.24,
+        "6M": -102.99,
+        "9M": -124.99,
+        "18M": -150.5
+      }
+    },
+    "USDILS": {
+      "pair": "USDILS",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -314.62,
+        "3Y": -476.96,
+        "5Y": -1020.88,
+        "SPOT": 3.4193,
+        "1W": -1.75,
+        "2W": -4.5,
+        "1M": -11.25,
+        "2M": -25.73,
+        "3M": -45.61,
+        "6M": -99.0,
+        "9M": -147.0,
+        "18M": -257.0
+      }
+    },
+    "USDAED": {
+      "pair": "USDAED",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -47.5,
+        "3Y": -48.75,
+        "5Y": -10.0,
+        "SPOT": 3.6725,
+        "1W": -0.9,
+        "2W": -1.85,
+        "1M": -4.75,
+        "2M": -9.74,
+        "3M": -14.0,
+        "6M": -24.85,
+        "9M": -30.42,
+        "18M": -41.12
+      }
+    },
+    "USDSAR": {
+      "pair": "USDSAR",
+      "category": "EM_EMEA",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M"
+      ],
+      "missing_forwards": [
+        "1Y",
+        "18M"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 333.73,
+        "3Y": 493.75,
+        "5Y": 628.75,
+        "SPOT": 3.7519,
+        "1W": 6.5,
+        "2W": 12.85,
+        "1M": 25.0,
+        "2M": 42.83,
+        "3M": 61.7,
+        "6M": 105.5,
+        "9M": 140.62
+      }
+    },
+    "EURGBP": {
+      "pair": "EURGBP",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 318.18,
+        "3Y": 450.51,
+        "5Y": 711.34,
+        "SPOT": 0.87,
+        "1W": 3.35,
+        "2W": 6.72,
+        "1M": 15.53,
+        "2M": 29.77,
+        "3M": 44.99,
+        "6M": 90.13,
+        "9M": 129.55,
+        "18M": 246.93
+      }
+    },
+    "EURJPY": {
+      "pair": "EURJPY",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -466.08,
+        "3Y": -710.2,
+        "5Y": -1236.8,
+        "SPOT": 170.01,
+        "1W": -5.09,
+        "2W": -10.3,
+        "1M": -24.22,
+        "2M": -46.69,
+        "3M": -69.78,
+        "6M": -137.9,
+        "9M": -192.07,
+        "18M": -355.77
+      }
+    },
+    "GBPJPY": {
+      "pair": "GBPJPY",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -1206.16,
+        "3Y": -1738.03,
+        "5Y": -2791.48,
+        "SPOT": 195.41,
+        "1W": -13.41,
+        "2W": -26.89,
+        "1M": -62.61,
+        "2M": -120.12,
+        "3M": -180.32,
+        "6M": -357.23,
+        "9M": -504.25,
+        "18M": -936.88
+      }
+    },
+    "EURCHF": {
+      "pair": "EURCHF",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -380.33,
+        "3Y": -565.02,
+        "5Y": -928.75,
+        "SPOT": 0.9355,
+        "1W": -3.86,
+        "2W": -7.69,
+        "1M": -17.68,
+        "2M": -33.43,
+        "3M": -50.39,
+        "6M": -100.71,
+        "9M": -145.59,
+        "18M": -286.53
+      }
+    },
+    "AUDJPY": {
+      "pair": "AUDJPY",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -528.71,
+        "3Y": -782.15,
+        "5Y": -1319.22,
+        "SPOT": 95.069,
+        "1W": -6.28,
+        "2W": -12.2,
+        "1M": -27.76,
+        "2M": -53.05,
+        "3M": -78.96,
+        "6M": -153.57,
+        "9M": -215.82,
+        "18M": -406.16
+      }
+    },
+    "CADJPY": {
+      "pair": "CADJPY",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -435.29,
+        "3Y": -649.34,
+        "5Y": -1099.58,
+        "SPOT": 106.709,
+        "1W": -4.48,
+        "2W": -9.0,
+        "1M": -21.02,
+        "2M": -40.36,
+        "3M": -60.43,
+        "6M": -120.24,
+        "9M": -171.05,
+        "18M": -329.7
+      }
+    },
+    "EURAUD": {
+      "pair": "EURAUD",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 534.14,
+        "3Y": 788.47,
+        "5Y": 1370.75,
+        "SPOT": 1.78821,
+        "1W": 6.43,
+        "2W": 12.13,
+        "1M": 26.83,
+        "2M": 50.97,
+        "3M": 75.75,
+        "6M": 146.18,
+        "9M": 208.71,
+        "18M": 407.23
+      }
+    },
+    "EURNZD": {
+      "pair": "EURNZD",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": 448.41,
+        "3Y": 717.7,
+        "5Y": 1355.84,
+        "SPOT": 1.9598,
+        "1W": 4.75,
+        "2W": 9.39,
+        "1M": 19.44,
+        "2M": 36.07,
+        "3M": 52.96,
+        "6M": 105.73,
+        "9M": 154.72,
+        "18M": 323.96
+      }
+    },
+    "GBPAUD": {
+      "pair": "GBPAUD",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -132.9,
+        "3Y": -151.01,
+        "5Y": -96.07,
+        "SPOT": 2.0555,
+        "1W": -0.54,
+        "2W": -1.89,
+        "1M": -5.85,
+        "2M": -11.73,
+        "3M": -19.12,
+        "6M": -44.45,
+        "9M": -65.22,
+        "18M": -112.11
+      }
+    },
+    "GBPNZD": {
+      "pair": "GBPNZD",
+      "category": "CROSSES",
+      "has_spot": true,
+      "available_forwards": [
+        "2Y",
+        "3Y",
+        "5Y",
+        "1W",
+        "2W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M"
+      ],
+      "missing_forwards": [
+        "1Y"
+      ],
+      "longest_tenor": "5Y",
+      "data_points": {
+        "2Y": -297.44,
+        "3Y": -324.54,
+        "5Y": -260.63,
+        "SPOT": 2.2526,
+        "1W": -3.23,
+        "2W": -6.58,
+        "1M": -17.84,
+        "2M": -35.47,
+        "3M": -55.32,
+        "6M": -110.52,
+        "9M": -155.26,
+        "18M": -260.53
+      }
+    }
+  }
+}

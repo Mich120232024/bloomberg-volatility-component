@@ -1,0 +1,2915 @@
+{
+  "timestamp": "2025-08-03T11:47:14.799636",
+  "summary": {
+    "total_currencies_tested": 28,
+    "currencies_with_ois": 10,
+    "total_ois_tickers": 207,
+    "g10_coverage": 10,
+    "em_coverage": 0
+  },
+  "currencies_with_ois": {
+    "AUD": {
+      "ticker_count": 36,
+      "tenor_coverage_pct": 50.0,
+      "covered_tenors": [
+        "ON",
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "Other",
+        "AUD AONIA10",
+        "AUD AONIA15",
+        "AUD AONIA1",
+        "AUD AONIA1M",
+        "AUD AONIA1W",
+        "AUD AONIA20",
+        "AUD AONIA2",
+        "AUD AONIA2M",
+        "AUD AONIA2W",
+        "AUD AONIA30",
+        "AUD AONIA3",
+        "AUD AONIA3M",
+        "AUD AONIA3W",
+        "AUD AONIA5",
+        "AUD AONIA6M",
+        "AUD AONIA7",
+        "AUD AONIA9M",
+        "AUD AONIAON"
+      ],
+      "sample_tickers": [
+        "ADSO10 Curncy",
+        "ADSO10 Index",
+        "ADSO15 Curncy",
+        "ADSO15 Index",
+        "ADSO1 Curncy"
+      ]
+    },
+    "CAD": {
+      "ticker_count": 36,
+      "tenor_coverage_pct": 90.0,
+      "covered_tenors": [
+        "ON",
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "CAD CORRA10",
+        "CAD CORRA15",
+        "CAD CORRA1",
+        "CAD CORRA1M",
+        "CAD CORRA1W",
+        "CAD CORRA20",
+        "CAD CORRA2",
+        "CAD CORRA2M",
+        "CAD CORRA2W",
+        "CAD CORRA30",
+        "CAD CORRA3",
+        "CAD CORRA3M",
+        "CAD CORRA3W",
+        "CAD CORRA5",
+        "CAD CORRA6M",
+        "CAD CORRA7",
+        "CAD CORRA9M",
+        "CAD CORRAON",
+        "Other"
+      ],
+      "sample_tickers": [
+        "CAD CORRA10 Index",
+        "CAD CORRA15 Index",
+        "CAD CORRA1 Index",
+        "CAD CORRA1M Index",
+        "CAD CORRA1W Index"
+      ]
+    },
+    "CHF": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 5.0,
+      "covered_tenors": [
+        "ON"
+      ],
+      "missing_tenors": [
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "4Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "main_patterns": [
+        "CHF SARON10",
+        "CHF SARON15",
+        "CHF SARON1",
+        "CHF SARON1M",
+        "CHF SARON1W",
+        "CHF SARON20",
+        "CHF SARON2",
+        "CHF SARON2M",
+        "CHF SARON2W",
+        "CHF SARON30",
+        "CHF SARON3",
+        "CHF SARON3M",
+        "CHF SARON3W",
+        "CHF SARON5",
+        "CHF SARON6M",
+        "CHF SARON7",
+        "CHF SARON9M",
+        "CHF SARONON"
+      ],
+      "sample_tickers": [
+        "CHF SARON10 Index",
+        "CHF SARON15 Index",
+        "CHF SARON1 Index",
+        "CHF SARON1M Index",
+        "CHF SARON1W Index"
+      ]
+    },
+    "EUR": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 90.0,
+      "covered_tenors": [
+        "ON",
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "EUR ESTR10",
+        "EUR ESTR15",
+        "EUR ESTR1",
+        "EUR ESTR1M",
+        "EUR ESTR1W",
+        "EUR ESTR20",
+        "EUR ESTR2",
+        "EUR ESTR2M",
+        "EUR ESTR2W",
+        "EUR ESTR30",
+        "EUR ESTR3",
+        "EUR ESTR3M",
+        "EUR ESTR3W",
+        "EUR ESTR5",
+        "EUR ESTR6M",
+        "EUR ESTR7",
+        "EUR ESTR9M",
+        "EUR ESTRON"
+      ],
+      "sample_tickers": [
+        "EUR ESTR10 Index",
+        "EUR ESTR15 Index",
+        "EUR ESTR1 Index",
+        "EUR ESTR1M Index",
+        "EUR ESTR1W Index"
+      ]
+    },
+    "GBP": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 5.0,
+      "covered_tenors": [
+        "ON"
+      ],
+      "missing_tenors": [
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "1Y",
+        "18M",
+        "2Y",
+        "3Y",
+        "4Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "main_patterns": [
+        "GBP SONIA10",
+        "GBP SONIA15",
+        "GBP SONIA1",
+        "GBP SONIA1M",
+        "GBP SONIA1W",
+        "GBP SONIA20",
+        "GBP SONIA2",
+        "GBP SONIA2M",
+        "GBP SONIA2W",
+        "GBP SONIA30",
+        "GBP SONIA3",
+        "GBP SONIA3M",
+        "GBP SONIA3W",
+        "GBP SONIA5",
+        "GBP SONIA6M",
+        "GBP SONIA7",
+        "GBP SONIA9M",
+        "GBP SONIAON"
+      ],
+      "sample_tickers": [
+        "GBP SONIA10 Index",
+        "GBP SONIA15 Index",
+        "GBP SONIA1 Index",
+        "GBP SONIA1M Index",
+        "GBP SONIA1W Index"
+      ]
+    },
+    "JPY": {
+      "ticker_count": 36,
+      "tenor_coverage_pct": 50.0,
+      "covered_tenors": [
+        "ON",
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "JPY TONAR10",
+        "JPY TONAR15",
+        "JPY TONAR1",
+        "JPY TONAR1M",
+        "JPY TONAR1W",
+        "JPY TONAR20",
+        "JPY TONAR2",
+        "JPY TONAR2M",
+        "JPY TONAR2W",
+        "JPY TONAR30",
+        "JPY TONAR3",
+        "JPY TONAR3M",
+        "JPY TONAR3W",
+        "JPY TONAR5",
+        "JPY TONAR6M",
+        "JPY TONAR7",
+        "JPY TONAR9M",
+        "JPY TONARON",
+        "Other"
+      ],
+      "sample_tickers": [
+        "JPY TONAR10 Index",
+        "JPY TONAR15 Index",
+        "JPY TONAR1 Index",
+        "JPY TONAR1M Index",
+        "JPY TONAR1W Index"
+      ]
+    },
+    "NOK": {
+      "ticker_count": 9,
+      "tenor_coverage_pct": 45.0,
+      "covered_tenors": [
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "ON",
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "NOK NOWA10",
+        "NOK NOWA15",
+        "NOK NOWA1",
+        "NOK NOWA20",
+        "NOK NOWA2",
+        "NOK NOWA30",
+        "NOK NOWA3",
+        "NOK NOWA5",
+        "NOK NOWA7"
+      ],
+      "sample_tickers": [
+        "NOK NOWA10 Index",
+        "NOK NOWA15 Index",
+        "NOK NOWA1 Index",
+        "NOK NOWA20 Index",
+        "NOK NOWA2 Index"
+      ]
+    },
+    "NZD": {
+      "ticker_count": 9,
+      "tenor_coverage_pct": 45.0,
+      "covered_tenors": [
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "ON",
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "NZD OCR10",
+        "NZD OCR15",
+        "NZD OCR1",
+        "NZD OCR20",
+        "NZD OCR2",
+        "NZD OCR30",
+        "NZD OCR3",
+        "NZD OCR5",
+        "NZD OCR7"
+      ],
+      "sample_tickers": [
+        "NZD OCR10 Index",
+        "NZD OCR15 Index",
+        "NZD OCR1 Index",
+        "NZD OCR20 Index",
+        "NZD OCR2 Index"
+      ]
+    },
+    "SEK": {
+      "ticker_count": 9,
+      "tenor_coverage_pct": 45.0,
+      "covered_tenors": [
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "ON",
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "SEK STINA10",
+        "SEK STINA15",
+        "SEK STINA1",
+        "SEK STINA20",
+        "SEK STINA2",
+        "SEK STINA30",
+        "SEK STINA3",
+        "SEK STINA5",
+        "SEK STINA7"
+      ],
+      "sample_tickers": [
+        "SEK STINA10 Index",
+        "SEK STINA15 Index",
+        "SEK STINA1 Index",
+        "SEK STINA20 Index",
+        "SEK STINA2 Index"
+      ]
+    },
+    "USD": {
+      "ticker_count": 18,
+      "tenor_coverage_pct": 45.0,
+      "covered_tenors": [
+        "1Y",
+        "2Y",
+        "3Y",
+        "5Y",
+        "7Y",
+        "10Y",
+        "15Y",
+        "20Y",
+        "30Y"
+      ],
+      "missing_tenors": [
+        "ON",
+        "1W",
+        "2W",
+        "3W",
+        "1M",
+        "2M",
+        "3M",
+        "6M",
+        "9M",
+        "18M",
+        "4Y"
+      ],
+      "main_patterns": [
+        "Other"
+      ],
+      "sample_tickers": [
+        "USSO10 Curncy",
+        "USSO10 Index",
+        "USSO15 Curncy",
+        "USSO15 Index",
+        "USSO1 Curncy"
+      ]
+    }
+  },
+  "currencies_without_ois": {
+    "G10": [],
+    "EM": [
+      "MXN",
+      "ZAR",
+      "TRY",
+      "CNH",
+      "INR",
+      "KRW",
+      "TWD",
+      "SGD",
+      "HKD",
+      "THB",
+      "ILS",
+      "PLN",
+      "CZK",
+      "HUF",
+      "RUB",
+      "PHP",
+      "DKK",
+      "BRL"
+    ]
+  },
+  "detailed_analysis": {
+    "AUD": {
+      "tenor_analysis": {
+        "total_tickers": 36,
+        "tenor_counts": {
+          "10Y": 2,
+          "15Y": 2,
+          "1Y": 2,
+          "20Y": 2,
+          "2Y": 2,
+          "30Y": 2,
+          "3Y": 2,
+          "5Y": 2,
+          "7Y": 2,
+          "ON": 18
+        },
+        "tenor_tickers": {
+          "10Y": [
+            "ADSO10 Curncy",
+            "ADSO10 Index"
+          ],
+          "15Y": [
+            "ADSO15 Curncy",
+            "ADSO15 Index"
+          ],
+          "1Y": [
+            "ADSO1 Curncy",
+            "ADSO1 Index"
+          ],
+          "20Y": [
+            "ADSO20 Curncy",
+            "ADSO20 Index"
+          ],
+          "2Y": [
+            "ADSO2 Curncy",
+            "ADSO2 Index"
+          ],
+          "30Y": [
+            "ADSO30 Curncy",
+            "ADSO30 Index"
+          ],
+          "3Y": [
+            "ADSO3 Curncy",
+            "ADSO3 Index"
+          ],
+          "5Y": [
+            "ADSO5 Curncy",
+            "ADSO5 Index"
+          ],
+          "7Y": [
+            "ADSO7 Curncy",
+            "ADSO7 Index"
+          ],
+          "ON": [
+            "AUD AONIA10 Index",
+            "AUD AONIA15 Index",
+            "AUD AONIA1 Index",
+            "AUD AONIA1M Index",
+            "AUD AONIA1W Index",
+            "AUD AONIA20 Index",
+            "AUD AONIA2 Index",
+            "AUD AONIA2M Index",
+            "AUD AONIA2W Index",
+            "AUD AONIA30 Index",
+            "AUD AONIA3 Index",
+            "AUD AONIA3M Index",
+            "AUD AONIA3W Index",
+            "AUD AONIA5 Index",
+            "AUD AONIA6M Index",
+            "AUD AONIA7 Index",
+            "AUD AONIA9M Index",
+            "AUD AONIAON Index"
+          ]
+        },
+        "covered_tenors": [
+          "ON",
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 50.0
+      },
+      "pattern_analysis": {
+        "Other": [
+          "ADSO10 Curncy",
+          "ADSO10 Index",
+          "ADSO15 Curncy",
+          "ADSO15 Index",
+          "ADSO1 Curncy",
+          "ADSO1 Index",
+          "ADSO20 Curncy",
+          "ADSO20 Index",
+          "ADSO2 Curncy",
+          "ADSO2 Index",
+          "ADSO30 Curncy",
+          "ADSO30 Index",
+          "ADSO3 Curncy",
+          "ADSO3 Index",
+          "ADSO5 Curncy",
+          "ADSO5 Index",
+          "ADSO7 Curncy",
+          "ADSO7 Index"
+        ],
+        "AUD AONIA10": [
+          "AUD AONIA10 Index"
+        ],
+        "AUD AONIA15": [
+          "AUD AONIA15 Index"
+        ],
+        "AUD AONIA1": [
+          "AUD AONIA1 Index"
+        ],
+        "AUD AONIA1M": [
+          "AUD AONIA1M Index"
+        ],
+        "AUD AONIA1W": [
+          "AUD AONIA1W Index"
+        ],
+        "AUD AONIA20": [
+          "AUD AONIA20 Index"
+        ],
+        "AUD AONIA2": [
+          "AUD AONIA2 Index"
+        ],
+        "AUD AONIA2M": [
+          "AUD AONIA2M Index"
+        ],
+        "AUD AONIA2W": [
+          "AUD AONIA2W Index"
+        ],
+        "AUD AONIA30": [
+          "AUD AONIA30 Index"
+        ],
+        "AUD AONIA3": [
+          "AUD AONIA3 Index"
+        ],
+        "AUD AONIA3M": [
+          "AUD AONIA3M Index"
+        ],
+        "AUD AONIA3W": [
+          "AUD AONIA3W Index"
+        ],
+        "AUD AONIA5": [
+          "AUD AONIA5 Index"
+        ],
+        "AUD AONIA6M": [
+          "AUD AONIA6M Index"
+        ],
+        "AUD AONIA7": [
+          "AUD AONIA7 Index"
+        ],
+        "AUD AONIA9M": [
+          "AUD AONIA9M Index"
+        ],
+        "AUD AONIAON": [
+          "AUD AONIAON Index"
+        ]
+      }
+    },
+    "CAD": {
+      "tenor_analysis": {
+        "total_tickers": 36,
+        "tenor_counts": {
+          "10Y": 3,
+          "15Y": 3,
+          "1Y": 3,
+          "1M": 1,
+          "1W": 1,
+          "20Y": 3,
+          "2Y": 3,
+          "2M": 1,
+          "2W": 1,
+          "30Y": 3,
+          "3Y": 3,
+          "3M": 1,
+          "3W": 1,
+          "5Y": 3,
+          "6M": 1,
+          "7Y": 3,
+          "9M": 1,
+          "ON": 1
+        },
+        "tenor_tickers": {
+          "10Y": [
+            "CAD CORRA10 Index",
+            "CDSO10 Curncy",
+            "CDSO10 Index"
+          ],
+          "15Y": [
+            "CAD CORRA15 Index",
+            "CDSO15 Curncy",
+            "CDSO15 Index"
+          ],
+          "1Y": [
+            "CAD CORRA1 Index",
+            "CDSO1 Curncy",
+            "CDSO1 Index"
+          ],
+          "1M": [
+            "CAD CORRA1M Index"
+          ],
+          "1W": [
+            "CAD CORRA1W Index"
+          ],
+          "20Y": [
+            "CAD CORRA20 Index",
+            "CDSO20 Curncy",
+            "CDSO20 Index"
+          ],
+          "2Y": [
+            "CAD CORRA2 Index",
+            "CDSO2 Curncy",
+            "CDSO2 Index"
+          ],
+          "2M": [
+            "CAD CORRA2M Index"
+          ],
+          "2W": [
+            "CAD CORRA2W Index"
+          ],
+          "30Y": [
+            "CAD CORRA30 Index",
+            "CDSO30 Curncy",
+            "CDSO30 Index"
+          ],
+          "3Y": [
+            "CAD CORRA3 Index",
+            "CDSO3 Curncy",
+            "CDSO3 Index"
+          ],
+          "3M": [
+            "CAD CORRA3M Index"
+          ],
+          "3W": [
+            "CAD CORRA3W Index"
+          ],
+          "5Y": [
+            "CAD CORRA5 Index",
+            "CDSO5 Curncy",
+            "CDSO5 Index"
+          ],
+          "6M": [
+            "CAD CORRA6M Index"
+          ],
+          "7Y": [
+            "CAD CORRA7 Index",
+            "CDSO7 Curncy",
+            "CDSO7 Index"
+          ],
+          "9M": [
+            "CAD CORRA9M Index"
+          ],
+          "ON": [
+            "CAD CORRAON Index"
+          ]
+        },
+        "covered_tenors": [
+          "ON",
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 90.0
+      },
+      "pattern_analysis": {
+        "CAD CORRA10": [
+          "CAD CORRA10 Index"
+        ],
+        "CAD CORRA15": [
+          "CAD CORRA15 Index"
+        ],
+        "CAD CORRA1": [
+          "CAD CORRA1 Index"
+        ],
+        "CAD CORRA1M": [
+          "CAD CORRA1M Index"
+        ],
+        "CAD CORRA1W": [
+          "CAD CORRA1W Index"
+        ],
+        "CAD CORRA20": [
+          "CAD CORRA20 Index"
+        ],
+        "CAD CORRA2": [
+          "CAD CORRA2 Index"
+        ],
+        "CAD CORRA2M": [
+          "CAD CORRA2M Index"
+        ],
+        "CAD CORRA2W": [
+          "CAD CORRA2W Index"
+        ],
+        "CAD CORRA30": [
+          "CAD CORRA30 Index"
+        ],
+        "CAD CORRA3": [
+          "CAD CORRA3 Index"
+        ],
+        "CAD CORRA3M": [
+          "CAD CORRA3M Index"
+        ],
+        "CAD CORRA3W": [
+          "CAD CORRA3W Index"
+        ],
+        "CAD CORRA5": [
+          "CAD CORRA5 Index"
+        ],
+        "CAD CORRA6M": [
+          "CAD CORRA6M Index"
+        ],
+        "CAD CORRA7": [
+          "CAD CORRA7 Index"
+        ],
+        "CAD CORRA9M": [
+          "CAD CORRA9M Index"
+        ],
+        "CAD CORRAON": [
+          "CAD CORRAON Index"
+        ],
+        "Other": [
+          "CDSO10 Curncy",
+          "CDSO10 Index",
+          "CDSO15 Curncy",
+          "CDSO15 Index",
+          "CDSO1 Curncy",
+          "CDSO1 Index",
+          "CDSO20 Curncy",
+          "CDSO20 Index",
+          "CDSO2 Curncy",
+          "CDSO2 Index",
+          "CDSO30 Curncy",
+          "CDSO30 Index",
+          "CDSO3 Curncy",
+          "CDSO3 Index",
+          "CDSO5 Curncy",
+          "CDSO5 Index",
+          "CDSO7 Curncy",
+          "CDSO7 Index"
+        ]
+      }
+    },
+    "CHF": {
+      "tenor_analysis": {
+        "total_tickers": 18,
+        "tenor_counts": {
+          "ON": 18
+        },
+        "tenor_tickers": {
+          "ON": [
+            "CHF SARON10 Index",
+            "CHF SARON15 Index",
+            "CHF SARON1 Index",
+            "CHF SARON1M Index",
+            "CHF SARON1W Index",
+            "CHF SARON20 Index",
+            "CHF SARON2 Index",
+            "CHF SARON2M Index",
+            "CHF SARON2W Index",
+            "CHF SARON30 Index",
+            "CHF SARON3 Index",
+            "CHF SARON3M Index",
+            "CHF SARON3W Index",
+            "CHF SARON5 Index",
+            "CHF SARON6M Index",
+            "CHF SARON7 Index",
+            "CHF SARON9M Index",
+            "CHF SARONON Index"
+          ]
+        },
+        "covered_tenors": [
+          "ON"
+        ],
+        "missing_tenors": [
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "1Y",
+          "18M",
+          "2Y",
+          "3Y",
+          "4Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "coverage_pct": 5.0
+      },
+      "pattern_analysis": {
+        "CHF SARON10": [
+          "CHF SARON10 Index"
+        ],
+        "CHF SARON15": [
+          "CHF SARON15 Index"
+        ],
+        "CHF SARON1": [
+          "CHF SARON1 Index"
+        ],
+        "CHF SARON1M": [
+          "CHF SARON1M Index"
+        ],
+        "CHF SARON1W": [
+          "CHF SARON1W Index"
+        ],
+        "CHF SARON20": [
+          "CHF SARON20 Index"
+        ],
+        "CHF SARON2": [
+          "CHF SARON2 Index"
+        ],
+        "CHF SARON2M": [
+          "CHF SARON2M Index"
+        ],
+        "CHF SARON2W": [
+          "CHF SARON2W Index"
+        ],
+        "CHF SARON30": [
+          "CHF SARON30 Index"
+        ],
+        "CHF SARON3": [
+          "CHF SARON3 Index"
+        ],
+        "CHF SARON3M": [
+          "CHF SARON3M Index"
+        ],
+        "CHF SARON3W": [
+          "CHF SARON3W Index"
+        ],
+        "CHF SARON5": [
+          "CHF SARON5 Index"
+        ],
+        "CHF SARON6M": [
+          "CHF SARON6M Index"
+        ],
+        "CHF SARON7": [
+          "CHF SARON7 Index"
+        ],
+        "CHF SARON9M": [
+          "CHF SARON9M Index"
+        ],
+        "CHF SARONON": [
+          "CHF SARONON Index"
+        ]
+      }
+    },
+    "EUR": {
+      "tenor_analysis": {
+        "total_tickers": 18,
+        "tenor_counts": {
+          "10Y": 1,
+          "15Y": 1,
+          "1Y": 1,
+          "1M": 1,
+          "1W": 1,
+          "20Y": 1,
+          "2Y": 1,
+          "2M": 1,
+          "2W": 1,
+          "30Y": 1,
+          "3Y": 1,
+          "3M": 1,
+          "3W": 1,
+          "5Y": 1,
+          "6M": 1,
+          "7Y": 1,
+          "9M": 1,
+          "ON": 1
+        },
+        "tenor_tickers": {
+          "10Y": [
+            "EUR ESTR10 Index"
+          ],
+          "15Y": [
+            "EUR ESTR15 Index"
+          ],
+          "1Y": [
+            "EUR ESTR1 Index"
+          ],
+          "1M": [
+            "EUR ESTR1M Index"
+          ],
+          "1W": [
+            "EUR ESTR1W Index"
+          ],
+          "20Y": [
+            "EUR ESTR20 Index"
+          ],
+          "2Y": [
+            "EUR ESTR2 Index"
+          ],
+          "2M": [
+            "EUR ESTR2M Index"
+          ],
+          "2W": [
+            "EUR ESTR2W Index"
+          ],
+          "30Y": [
+            "EUR ESTR30 Index"
+          ],
+          "3Y": [
+            "EUR ESTR3 Index"
+          ],
+          "3M": [
+            "EUR ESTR3M Index"
+          ],
+          "3W": [
+            "EUR ESTR3W Index"
+          ],
+          "5Y": [
+            "EUR ESTR5 Index"
+          ],
+          "6M": [
+            "EUR ESTR6M Index"
+          ],
+          "7Y": [
+            "EUR ESTR7 Index"
+          ],
+          "9M": [
+            "EUR ESTR9M Index"
+          ],
+          "ON": [
+            "EUR ESTRON Index"
+          ]
+        },
+        "covered_tenors": [
+          "ON",
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 90.0
+      },
+      "pattern_analysis": {
+        "EUR ESTR10": [
+          "EUR ESTR10 Index"
+        ],
+        "EUR ESTR15": [
+          "EUR ESTR15 Index"
+        ],
+        "EUR ESTR1": [
+          "EUR ESTR1 Index"
+        ],
+        "EUR ESTR1M": [
+          "EUR ESTR1M Index"
+        ],
+        "EUR ESTR1W": [
+          "EUR ESTR1W Index"
+        ],
+        "EUR ESTR20": [
+          "EUR ESTR20 Index"
+        ],
+        "EUR ESTR2": [
+          "EUR ESTR2 Index"
+        ],
+        "EUR ESTR2M": [
+          "EUR ESTR2M Index"
+        ],
+        "EUR ESTR2W": [
+          "EUR ESTR2W Index"
+        ],
+        "EUR ESTR30": [
+          "EUR ESTR30 Index"
+        ],
+        "EUR ESTR3": [
+          "EUR ESTR3 Index"
+        ],
+        "EUR ESTR3M": [
+          "EUR ESTR3M Index"
+        ],
+        "EUR ESTR3W": [
+          "EUR ESTR3W Index"
+        ],
+        "EUR ESTR5": [
+          "EUR ESTR5 Index"
+        ],
+        "EUR ESTR6M": [
+          "EUR ESTR6M Index"
+        ],
+        "EUR ESTR7": [
+          "EUR ESTR7 Index"
+        ],
+        "EUR ESTR9M": [
+          "EUR ESTR9M Index"
+        ],
+        "EUR ESTRON": [
+          "EUR ESTRON Index"
+        ]
+      }
+    },
+    "GBP": {
+      "tenor_analysis": {
+        "total_tickers": 18,
+        "tenor_counts": {
+          "ON": 18
+        },
+        "tenor_tickers": {
+          "ON": [
+            "GBP SONIA10 Index",
+            "GBP SONIA15 Index",
+            "GBP SONIA1 Index",
+            "GBP SONIA1M Index",
+            "GBP SONIA1W Index",
+            "GBP SONIA20 Index",
+            "GBP SONIA2 Index",
+            "GBP SONIA2M Index",
+            "GBP SONIA2W Index",
+            "GBP SONIA30 Index",
+            "GBP SONIA3 Index",
+            "GBP SONIA3M Index",
+            "GBP SONIA3W Index",
+            "GBP SONIA5 Index",
+            "GBP SONIA6M Index",
+            "GBP SONIA7 Index",
+            "GBP SONIA9M Index",
+            "GBP SONIAON Index"
+          ]
+        },
+        "covered_tenors": [
+          "ON"
+        ],
+        "missing_tenors": [
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "1Y",
+          "18M",
+          "2Y",
+          "3Y",
+          "4Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "coverage_pct": 5.0
+      },
+      "pattern_analysis": {
+        "GBP SONIA10": [
+          "GBP SONIA10 Index"
+        ],
+        "GBP SONIA15": [
+          "GBP SONIA15 Index"
+        ],
+        "GBP SONIA1": [
+          "GBP SONIA1 Index"
+        ],
+        "GBP SONIA1M": [
+          "GBP SONIA1M Index"
+        ],
+        "GBP SONIA1W": [
+          "GBP SONIA1W Index"
+        ],
+        "GBP SONIA20": [
+          "GBP SONIA20 Index"
+        ],
+        "GBP SONIA2": [
+          "GBP SONIA2 Index"
+        ],
+        "GBP SONIA2M": [
+          "GBP SONIA2M Index"
+        ],
+        "GBP SONIA2W": [
+          "GBP SONIA2W Index"
+        ],
+        "GBP SONIA30": [
+          "GBP SONIA30 Index"
+        ],
+        "GBP SONIA3": [
+          "GBP SONIA3 Index"
+        ],
+        "GBP SONIA3M": [
+          "GBP SONIA3M Index"
+        ],
+        "GBP SONIA3W": [
+          "GBP SONIA3W Index"
+        ],
+        "GBP SONIA5": [
+          "GBP SONIA5 Index"
+        ],
+        "GBP SONIA6M": [
+          "GBP SONIA6M Index"
+        ],
+        "GBP SONIA7": [
+          "GBP SONIA7 Index"
+        ],
+        "GBP SONIA9M": [
+          "GBP SONIA9M Index"
+        ],
+        "GBP SONIAON": [
+          "GBP SONIAON Index"
+        ]
+      }
+    },
+    "JPY": {
+      "tenor_analysis": {
+        "total_tickers": 36,
+        "tenor_counts": {
+          "ON": 18,
+          "10Y": 2,
+          "15Y": 2,
+          "1Y": 2,
+          "20Y": 2,
+          "2Y": 2,
+          "30Y": 2,
+          "3Y": 2,
+          "5Y": 2,
+          "7Y": 2
+        },
+        "tenor_tickers": {
+          "ON": [
+            "JPY TONAR10 Index",
+            "JPY TONAR15 Index",
+            "JPY TONAR1 Index",
+            "JPY TONAR1M Index",
+            "JPY TONAR1W Index",
+            "JPY TONAR20 Index",
+            "JPY TONAR2 Index",
+            "JPY TONAR2M Index",
+            "JPY TONAR2W Index",
+            "JPY TONAR30 Index",
+            "JPY TONAR3 Index",
+            "JPY TONAR3M Index",
+            "JPY TONAR3W Index",
+            "JPY TONAR5 Index",
+            "JPY TONAR6M Index",
+            "JPY TONAR7 Index",
+            "JPY TONAR9M Index",
+            "JPY TONARON Index"
+          ],
+          "10Y": [
+            "JYSO10 Curncy",
+            "JYSO10 Index"
+          ],
+          "15Y": [
+            "JYSO15 Curncy",
+            "JYSO15 Index"
+          ],
+          "1Y": [
+            "JYSO1 Curncy",
+            "JYSO1 Index"
+          ],
+          "20Y": [
+            "JYSO20 Curncy",
+            "JYSO20 Index"
+          ],
+          "2Y": [
+            "JYSO2 Curncy",
+            "JYSO2 Index"
+          ],
+          "30Y": [
+            "JYSO30 Curncy",
+            "JYSO30 Index"
+          ],
+          "3Y": [
+            "JYSO3 Curncy",
+            "JYSO3 Index"
+          ],
+          "5Y": [
+            "JYSO5 Curncy",
+            "JYSO5 Index"
+          ],
+          "7Y": [
+            "JYSO7 Curncy",
+            "JYSO7 Index"
+          ]
+        },
+        "covered_tenors": [
+          "ON",
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 50.0
+      },
+      "pattern_analysis": {
+        "JPY TONAR10": [
+          "JPY TONAR10 Index"
+        ],
+        "JPY TONAR15": [
+          "JPY TONAR15 Index"
+        ],
+        "JPY TONAR1": [
+          "JPY TONAR1 Index"
+        ],
+        "JPY TONAR1M": [
+          "JPY TONAR1M Index"
+        ],
+        "JPY TONAR1W": [
+          "JPY TONAR1W Index"
+        ],
+        "JPY TONAR20": [
+          "JPY TONAR20 Index"
+        ],
+        "JPY TONAR2": [
+          "JPY TONAR2 Index"
+        ],
+        "JPY TONAR2M": [
+          "JPY TONAR2M Index"
+        ],
+        "JPY TONAR2W": [
+          "JPY TONAR2W Index"
+        ],
+        "JPY TONAR30": [
+          "JPY TONAR30 Index"
+        ],
+        "JPY TONAR3": [
+          "JPY TONAR3 Index"
+        ],
+        "JPY TONAR3M": [
+          "JPY TONAR3M Index"
+        ],
+        "JPY TONAR3W": [
+          "JPY TONAR3W Index"
+        ],
+        "JPY TONAR5": [
+          "JPY TONAR5 Index"
+        ],
+        "JPY TONAR6M": [
+          "JPY TONAR6M Index"
+        ],
+        "JPY TONAR7": [
+          "JPY TONAR7 Index"
+        ],
+        "JPY TONAR9M": [
+          "JPY TONAR9M Index"
+        ],
+        "JPY TONARON": [
+          "JPY TONARON Index"
+        ],
+        "Other": [
+          "JYSO10 Curncy",
+          "JYSO10 Index",
+          "JYSO15 Curncy",
+          "JYSO15 Index",
+          "JYSO1 Curncy",
+          "JYSO1 Index",
+          "JYSO20 Curncy",
+          "JYSO20 Index",
+          "JYSO2 Curncy",
+          "JYSO2 Index",
+          "JYSO30 Curncy",
+          "JYSO30 Index",
+          "JYSO3 Curncy",
+          "JYSO3 Index",
+          "JYSO5 Curncy",
+          "JYSO5 Index",
+          "JYSO7 Curncy",
+          "JYSO7 Index"
+        ]
+      }
+    },
+    "NOK": {
+      "tenor_analysis": {
+        "total_tickers": 9,
+        "tenor_counts": {
+          "10Y": 1,
+          "15Y": 1,
+          "1Y": 1,
+          "20Y": 1,
+          "2Y": 1,
+          "30Y": 1,
+          "3Y": 1,
+          "5Y": 1,
+          "7Y": 1
+        },
+        "tenor_tickers": {
+          "10Y": [
+            "NOK NOWA10 Index"
+          ],
+          "15Y": [
+            "NOK NOWA15 Index"
+          ],
+          "1Y": [
+            "NOK NOWA1 Index"
+          ],
+          "20Y": [
+            "NOK NOWA20 Index"
+          ],
+          "2Y": [
+            "NOK NOWA2 Index"
+          ],
+          "30Y": [
+            "NOK NOWA30 Index"
+          ],
+          "3Y": [
+            "NOK NOWA3 Index"
+          ],
+          "5Y": [
+            "NOK NOWA5 Index"
+          ],
+          "7Y": [
+            "NOK NOWA7 Index"
+          ]
+        },
+        "covered_tenors": [
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "ON",
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 45.0
+      },
+      "pattern_analysis": {
+        "NOK NOWA10": [
+          "NOK NOWA10 Index"
+        ],
+        "NOK NOWA15": [
+          "NOK NOWA15 Index"
+        ],
+        "NOK NOWA1": [
+          "NOK NOWA1 Index"
+        ],
+        "NOK NOWA20": [
+          "NOK NOWA20 Index"
+        ],
+        "NOK NOWA2": [
+          "NOK NOWA2 Index"
+        ],
+        "NOK NOWA30": [
+          "NOK NOWA30 Index"
+        ],
+        "NOK NOWA3": [
+          "NOK NOWA3 Index"
+        ],
+        "NOK NOWA5": [
+          "NOK NOWA5 Index"
+        ],
+        "NOK NOWA7": [
+          "NOK NOWA7 Index"
+        ]
+      }
+    },
+    "NZD": {
+      "tenor_analysis": {
+        "total_tickers": 9,
+        "tenor_counts": {
+          "10Y": 1,
+          "15Y": 1,
+          "1Y": 1,
+          "20Y": 1,
+          "2Y": 1,
+          "30Y": 1,
+          "3Y": 1,
+          "5Y": 1,
+          "7Y": 1
+        },
+        "tenor_tickers": {
+          "10Y": [
+            "NZD OCR10 Index"
+          ],
+          "15Y": [
+            "NZD OCR15 Index"
+          ],
+          "1Y": [
+            "NZD OCR1 Index"
+          ],
+          "20Y": [
+            "NZD OCR20 Index"
+          ],
+          "2Y": [
+            "NZD OCR2 Index"
+          ],
+          "30Y": [
+            "NZD OCR30 Index"
+          ],
+          "3Y": [
+            "NZD OCR3 Index"
+          ],
+          "5Y": [
+            "NZD OCR5 Index"
+          ],
+          "7Y": [
+            "NZD OCR7 Index"
+          ]
+        },
+        "covered_tenors": [
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "ON",
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 45.0
+      },
+      "pattern_analysis": {
+        "NZD OCR10": [
+          "NZD OCR10 Index"
+        ],
+        "NZD OCR15": [
+          "NZD OCR15 Index"
+        ],
+        "NZD OCR1": [
+          "NZD OCR1 Index"
+        ],
+        "NZD OCR20": [
+          "NZD OCR20 Index"
+        ],
+        "NZD OCR2": [
+          "NZD OCR2 Index"
+        ],
+        "NZD OCR30": [
+          "NZD OCR30 Index"
+        ],
+        "NZD OCR3": [
+          "NZD OCR3 Index"
+        ],
+        "NZD OCR5": [
+          "NZD OCR5 Index"
+        ],
+        "NZD OCR7": [
+          "NZD OCR7 Index"
+        ]
+      }
+    },
+    "SEK": {
+      "tenor_analysis": {
+        "total_tickers": 9,
+        "tenor_counts": {
+          "10Y": 1,
+          "15Y": 1,
+          "1Y": 1,
+          "20Y": 1,
+          "2Y": 1,
+          "30Y": 1,
+          "3Y": 1,
+          "5Y": 1,
+          "7Y": 1
+        },
+        "tenor_tickers": {
+          "10Y": [
+            "SEK STINA10 Index"
+          ],
+          "15Y": [
+            "SEK STINA15 Index"
+          ],
+          "1Y": [
+            "SEK STINA1 Index"
+          ],
+          "20Y": [
+            "SEK STINA20 Index"
+          ],
+          "2Y": [
+            "SEK STINA2 Index"
+          ],
+          "30Y": [
+            "SEK STINA30 Index"
+          ],
+          "3Y": [
+            "SEK STINA3 Index"
+          ],
+          "5Y": [
+            "SEK STINA5 Index"
+          ],
+          "7Y": [
+            "SEK STINA7 Index"
+          ]
+        },
+        "covered_tenors": [
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "ON",
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 45.0
+      },
+      "pattern_analysis": {
+        "SEK STINA10": [
+          "SEK STINA10 Index"
+        ],
+        "SEK STINA15": [
+          "SEK STINA15 Index"
+        ],
+        "SEK STINA1": [
+          "SEK STINA1 Index"
+        ],
+        "SEK STINA20": [
+          "SEK STINA20 Index"
+        ],
+        "SEK STINA2": [
+          "SEK STINA2 Index"
+        ],
+        "SEK STINA30": [
+          "SEK STINA30 Index"
+        ],
+        "SEK STINA3": [
+          "SEK STINA3 Index"
+        ],
+        "SEK STINA5": [
+          "SEK STINA5 Index"
+        ],
+        "SEK STINA7": [
+          "SEK STINA7 Index"
+        ]
+      }
+    },
+    "USD": {
+      "tenor_analysis": {
+        "total_tickers": 18,
+        "tenor_counts": {
+          "10Y": 2,
+          "15Y": 2,
+          "1Y": 2,
+          "20Y": 2,
+          "2Y": 2,
+          "30Y": 2,
+          "3Y": 2,
+          "5Y": 2,
+          "7Y": 2
+        },
+        "tenor_tickers": {
+          "10Y": [
+            "USSO10 Curncy",
+            "USSO10 Index"
+          ],
+          "15Y": [
+            "USSO15 Curncy",
+            "USSO15 Index"
+          ],
+          "1Y": [
+            "USSO1 Curncy",
+            "USSO1 Index"
+          ],
+          "20Y": [
+            "USSO20 Curncy",
+            "USSO20 Index"
+          ],
+          "2Y": [
+            "USSO2 Curncy",
+            "USSO2 Index"
+          ],
+          "30Y": [
+            "USSO30 Curncy",
+            "USSO30 Index"
+          ],
+          "3Y": [
+            "USSO3 Curncy",
+            "USSO3 Index"
+          ],
+          "5Y": [
+            "USSO5 Curncy",
+            "USSO5 Index"
+          ],
+          "7Y": [
+            "USSO7 Curncy",
+            "USSO7 Index"
+          ]
+        },
+        "covered_tenors": [
+          "1Y",
+          "2Y",
+          "3Y",
+          "5Y",
+          "7Y",
+          "10Y",
+          "15Y",
+          "20Y",
+          "30Y"
+        ],
+        "missing_tenors": [
+          "ON",
+          "1W",
+          "2W",
+          "3W",
+          "1M",
+          "2M",
+          "3M",
+          "6M",
+          "9M",
+          "18M",
+          "4Y"
+        ],
+        "coverage_pct": 45.0
+      },
+      "pattern_analysis": {
+        "Other": [
+          "USSO10 Curncy",
+          "USSO10 Index",
+          "USSO15 Curncy",
+          "USSO15 Index",
+          "USSO1 Curncy",
+          "USSO1 Index",
+          "USSO20 Curncy",
+          "USSO20 Index",
+          "USSO2 Curncy",
+          "USSO2 Index",
+          "USSO30 Curncy",
+          "USSO30 Index",
+          "USSO3 Curncy",
+          "USSO3 Index",
+          "USSO5 Curncy",
+          "USSO5 Index",
+          "USSO7 Curncy",
+          "USSO7 Index"
+        ]
+      }
+    }
+  },
+  "tenor_coverage_summary": {
+    "ON": {
+      "currencies_count": 6,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "CHF",
+        "EUR",
+        "GBP",
+        "JPY"
+      ],
+      "coverage_pct": 60.0
+    },
+    "1W": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "2W": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "3W": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "1M": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "2M": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "3M": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "6M": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "9M": {
+      "currencies_count": 2,
+      "currencies": [
+        "CAD",
+        "EUR"
+      ],
+      "coverage_pct": 20.0
+    },
+    "1Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "18M": {
+      "currencies_count": 0,
+      "currencies": [],
+      "coverage_pct": 0.0
+    },
+    "2Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "3Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "4Y": {
+      "currencies_count": 0,
+      "currencies": [],
+      "coverage_pct": 0.0
+    },
+    "5Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "7Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "10Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "15Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "20Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    },
+    "30Y": {
+      "currencies_count": 8,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "EUR",
+        "JPY",
+        "NOK",
+        "NZD",
+        "SEK",
+        "USD"
+      ],
+      "coverage_pct": 80.0
+    }
+  },
+  "pattern_summary": {
+    "GBP SONIA10": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CHF SARON1M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "JPY TONAR5": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "NZD OCR10": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "NOK NOWA5": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "NZD OCR20": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "CAD CORRA2M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "GBP SONIA5": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CAD CORRA20": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "CAD CORRA1W": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "JPY TONAR15": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "SEK STINA1": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "GBP SONIA3W": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "GBP SONIA30": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CHF SARON3": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "EUR ESTR6M": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "GBP SONIA2": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CAD CORRA10": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "CAD CORRA1M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "JPY TONARON": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "AUD AONIA2W": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "CAD CORRA2": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "SEK STINA5": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "GBP SONIA2W": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "JPY TONAR20": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "AUD AONIA9M": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "EUR ESTR1M": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "CAD CORRA3": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "GBP SONIA3M": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "SEK STINA7": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "NOK NOWA10": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "NZD OCR5": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "CHF SARON9M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "AUD AONIA20": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "EUR ESTR9M": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "EUR ESTR20": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "EUR ESTR5": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "NOK NOWA20": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "CHF SARON5": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "NOK NOWA30": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "AUD AONIA6M": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "AUD AONIA3W": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "NZD OCR1": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "CHF SARON2W": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "EUR ESTR10": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "NOK NOWA7": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "CHF SARON10": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "CAD CORRA30": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "JPY TONAR2W": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "AUD AONIAON": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "AUD AONIA2": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "JPY TONAR3M": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "AUD AONIA2M": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "EUR ESTR15": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "CAD CORRA3M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "JPY TONAR3W": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "EUR ESTR3M": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "GBP SONIA1M": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CAD CORRAON": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "CHF SARON7": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "CHF SARON2M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "CHF SARON15": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "CHF SARON3W": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "CAD CORRA6M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "NOK NOWA1": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "SEK STINA15": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "AUD AONIA15": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "GBP SONIA9M": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "JPY TONAR7": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "AUD AONIA3M": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "CAD CORRA1": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "EUR ESTR3": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "EUR ESTR2": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "SEK STINA10": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "EUR ESTR30": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "AUD AONIA30": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "AUD AONIA10": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "CAD CORRA9M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "NZD OCR2": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "NOK NOWA3": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "EUR ESTR7": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "CAD CORRA15": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "JPY TONAR2M": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "CHF SARON1W": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "AUD AONIA7": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "CHF SARON20": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "EUR ESTRON": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "JPY TONAR1M": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "AUD AONIA5": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "AUD AONIA1W": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "NOK NOWA2": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "JPY TONAR1": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "CHF SARON1": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "SEK STINA2": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "CHF SARON2": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "EUR ESTR1": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "CHF SARON3M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "EUR ESTR2M": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "CAD CORRA2W": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "AUD AONIA1M": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "GBP SONIA15": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "GBP SONIA1W": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "NZD OCR30": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "JPY TONAR30": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "SEK STINA20": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "GBP SONIA6M": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "NZD OCR15": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "GBP SONIA7": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CAD CORRA7": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "GBP SONIA1": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CHF SARON30": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "NOK NOWA15": {
+      "currencies_count": 1,
+      "currencies": [
+        "NOK"
+      ]
+    },
+    "GBP SONIA20": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "CHF SARONON": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "AUD AONIA1": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "GBP SONIA2M": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "NZD OCR3": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "JPY TONAR6M": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "SEK STINA30": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "JPY TONAR3": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "NZD OCR7": {
+      "currencies_count": 1,
+      "currencies": [
+        "NZD"
+      ]
+    },
+    "CAD CORRA5": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "GBP SONIAON": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "EUR ESTR3W": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "JPY TONAR2": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "CAD CORRA3W": {
+      "currencies_count": 1,
+      "currencies": [
+        "CAD"
+      ]
+    },
+    "EUR ESTR1W": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "Other": {
+      "currencies_count": 4,
+      "currencies": [
+        "AUD",
+        "CAD",
+        "JPY",
+        "USD"
+      ]
+    },
+    "JPY TONAR10": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "GBP SONIA3": {
+      "currencies_count": 1,
+      "currencies": [
+        "GBP"
+      ]
+    },
+    "AUD AONIA3": {
+      "currencies_count": 1,
+      "currencies": [
+        "AUD"
+      ]
+    },
+    "CHF SARON6M": {
+      "currencies_count": 1,
+      "currencies": [
+        "CHF"
+      ]
+    },
+    "JPY TONAR9M": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    },
+    "SEK STINA3": {
+      "currencies_count": 1,
+      "currencies": [
+        "SEK"
+      ]
+    },
+    "EUR ESTR2W": {
+      "currencies_count": 1,
+      "currencies": [
+        "EUR"
+      ]
+    },
+    "JPY TONAR1W": {
+      "currencies_count": 1,
+      "currencies": [
+        "JPY"
+      ]
+    }
+  }
+}

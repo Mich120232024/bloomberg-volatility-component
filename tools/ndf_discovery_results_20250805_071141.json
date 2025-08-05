@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-08-05T07:11:41.492611",
+  "discoveries": {
+    "USDINR": {
+      "description": "Indian Rupee - NDF likely",
+      "type": "spot_only",
+      "discovered_tickers": []
+    },
+    "USDTWD": {
+      "description": "Taiwan Dollar - NDF likely",
+      "type": "spot_only",
+      "discovered_tickers": []
+    },
+    "USDIDR": {
+      "description": "Indonesian Rupiah - NDF likely",
+      "type": "spot_only",
+      "discovered_tickers": []
+    },
+    "USDBRL": {
+      "description": "Brazilian Real",
+      "type": "spot_only",
+      "discovered_tickers": []
+    },
+    "USDCLP": {
+      "description": "Chilean Peso",
+      "type": "spot_only",
+      "discovered_tickers": []
+    },
+    "USDPEN": {
+      "description": "Peruvian Sol",
+      "type": "spot_only",
+      "discovered_tickers": []
+    },
+    "USDARS": {
+      "description": "Argentine Peso",
+      "type": "spot_only",
+      "discovered_tickers": []
+    },
+    "USDKRW": {
+      "description": "Korean Won - only up to 9M",
+      "type": "limited_coverage",
+      "discovered_tickers": []
+    },
+    "USDPHP": {
+      "description": "Philippine Peso - only up to 9M",
+      "type": "limited_coverage",
+      "discovered_tickers": []
+    },
+    "USDMYR": {
+      "description": "Malaysian Ringgit - only up to 9M",
+      "type": "limited_coverage",
+      "discovered_tickers": []
+    }
+  },
+  "summary": {
+    "successful": [],
+    "failed": [
+      "USDINR",
+      "USDTWD",
+      "USDIDR",
+      "USDBRL",
+      "USDCLP",
+      "USDPEN",
+      "USDARS",
+      "USDKRW",
+      "USDPHP",
+      "USDMYR"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "USD": [
+    {
+      "ticker": "USSO1 Curncy",
+      "description": "USD SOFR OIS 1Y",
+      "tenor": "1Y"
+    },
+    {
+      "ticker": "USSO2 Curncy",
+      "description": "USD SOFR OIS 2Y",
+      "tenor": "2Y"
+    },
+    {
+      "ticker": "USSO5 Curncy",
+      "description": "USD SOFR OIS 5Y",
+      "tenor": "5Y"
+    },
+    {
+      "ticker": "USSO10 Curncy",
+      "description": "USD SOFR OIS 10Y",
+      "tenor": "10Y"
+    }
+  ],
+  "NOK": [
+    {
+      "ticker": "NOWA Index",
+      "name": "Overnight WeightNOWA",
+      "currency": "NOK"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-# FX Options Volatility Surface Dashboard
+# Bloomberg Volatility Surface Component
 
-A professional-grade React application for visualizing and analyzing FX options volatility surfaces using real-time Bloomberg Terminal data.
+A professional-grade React application for visualizing FX options volatility surfaces, forward curves, and rate curves using real-time Bloomberg Terminal data.
 
 ## Overview
 
@@ -20,27 +20,29 @@ This application provides comprehensive tools for analyzing FX options volatilit
 - **Interactive Tooltips**: Detailed information including Bloomberg tickers
 - **Data Quality Indicators**: Real-time data validation metrics
 
-### 3. Rate Curves (NEW)
-- **Yield Curves**: Government bond yields for 8 major currencies
-  - USD: Treasury Bills + Treasury Bonds
-  - EUR: German Bunds + EURIBOR rates
-  - GBP: UK Gilts
-  - JPY: Japanese Government Bonds
-  - CHF: Swiss Government Bonds
-  - AUD/CAD/NZD: Government bonds
-- **FX Forward Curves**: OTC forward rates for 10+ currency pairs
-  - Major pairs: EURUSD, GBPUSD, USDJPY, USDCHF, AUDUSD
-  - Cross pairs: EURGBP, EURJPY, GBPJPY
-  - 2-year maximum tenor for forwards
-- **Bloomberg Integration**: Real ticker transparency in tooltips
-- **Realistic Scaling**: Proper time-to-maturity representation
+### 3. FX Forward Curves (ENHANCED - August 2025)
+- **Extended Coverage**: Now supports forwards up to 5Y (previously 2Y)
+- **45 Currency Pairs**: All major, EM, and cross pairs
+- **NDF Support**: Automatic detection and usage of Non-Deliverable Forward tickers
+  - USDINR: IRN format (1W-6M coverage)
+  - USDTWD: NTN format (1W-5Y coverage)
+  - USDKRW: KWN format (1W-5Y coverage)
+  - And 6 more restricted currencies
+- **Forward Points Calculation**: Spot + (Points / Pip Factor)
+- **Interactive Hover Cards**: Shows spot, forward rate, FX net %, points, bid/ask
+- **Real Bloomberg Tickers**: Full transparency in tooltips
 
-### 4. Historical Analysis
+### 4. Rate Curves
+- **OIS Yield Curves**: 25+ currencies with database-driven configurations
+- **Money Market to Long-term**: Seamless curve from O/N to 30Y
+- **Dynamic Data Source**: PostgreSQL database for ticker management
+
+### 5. Historical Analysis
 - **Time Series Charts**: Historical volatility trends
 - **Date Range Selection**: Flexible historical data queries
 - **Comparative Analysis**: Multi-currency comparison capabilities
 
-### 5. Options Pricing
+### 6. Options Pricing
 - **Black-Scholes Calculator**: Real-time options pricing
 - **Greeks Calculation**: Delta, Gamma, Vega, Theta, Rho
 - **Payoff Diagrams**: Visual representation of option strategies
@@ -106,9 +108,16 @@ Bloomberg Terminal → Azure VM API → Local Gateway → React App
 - **Japanese Bonds**: `GJGB10 Index`
 
 ### FX Forwards
-- **Spot rates**: `EURUSD Curncy`
-- **Forward points**: `EUR1M Curncy`, `EUR3M Curncy`
-- **Calculation**: Forward Rate = Spot + (Points / Pip Divisor)
+- **Standard Forwards**: `{PAIR}{TENOR} Curncy` (e.g., `EURUSD1M Curncy`)
+- **NDF Tickers**: Special format for restricted currencies
+  - India: `IRN{TENOR} Curncy` (e.g., `IRN1M Curncy`)
+  - Taiwan: `NTN{TENOR} Curncy` (e.g., `NTN1M Curncy`)
+  - Korea: `KWN{TENOR} Curncy` (e.g., `KWN1M Curncy`)
+- **Forward Points Calculation**: 
+  ```javascript
+  const pipFactor = pair.includes('JPY') ? 100 : 10000
+  const forwardRate = spotRate + (forwardPoints / pipFactor)
+  ```
 
 ## Configuration
 
@@ -137,14 +146,18 @@ BLOOMBERG_API_URL = "http://20.172.249.92:8080"
 ```
 src/
 ├── components/
-│   ├── RateCurvesTabD3.tsx      # Rate curves with D3.js
+│   ├── FXForwardCurvesTab.tsx    # FX forwards with NDF support
+│   ├── RateCurvesTabD3.tsx       # OIS yield curves
 │   ├── VolatilityAnalysisTab.tsx # Volatility analysis
 │   └── MainAppContainer.tsx      # Main app navigation
 ├── api/
-│   ├── bloomberg.ts             # API client
-│   └── DataValidator.ts         # Data validation
+│   ├── bloomberg.ts              # API client with retry logic
+│   └── DataValidator.ts          # Data validation (no fallbacks!)
+├── constants/
+│   ├── currencies.ts             # All 45 currency pairs
+│   └── ndfMappings.ts           # NDF ticker mappings
 └── contexts/
-    └── ThemeContext.tsx         # Theme management
+    └── ThemeContext.tsx          # Theme management
 ```
 
 ### Key Components
@@ -169,15 +182,58 @@ curl -X POST http://localhost:8000/api/bloomberg/reference \
 1. **Connection refused**: Check if gateway is running on port 8000
 2. **No data**: Verify Bloomberg Terminal is logged in
 3. **Cache issues**: Set `ENABLE_CACHE=false` for development
+4. **ERR_NETWORK_CHANGED**: Use localhost:8000 gateway, not direct VM connection
 
-### Data Quality
-- Invalid ATM values are handled gracefully
-- Missing forward tenors are filtered out
-- Swiss rates corrected (was showing 4% instead of 0.4%)
+### FX Forward Curves Issues
+1. **No forward data for restricted currencies (INR, TWD, etc.)**
+   - Component now uses NDF tickers automatically
+   - Check console for: "🔄 Using NDF tickers for USDINR (IRN format)"
+   - Verify NDF mapping exists in `ndfMappings.ts`
+
+2. **Incomplete forward curves**
+   - USDINR: Only 5 points (1W, 1M, 2M, 3M, 6M) - this is normal
+   - USDKRW: Should show full 5Y with NDF tickers
+   - Check coverage limits in NDF mappings
+
+3. **Wrong forward rates (e.g., 11.0 for EURUSD)**
+   - Bloomberg returns forward POINTS not rates
+   - Calculation: Forward = Spot + (Points / PipFactor)
+   - PipFactor: 100 for JPY pairs, 10,000 for others
+
+4. **CLN ticker confusion**
+   - CLN format returns "COP NDF POINTS" - it's Colombian Peso (COP), not Chilean (CLP)
+   - Chilean Peso uses CHN format
+   - Always check the NAME field from Bloomberg to confirm currency
+
+### Debugging Console Logs
+```javascript
+// NDF ticker detection
+"🔄 Using NDF tickers for USDINR (IRN format)"
+"📊 NDF Coverage: 1W-6M"
+
+// Ticker requests
+"📡 Fetching data for USDINR:"
+"   Forward tickers (first 5): ['IRN1W Curncy', 'IRN1M Curncy', ...]"
+
+// NDF parsing confirmation
+"✅ Matched NDF ticker: IRN1M Curncy -> tenor: 1M"
+```
+
+### Data Quality Notes
+- Bloomberg API sessions persist when Terminal UI is logged off
+- Some currencies have no forward market (USDPEN, USDARS)
+- NDF markets have limited liquidity - sparse curves are normal
+- Always verify with Bloomberg Terminal for reference
+
+### NDF Currency Coverage Summary
+- **Full NDF support (9 currencies)**: USDINR, USDTWD, USDKRW, USDIDR, USDPHP, USDMYR, USDBRL, USDCLP, USDCOP
+- **No forward market (2 currencies)**: USDPEN, USDARS
+- **Standard forwards only (34 currencies)**: All other pairs use standard ticker format
+- **Coverage achieved**: 95.6% (43 out of 45 currency pairs have forward data)
 
 ## License
 
 Private project - Bloomberg Terminal license required for data access.
 
 ---
-Last updated: 2025-01-25
+Last updated: 2025-08-05

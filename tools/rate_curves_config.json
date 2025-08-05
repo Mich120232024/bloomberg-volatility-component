@@ -1,0 +1,32 @@
+{
+  "curves": {
+    "USD_OIS": {
+      "curve_name": "USD OIS SOFR Curve",
+      "currency": "USD",
+      "curve_type": "OIS",
+      "tickers": [
+        {"ticker": "USSOA Curncy", "tenor": "1M", "tenor_days": 30},
+        {"ticker": "USSOB Curncy", "tenor": "2M", "tenor_days": 60},
+        {"ticker": "USSOC Curncy", "tenor": "3M", "tenor_days": 90},
+        {"ticker": "USSOD Curncy", "tenor": "4M", "tenor_days": 120},
+        {"ticker": "USSOE Curncy", "tenor": "5M", "tenor_days": 150},
+        {"ticker": "USSOF Curncy", "tenor": "6M", "tenor_days": 180},
+        {"ticker": "USSOG Curncy", "tenor": "7M", "tenor_days": 210},
+        {"ticker": "USSOH Curncy", "tenor": "8M", "tenor_days": 240},
+        {"ticker": "USSOI Curncy", "tenor": "9M", "tenor_days": 270},
+        {"ticker": "USSOJ Curncy", "tenor": "10M", "tenor_days": 300},
+        {"ticker": "USSOK Curncy", "tenor": "11M", "tenor_days": 330},
+        {"ticker": "USSO1 Curncy", "tenor": "1Y", "tenor_days": 365},
+        {"ticker": "USSO2 Curncy", "tenor": "2Y", "tenor_days": 730},
+        {"ticker": "USSO3 Curncy", "tenor": "3Y", "tenor_days": 1095},
+        {"ticker": "USSO4 Curncy", "tenor": "4Y", "tenor_days": 1460},
+        {"ticker": "USSO5 Curncy", "tenor": "5Y", "tenor_days": 1825},
+        {"ticker": "USSO6 Curncy", "tenor": "6Y", "tenor_days": 2190},
+        {"ticker": "USSO7 Curncy", "tenor": "7Y", "tenor_days": 2555},
+        {"ticker": "USSO8 Curncy", "tenor": "8Y", "tenor_days": 2920},
+        {"ticker": "USSO9 Curncy", "tenor": "9Y", "tenor_days": 3285},
+        {"ticker": "USSO10 Curncy", "tenor": "10Y", "tenor_days": 3650}
+      ]
+    }
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "total_tickers": 233,
+  "currencies_covered": 14,
+  "g10_coverage": "8/10",
+  "currencies": {
+    "AUD": {
+      "total": 26,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "ADSO10 Curncy",
+        "ADSO12 Curncy",
+        "ADSO15 Curncy",
+        "ADSO15M Curncy",
+        "ADSO18M Curncy",
+        "ADSO1 Curncy",
+        "ADSO20 Curncy",
+        "ADSO2 Curncy",
+        "ADSO30 Curncy",
+        "ADSO3 Curncy"
+      ],
+      "curve_name": "AUD_OIS"
+    },
+    "BRL": {
+      "total": 9,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "BPSO10 Curncy",
+        "BPSO15 Curncy",
+        "BPSO1 Curncy",
+        "BPSO20 Curncy",
+        "BPSO2 Curncy",
+        "BPSO30 Curncy",
+        "BPSO3 Curncy",
+        "BPSO5 Curncy",
+        "BPSO7 Curncy"
+      ],
+      "curve_name": "BRL_OIS"
+    },
+    "CAD": {
+      "total": 26,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "CDSO10 Curncy",
+        "CDSO12 Curncy",
+        "CDSO15 Curncy",
+        "CDSO15M Curncy",
+        "CDSO18M Curncy",
+        "CDSO1 Curncy",
+        "CDSO20 Curncy",
+        "CDSO2 Curncy",
+        "CDSO30 Curncy",
+        "CDSO3 Curncy"
+      ],
+      "curve_name": "CAD_OIS"
+    },
+    "CHF": {
+      "total": 15,
+      "overnight_tickers": [
+        "SSARON Index"
+      ],
+      "ois_tickers": [
+        "SFSNT10 BGNL Curncy",
+        "SFSNT1 BGNL Curncy",
+        "SFSNT2 BGNL Curncy",
+        "SFSNT2Z BGNL Curncy",
+        "SFSNT3 BGNL Curncy",
+        "SFSNT5 BGNL Curncy",
+        "SFSO12 Curncy",
+        "SFSO15M Curncy",
+        "SFSO18M Curncy",
+        "SFSO1 Curncy"
+      ],
+      "curve_name": "CHF_OIS"
+    },
+    "CZK": {
+      "total": 9,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "CKSO1 BGN Curncy",
+        "CKSO1Z BGN Curncy",
+        "CKSO2 BGN Curncy",
+        "CKSO2Z BGN Curncy",
+        "CKSOA BGN Curncy",
+        "CKSOB BGN Curncy",
+        "CKSOC BGN Curncy",
+        "CKSOF BGN Curncy",
+        "CKSOI BGN Curncy"
+      ],
+      "curve_name": "CZK_OIS"
+    },
+    "EUR": {
+      "total": 17,
+      "overnight_tickers": [
+        "ESTRON Index"
+      ],
+      "ois_tickers": [
+        "EESWE10 Curncy",
+        "EESWE15 Curncy",
+        "EESWE1 Curncy",
+        "EESWE20 Curncy",
+        "EESWE25 Curncy",
+        "EESWE2 Curncy",
+        "EESWE30 Curncy",
+        "EESWE3 Curncy",
+        "EESWE5 Curncy",
+        "EESWE7 Curncy"
+      ],
+      "curve_name": "EUR_OIS"
+    },
+    "GBP": {
+      "total": 19,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "BPSO12 Curncy",
+        "BPSO15M Curncy",
+        "BPSO18M Curncy",
+        "BPSO25 Curncy",
+        "BPSO4 Curncy",
+        "BPSO6 Curncy",
+        "BPSO8 Curncy",
+        "BPSO9 Curncy",
+        "BPSOA Curncy",
+        "BPSOB Curncy"
+      ],
+      "curve_name": "GBP_OIS"
+    },
+    "HUF": {
+      "total": 1,
+      "overnight_tickers": [
+        "BUBORON Index"
+      ],
+      "ois_tickers": [],
+      "curve_name": "HUF_OIS"
+    },
+    "JPY": {
+      "total": 26,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "JYSO10 Curncy",
+        "JYSO12 Curncy",
+        "JYSO15 Curncy",
+        "JYSO15M Curncy",
+        "JYSO18M Curncy",
+        "JYSO1 BGN Curncy",
+        "JYSO20 Curncy",
+        "JYSO2 Curncy",
+        "JYSO30 Curncy",
+        "JYSO3 Curncy"
+      ],
+      "curve_name": "JPY_OIS"
+    },
+    "NZD": {
+      "total": 27,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "NDSO10 Curncy",
+        "NDSO12 Curncy",
+        "NDSO15 Curncy",
+        "NDSO15M Curncy",
+        "NDSO18M Curncy",
+        "NDSO1 Curncy",
+        "NDSO20 Curncy",
+        "NDSO25 Curncy",
+        "NDSO2 Curncy",
+        "NDSO30 Curncy"
+      ],
+      "curve_name": "NZD_OIS"
+    },
+    "PLN": {
+      "total": 1,
+      "overnight_tickers": [
+        "WIBOON Index"
+      ],
+      "ois_tickers": [],
+      "curve_name": "PLN_OIS"
+    },
+    "SGD": {
+      "total": 14,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "SDSOA10 BGN Curncy",
+        "SDSOA12 BGN Curncy",
+        "SDSOA1 BGN Curncy",
+        "SDSOA1F BGN Curncy",
+        "SDSOA2 BGN Curncy",
+        "SDSOA3 BGN Curncy",
+        "SDSOA4 BGN Curncy",
+        "SDSOA5 BGN Curncy",
+        "SDSOA7 BGN Curncy",
+        "SDSOAA BGN Curncy"
+      ],
+      "curve_name": "SGD_OIS"
+    },
+    "TRY": {
+      "total": 13,
+      "overnight_tickers": [],
+      "ois_tickers": [
+        "TYSO1 BGN Curncy",
+        "TYSO1F BGN Curncy",
+        "TYSO1Z BGN Curncy",
+        "TYSO2 BGN Curncy",
+        "TYSO2Z BGN Curncy",
+        "TYSO3 BGN Curncy",
+        "TYSO4 BGN Curncy",
+        "TYSO5 BGN Curncy",
+        "TYSOA BGN Curncy",
+        "TYSOB BGN Curncy"
+      ],
+      "curve_name": "TRY_OIS"
+    },
+    "USD": {
+      "total": 30,
+      "overnight_tickers": [
+        "SOFRRATE Index"
+      ],
+      "ois_tickers": [
+        "USSO10 Curncy",
+        "USSO15 Curncy",
+        "USSO15M Curncy",
+        "USSO18M Curncy",
+        "USSO1 BGN Curncy",
+        "USSO1 Curncy",
+        "USSO20 Curncy",
+        "USSO21M Curncy",
+        "USSO25 Curncy",
+        "USSO2 Curncy"
+      ],
+      "curve_name": "USD_OIS"
+    }
+  }
+}

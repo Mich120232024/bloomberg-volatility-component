@@ -1,0 +1,272 @@
+{
+  "timestamp": "2025-08-05T07:13:10.507921",
+  "results": {
+    "USDINR": {
+      "tested": 16,
+      "valid": 5,
+      "tickers": [
+        {
+          "ticker": "IRN1W Curncy",
+          "px_last": 4.35,
+          "name": "INR NDF POINTS      1 WK",
+          "bid": 3.75,
+          "ask": 4.95
+        },
+        {
+          "ticker": "IRN1M Curncy",
+          "px_last": 15.3,
+          "name": "INR NDF POINTS      1 MO",
+          "bid": 14.98,
+          "ask": 15.63
+        },
+        {
+          "ticker": "IRN2M Curncy",
+          "px_last": 28.67,
+          "name": "INR NDF POINTS      2 MO",
+          "bid": 27.18,
+          "ask": 30.17
+        },
+        {
+          "ticker": "IRN3M Curncy",
+          "px_last": 42.58,
+          "name": "INR NDF POINTS      3 MO",
+          "bid": 41.08,
+          "ask": 44.07
+        },
+        {
+          "ticker": "IRN6M Curncy",
+          "px_last": 88.2,
+          "name": "INR NDF POINTS      6 MO",
+          "bid": 86.57,
+          "ask": 89.83
+        }
+      ]
+    },
+    "USDTWD": {
+      "tested": 14,
+      "valid": 10,
+      "tickers": [
+        {
+          "ticker": "NTN1W Curncy",
+          "px_last": -0.01,
+          "name": "TWD NDF POINTS      1 WK",
+          "bid": -0.022,
+          "ask": 0.002
+        },
+        {
+          "ticker": "NTN2W Curncy",
+          "px_last": -0.039,
+          "name": "TWD NDF POINTS      2 WK",
+          "bid": -0.048,
+          "ask": -0.03
+        },
+        {
+          "ticker": "NTN1M Curncy",
+          "px_last": -0.122,
+          "name": "TWD NDF POINTS      1 MO",
+          "bid": -0.127,
+          "ask": -0.117
+        },
+        {
+          "ticker": "NTN2M Curncy",
+          "px_last": -0.256,
+          "name": "TWD NDF POINTS      2 MO",
+          "bid": -0.261,
+          "ask": -0.251
+        },
+        {
+          "ticker": "NTN3M Curncy",
+          "px_last": -0.395,
+          "name": "TWD NDF POINTS      3 MO",
+          "bid": -0.403,
+          "ask": -0.387
+        },
+        {
+          "ticker": "NTN6M Curncy",
+          "px_last": -0.807,
+          "name": "TWD NDF POINTS      6 MO",
+          "bid": -0.825,
+          "ask": -0.79
+        },
+        {
+          "ticker": "NTN9M Curncy",
+          "px_last": -1.158,
+          "name": "TWD NDF POINTS      9 MO",
+          "bid": -1.174,
+          "ask": -1.141
+        },
+        {
+          "ticker": "NTN2Y Curncy",
+          "px_last": -2.566,
+          "name": "TWD NDF POINTS      2 YR",
+          "bid": -2.619,
+          "ask": -2.513
+        },
+        {
+          "ticker": "NTN3Y Curncy",
+          "px_last": -3.117,
+          "name": "TWD NDF POINTS      3 YR",
+          "bid": -3.161,
+          "ask": -3.073
+        },
+        {
+          "ticker": "NTN5Y Curncy",
+          "px_last": -4.011,
+          "name": "TWD NDF POINTS      5 YR",
+          "bid": -4.055,
+          "ask": -3.967
+        }
+      ]
+    },
+    "USDKRW": {
+      "tested": 15,
+      "valid": 0,
+      "tickers": []
+    },
+    "USDIDR": {
+      "tested": 11,
+      "valid": 0,
+      "tickers": []
+    },
+    "USDPHP": {
+      "tested": 12,
+      "valid": 0,
+      "tickers": []
+    },
+    "USDMYR": {
+      "tested": 12,
+      "valid": 6,
+      "tickers": [
+        {
+          "ticker": "MRN1W Curncy",
+          "px_last": -15.0,
+          "name": "MYR NDF POINTS        1W",
+          "bid": -29.89,
+          "ask": -0.11
+        },
+        {
+          "ticker": "MRN1M Curncy",
+          "px_last": -30.91,
+          "name": "MYR NDF POINTS        1M",
+          "bid": -61.81,
+          "ask": 0.0
+        },
+        {
+          "ticker": "MRN2M Curncy",
+          "px_last": -135.01,
+          "name": "MYR NDF POINTS        2M",
+          "bid": -210.01,
+          "ask": -60.01
+        },
+        {
+          "ticker": "MRN3M Curncy",
+          "px_last": -205.01,
+          "name": "MYR NDF POINTS        3M",
+          "bid": -280.01,
+          "ask": -130.01
+        },
+        {
+          "ticker": "MRN6M Curncy",
+          "px_last": -335.0,
+          "name": "MYR NDF POINTS        6M",
+          "bid": -384.72,
+          "ask": -285.28
+        },
+        {
+          "ticker": "MRN9M Curncy",
+          "px_last": -435.0,
+          "name": "MYR NDF POINTS        9M",
+          "bid": -485.0,
+          "ask": -385.0
+        }
+      ]
+    },
+    "USDBRL": {
+      "tested": 12,
+      "valid": 0,
+      "tickers": []
+    },
+    "USDCLP": {
+      "tested": 11,
+      "valid": 7,
+      "tickers": [
+        {
+          "ticker": "CLN1W Curncy",
+          "px_last": 2.13,
+          "name": "COP NDF POINTS      1 WK",
+          "bid": 1.76,
+          "ask": 2.5
+        },
+        {
+          "ticker": "CLN2W Curncy",
+          "px_last": 4.6,
+          "name": "COP NDF POINTS      2 WK",
+          "bid": 4.01,
+          "ask": 5.19
+        },
+        {
+          "ticker": "CLN1M Curncy",
+          "px_last": 9.1,
+          "name": "COP NDF POINTS      1 MO",
+          "bid": 8.39,
+          "ask": 9.81
+        },
+        {
+          "ticker": "CLN2M Curncy",
+          "px_last": 23.5,
+          "name": "COP NDF POINTS      2 MO",
+          "bid": 22.69,
+          "ask": 24.31
+        },
+        {
+          "ticker": "CLN3M Curncy",
+          "px_last": 41.9,
+          "name": "COP NDF POINTS      3 MO",
+          "bid": 41.01,
+          "ask": 42.79
+        },
+        {
+          "ticker": "CLN6M Curncy",
+          "px_last": 93.57,
+          "name": "COP NDF POINTS      6 MO",
+          "bid": 92.35,
+          "ask": 94.8
+        },
+        {
+          "ticker": "CLN9M Curncy",
+          "px_last": 142.89,
+          "name": "COP NDF POINTS      9 MO",
+          "bid": 139.9,
+          "ask": 145.88
+        }
+      ]
+    },
+    "USDPEN": {
+      "tested": 8,
+      "valid": 0,
+      "tickers": []
+    },
+    "USDARS": {
+      "tested": 12,
+      "valid": 0,
+      "tickers": []
+    }
+  },
+  "summary": {
+    "successful": [
+      "USDINR",
+      "USDTWD",
+      "USDMYR",
+      "USDCLP"
+    ],
+    "failed": [
+      "USDKRW",
+      "USDIDR",
+      "USDPHP",
+      "USDBRL",
+      "USDPEN",
+      "USDARS"
+    ],
+    "total_tested": 10
+  }
+}

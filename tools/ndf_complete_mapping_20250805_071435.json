@@ -1,0 +1,469 @@
+{
+  "timestamp": "2025-08-05T07:14:35.510521",
+  "working_ndfs": {
+    "USDINR": "IRN format (5 tenors: 1W-6M)",
+    "USDTWD": "NTN format (10 tenors: 1W-5Y)",
+    "USDMYR": "MRN format (6 tenors: 1W-9M)",
+    "USDCOP": "CLN format (7+ tenors: 1W-3Y)",
+    "USDKRW": "KWN format (10 tenors)",
+    "USDIDR": "IHN format (6 tenors)",
+    "USDPHP": "PPN format (7 tenors)",
+    "USDBRL": "BCN format (7 tenors)",
+    "USDCLP": "CHN format (7 tenors)"
+  },
+  "detailed_results": {
+    "USDKRW": {
+      "tested": 17,
+      "valid": 10,
+      "tickers": [
+        {
+          "ticker": "KWN5Y Curncy",
+          "px_last": -103.13,
+          "name": "KRW NDF POINTS      5 YR",
+          "bid": -103.63,
+          "ask": -102.63
+        },
+        {
+          "ticker": "KWN1W Curncy",
+          "px_last": -0.45,
+          "name": "KRW NDF POINTS      1 WK",
+          "bid": -0.73,
+          "ask": -0.18
+        },
+        {
+          "ticker": "KWN2W Curncy",
+          "px_last": -0.93,
+          "name": "KOREAN WON    NDF   2 WK",
+          "bid": -1.25,
+          "ask": -0.61
+        },
+        {
+          "ticker": "KWN1M Curncy",
+          "px_last": -2.26,
+          "name": "KRW NDF POINTS      1 MO",
+          "bid": -2.71,
+          "ask": -1.81
+        },
+        {
+          "ticker": "KWN2M Curncy",
+          "px_last": -4.75,
+          "name": "KRW NDF POINTS      2 MO",
+          "bid": -5.25,
+          "ask": -4.25
+        },
+        {
+          "ticker": "KWN3M Curncy",
+          "px_last": -6.9,
+          "name": "KRW NDF POINTS      3 MO",
+          "bid": -7.4,
+          "ask": -6.4
+        },
+        {
+          "ticker": "KWN6M Curncy",
+          "px_last": -14.03,
+          "name": "KRW NDF POINTS    6 MO",
+          "bid": -14.53,
+          "ask": -13.53
+        },
+        {
+          "ticker": "KWN9M Curncy",
+          "px_last": -20.08,
+          "name": "KRW NDF POINTS      9 MO",
+          "bid": -21.82,
+          "ask": -18.34
+        },
+        {
+          "ticker": "KWN2Y Curncy",
+          "px_last": -46.58,
+          "name": "KRW NDF POINTS      2 YR",
+          "bid": -48.65,
+          "ask": -44.51
+        },
+        {
+          "ticker": "KWN3Y Curncy",
+          "px_last": -59.31,
+          "name": "KRW NDF POINTS      3 YR",
+          "bid": -60.31,
+          "ask": -58.31
+        }
+      ]
+    },
+    "USDIDR": {
+      "tested": 12,
+      "valid": 6,
+      "tickers": [
+        {
+          "ticker": "IHN1W Curncy",
+          "px_last": 5.08,
+          "name": "IDR NDF POINTS      1 WK",
+          "bid": 2.28,
+          "ask": 7.87
+        },
+        {
+          "ticker": "IHN1M Curncy",
+          "px_last": 17.24,
+          "name": "IDR NDF POINTS       1MO",
+          "bid": 13.07,
+          "ask": 21.42
+        },
+        {
+          "ticker": "IHN2M Curncy",
+          "px_last": 33.0,
+          "name": "IDR NDF POINTS       2MO",
+          "bid": 28.0,
+          "ask": 38.0
+        },
+        {
+          "ticker": "IHN3M Curncy",
+          "px_last": 49.62,
+          "name": "IDR NDF POINTS       3MO",
+          "bid": 43.8,
+          "ask": 55.44
+        },
+        {
+          "ticker": "IHN6M Curncy",
+          "px_last": 102.0,
+          "name": "IDR NDF POINTS       6MO",
+          "bid": 92.0,
+          "ask": 112.0
+        },
+        {
+          "ticker": "IHN9M Curncy",
+          "px_last": 160.35,
+          "name": "IDR NDF POINTS       9MO",
+          "bid": 143.52,
+          "ask": 177.18
+        }
+      ]
+    },
+    "USDPHP": {
+      "tested": 12,
+      "valid": 7,
+      "tickers": [
+        {
+          "ticker": "PPN1W Curncy",
+          "px_last": 0.013,
+          "name": "PHILIPPINE PESO NDF 1 WK",
+          "bid": -0.017,
+          "ask": 0.043
+        },
+        {
+          "ticker": "PPN2W Curncy",
+          "px_last": 0.027,
+          "name": "PHILIPPINE PESO NDF 2 WK",
+          "bid": 0.007,
+          "ask": 0.046
+        },
+        {
+          "ticker": "PPN1M Curncy",
+          "px_last": 0.053,
+          "name": "PHP NDF POINTS      1 MO",
+          "bid": 0.01,
+          "ask": 0.097
+        },
+        {
+          "ticker": "PPN2M Curncy",
+          "px_last": 0.1,
+          "name": "PHP NDF POINTS      2 MO",
+          "bid": 0.063,
+          "ask": 0.137
+        },
+        {
+          "ticker": "PPN3M Curncy",
+          "px_last": 0.146,
+          "name": "PHP NDF POINTS      3 MO",
+          "bid": 0.103,
+          "ask": 0.19
+        },
+        {
+          "ticker": "PPN6M Curncy",
+          "px_last": 0.251,
+          "name": "PHP NDF POINTS      6 MO",
+          "bid": 0.207,
+          "ask": 0.295
+        },
+        {
+          "ticker": "PPN9M Curncy",
+          "px_last": 0.365,
+          "name": "PHP NDF POINTS      9 MO",
+          "bid": 0.315,
+          "ask": 0.415
+        }
+      ]
+    },
+    "USDBRL": {
+      "tested": 16,
+      "valid": 7,
+      "tickers": [
+        {
+          "ticker": "BCN1W Curncy",
+          "px_last": 100.62,
+          "name": "BRL NDF POINTS    1 WK",
+          "bid": 99.67,
+          "ask": 101.57
+        },
+        {
+          "ticker": "BCN2W Curncy",
+          "px_last": 186.63,
+          "name": "BRL NDF Points 2W",
+          "bid": 178.9,
+          "ask": 194.36
+        },
+        {
+          "ticker": "BCN1M Curncy",
+          "px_last": 446.25,
+          "name": "BRL NDF POINTS      1 MO",
+          "bid": 445.25,
+          "ask": 447.25
+        },
+        {
+          "ticker": "BCN2M Curncy",
+          "px_last": 833.84,
+          "name": "BRL NDF POINTS      2 MO",
+          "bid": 828.87,
+          "ask": 838.81
+        },
+        {
+          "ticker": "BCN3M Curncy",
+          "px_last": 1296.93,
+          "name": "BRL NDF POINTS      3 MO",
+          "bid": 1291.3,
+          "ask": 1302.56
+        },
+        {
+          "ticker": "BCN6M Curncy",
+          "px_last": 2545.0,
+          "name": "BRL NDF POINTS      6 MO",
+          "bid": 2523.27,
+          "ask": 2566.73
+        },
+        {
+          "ticker": "BCN9M Curncy",
+          "px_last": 3705.82,
+          "name": "BRL NDF POINTS      9 MO",
+          "bid": 3696.12,
+          "ask": 3715.53
+        }
+      ]
+    },
+    "USDCLP": {
+      "tested": 12,
+      "valid": 7,
+      "tickers": [
+        {
+          "ticker": "CHN1W Curncy",
+          "px_last": -0.03,
+          "name": "CLP NDF POINTS      1 WK",
+          "bid": -0.14,
+          "ask": 0.09
+        },
+        {
+          "ticker": "CHN2W Curncy",
+          "px_last": -0.05,
+          "name": "CLP NDF POINTS      2 WK",
+          "bid": -0.15,
+          "ask": 0.05
+        },
+        {
+          "ticker": "CHN1M Curncy",
+          "px_last": -0.11,
+          "name": "CLP NDF POINTS      1 MO",
+          "bid": -0.16,
+          "ask": -0.06
+        },
+        {
+          "ticker": "CHN2M Curncy",
+          "px_last": -0.02,
+          "name": "CLP NDF POINTS      2 MO",
+          "bid": -0.13,
+          "ask": 0.08
+        },
+        {
+          "ticker": "CHN3M Curncy",
+          "px_last": -0.03,
+          "name": "CLP NDF POINTS      3 MO",
+          "bid": -0.13,
+          "ask": 0.07
+        },
+        {
+          "ticker": "CHN6M Curncy",
+          "px_last": 0.25,
+          "name": "CLP NDF POINTS      6 MO",
+          "bid": 0.06,
+          "ask": 0.44
+        },
+        {
+          "ticker": "CHN9M Curncy",
+          "px_last": 0.65,
+          "name": "CLP NDF POINTS      9 MO",
+          "bid": 0.46,
+          "ask": 0.84
+        }
+      ]
+    },
+    "USDCOP": {
+      "tested": 10,
+      "valid": 9,
+      "tickers": [
+        {
+          "ticker": "CLN1W Curncy",
+          "px_last": 2.13,
+          "name": "COP NDF POINTS      1 WK",
+          "bid": 1.76,
+          "ask": 2.5
+        },
+        {
+          "ticker": "CLN2W Curncy",
+          "px_last": 4.6,
+          "name": "COP NDF POINTS      2 WK",
+          "bid": 4.01,
+          "ask": 5.19
+        },
+        {
+          "ticker": "CLN1M Curncy",
+          "px_last": 9.1,
+          "name": "COP NDF POINTS      1 MO",
+          "bid": 8.39,
+          "ask": 9.81
+        },
+        {
+          "ticker": "CLN2M Curncy",
+          "px_last": 23.5,
+          "name": "COP NDF POINTS      2 MO",
+          "bid": 22.69,
+          "ask": 24.31
+        },
+        {
+          "ticker": "CLN3M Curncy",
+          "px_last": 41.9,
+          "name": "COP NDF POINTS      3 MO",
+          "bid": 41.01,
+          "ask": 42.79
+        },
+        {
+          "ticker": "CLN6M Curncy",
+          "px_last": 93.57,
+          "name": "COP NDF POINTS      6 MO",
+          "bid": 92.35,
+          "ask": 94.8
+        },
+        {
+          "ticker": "CLN9M Curncy",
+          "px_last": 142.89,
+          "name": "COP NDF POINTS      9 MO",
+          "bid": 139.9,
+          "ask": 145.88
+        },
+        {
+          "ticker": "CLN2Y Curncy",
+          "px_last": 437.13,
+          "name": "COP NDF POINTS      2 YR",
+          "bid": 418.92,
+          "ask": 455.34
+        },
+        {
+          "ticker": "CLN3Y Curncy",
+          "px_last": 740.29,
+          "name": "COP NDF POINTS      3 YR",
+          "bid": 715.29,
+          "ask": 765.29
+        }
+      ]
+    },
+    "USDPEN": {
+      "tested": 12,
+      "valid": 0,
+      "tickers": []
+    },
+    "USDARS": {
+      "tested": 15,
+      "valid": 0,
+      "tickers": []
+    }
+  },
+  "ticker_formats": {
+    "USDINR": {
+      "format": "IRN",
+      "example": "IRN1M Curncy"
+    },
+    "USDTWD": {
+      "format": "NTN",
+      "example": "NTN1M Curncy"
+    },
+    "USDMYR": {
+      "format": "MRN",
+      "example": "MRN1M Curncy"
+    },
+    "USDCOP": {
+      "format": "CLN",
+      "example": "CLN1M Curncy"
+    },
+    "USDKRW": {
+      "format": "KWN",
+      "example": "KWN1M Curncy",
+      "working_tickers": [
+        "KWN5Y Curncy",
+        "KWN1W Curncy",
+        "KWN2W Curncy",
+        "KWN1M Curncy",
+        "KWN2M Curncy",
+        "KWN3M Curncy",
+        "KWN6M Curncy",
+        "KWN9M Curncy",
+        "KWN2Y Curncy",
+        "KWN3Y Curncy"
+      ]
+    },
+    "USDIDR": {
+      "format": "IHN",
+      "example": "IHN1M Curncy",
+      "working_tickers": [
+        "IHN1W Curncy",
+        "IHN1M Curncy",
+        "IHN2M Curncy",
+        "IHN3M Curncy",
+        "IHN6M Curncy",
+        "IHN9M Curncy"
+      ]
+    },
+    "USDPHP": {
+      "format": "PPN",
+      "example": "PPN1M Curncy",
+      "working_tickers": [
+        "PPN1W Curncy",
+        "PPN2W Curncy",
+        "PPN1M Curncy",
+        "PPN2M Curncy",
+        "PPN3M Curncy",
+        "PPN6M Curncy",
+        "PPN9M Curncy"
+      ]
+    },
+    "USDBRL": {
+      "format": "BCN/BRL",
+      "example": "BCN1M Curncy",
+      "working_tickers": [
+        "BCN1W Curncy",
+        "BCN2W Curncy",
+        "BCN1M Curncy",
+        "BCN2M Curncy",
+        "BCN3M Curncy",
+        "BCN6M Curncy",
+        "BCN9M Curncy"
+      ]
+    },
+    "USDCLP": {
+      "format": "CHN/CLP",
+      "example": "CHN1M Curncy",
+      "working_tickers": [
+        "CHN1W Curncy",
+        "CHN2W Curncy",
+        "CHN1M Curncy",
+        "CHN2M Curncy",
+        "CHN3M Curncy",
+        "CHN6M Curncy",
+        "CHN9M Curncy"
+      ]
+    }
+  }
+}
