@@ -11,15 +11,15 @@ This repository contains multiple versions of the Bloomberg Volatility Surface a
 
 ### Branches & Versions
 
-#### `main` Branch - Basic Version (5 Tabs)
-- **Tabs**: Volatility Surface, Historical Analysis, Volatility Analysis, Rate Curves, Options Pricing
-- **Status**: Basic functionality, synced with original GZCIM repo
-- **Use Case**: Simple volatility analysis and basic rate curves
-
-#### `production/complete-7-tab-version` Branch - Complete Version (7 Tabs)
+#### `main` Branch - Complete Version (7 Tabs) ✅ NEW STANDARD
 - **Tabs**: Volatility Surface, Historical Analysis, Volatility Analysis, **Yield Curves**, **FX Forwards**, **Option Pricing**, **Portfolio**
 - **Status**: Full-featured production version ✅ CURRENT RUNNING VERSION
 - **Use Case**: Complete trading and analysis platform
+
+#### `archive/original-5-tab-main` Branch - Original Basic Version (5 Tabs)
+- **Tabs**: Volatility Surface, Historical Analysis, Volatility Analysis, Rate Curves, Options Pricing
+- **Status**: Archived original version for reference
+- **Use Case**: Reference for original simple implementation
 
 #### `feature/bloomberg-data-fixes` Branch - Development
 - **Status**: Development branch with ongoing fixes
@@ -35,13 +35,13 @@ This repository contains multiple versions of the Bloomberg Volatility Surface a
 ## Current Status
 
 ### ✅ Running Version
-- **Branch**: `production/complete-7-tab-version`
+- **Branch**: `main` (now contains complete 7-tab version)
 - **URL**: http://localhost:3501
 - **Features**: All 7 tabs including Yield Curves, FX Forwards, and Portfolio
 
 ### Key Features by Version
 
-| Feature | Main (5-tab) | Production (7-tab) |
+| Feature | Archive (5-tab) | Main (7-tab) |
 |---------|-------------|-------------------|
 | Volatility Surface | ✅ | ✅ |
 | Historical Analysis | ✅ | ✅ |
@@ -55,12 +55,12 @@ This repository contains multiple versions of the Bloomberg Volatility Surface a
 ## Development Commands
 
 ```bash
-# Switch to production version (recommended)
-git checkout production/complete-7-tab-version
+# Run the complete version (main branch - default)
+git checkout main
 npm run dev
 
-# Switch to basic version
-git checkout main
+# Switch to archived basic version (if needed)
+git checkout archive/original-5-tab-main
 npm run dev
 
 # Check current version
@@ -69,9 +69,9 @@ git branch --show-current
 
 ## Deployment Strategy
 
-1. **Development**: Use `production/complete-7-tab-version` branch
-2. **Testing**: All features available in production branch
-3. **Maintenance**: Keep `main` branch simple and stable
+1. **Development**: Use `main` branch (complete 7-tab version)
+2. **Testing**: All features available in main branch
+3. **Production**: Main branch is production-ready
 4. **No Git Linking**: GZCIM copy is standalone, no repository connection
 
 ## Bloomberg API Integration
@@ -83,4 +83,4 @@ All versions connect to:
 ---
 
 **Last Updated**: 2025-08-05  
-**Current Running Version**: `production/complete-7-tab-version`
+**Current Running Version**: `main` (complete 7-tab version)
