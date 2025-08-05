@@ -1,0 +1,249 @@
+{
+  "timestamp": "2025-08-05T07:07:59.332220",
+  "summary": {
+    "total_pairs": 45,
+    "categories": {
+      "full_5y": 0,
+      "full_3y": 0,
+      "partial_long": 0,
+      "partial_short": 0,
+      "spot_only": 0,
+      "no_data": 0
+    }
+  },
+  "categories": {
+    "full_5y": [],
+    "full_3y": [],
+    "partial_long": [],
+    "partial_short": [],
+    "spot_only": [],
+    "no_data": []
+  },
+  "detailed_results": {
+    "EURUSD": {
+      "pair": "EURUSD",
+      "category": "G10",
+      "status": "error"
+    },
+    "GBPUSD": {
+      "pair": "GBPUSD",
+      "category": "G10",
+      "status": "error"
+    },
+    "USDJPY": {
+      "pair": "USDJPY",
+      "category": "G10",
+      "status": "error"
+    },
+    "USDCHF": {
+      "pair": "USDCHF",
+      "category": "G10",
+      "status": "error"
+    },
+    "AUDUSD": {
+      "pair": "AUDUSD",
+      "category": "G10",
+      "status": "error"
+    },
+    "USDCAD": {
+      "pair": "USDCAD",
+      "category": "G10",
+      "status": "error"
+    },
+    "NZDUSD": {
+      "pair": "NZDUSD",
+      "category": "G10",
+      "status": "error"
+    },
+    "USDSEK": {
+      "pair": "USDSEK",
+      "category": "G10",
+      "status": "error"
+    },
+    "USDNOK": {
+      "pair": "USDNOK",
+      "category": "G10",
+      "status": "error"
+    },
+    "USDDKK": {
+      "pair": "USDDKK",
+      "category": "G10",
+      "status": "error"
+    },
+    "USDSGD": {
+      "pair": "USDSGD",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDHKD": {
+      "pair": "USDHKD",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDCNH": {
+      "pair": "USDCNH",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDINR": {
+      "pair": "USDINR",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDKRW": {
+      "pair": "USDKRW",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDTWD": {
+      "pair": "USDTWD",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDTHB": {
+      "pair": "USDTHB",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDPHP": {
+      "pair": "USDPHP",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDIDR": {
+      "pair": "USDIDR",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDMYR": {
+      "pair": "USDMYR",
+      "category": "EM_ASIA",
+      "status": "error"
+    },
+    "USDMXN": {
+      "pair": "USDMXN",
+      "category": "EM_LATAM",
+      "status": "error"
+    },
+    "USDBRL": {
+      "pair": "USDBRL",
+      "category": "EM_LATAM",
+      "status": "error"
+    },
+    "USDCLP": {
+      "pair": "USDCLP",
+      "category": "EM_LATAM",
+      "status": "error"
+    },
+    "USDCOP": {
+      "pair": "USDCOP",
+      "category": "EM_LATAM",
+      "status": "error"
+    },
+    "USDPEN": {
+      "pair": "USDPEN",
+      "category": "EM_LATAM",
+      "status": "error"
+    },
+    "USDARS": {
+      "pair": "USDARS",
+      "category": "EM_LATAM",
+      "status": "error"
+    },
+    "USDZAR": {
+      "pair": "USDZAR",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDTRY": {
+      "pair": "USDTRY",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDRUB": {
+      "pair": "USDRUB",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDPLN": {
+      "pair": "USDPLN",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDHUF": {
+      "pair": "USDHUF",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDCZK": {
+      "pair": "USDCZK",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDILS": {
+      "pair": "USDILS",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDAED": {
+      "pair": "USDAED",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "USDSAR": {
+      "pair": "USDSAR",
+      "category": "EM_EMEA",
+      "status": "error"
+    },
+    "EURGBP": {
+      "pair": "EURGBP",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "EURJPY": {
+      "pair": "EURJPY",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "GBPJPY": {
+      "pair": "GBPJPY",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "EURCHF": {
+      "pair": "EURCHF",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "AUDJPY": {
+      "pair": "AUDJPY",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "CADJPY": {
+      "pair": "CADJPY",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "EURAUD": {
+      "pair": "EURAUD",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "EURNZD": {
+      "pair": "EURNZD",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "GBPAUD": {
+      "pair": "GBPAUD",
+      "category": "CROSSES",
+      "status": "error"
+    },
+    "GBPNZD": {
+      "pair": "GBPNZD",
+      "category": "CROSSES",
+      "status": "error"
+    }
+  }
+}

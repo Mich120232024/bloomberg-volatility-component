@@ -7,6 +7,9 @@ export default defineConfig({
             jsxRuntime: 'automatic'
         })
     ],
+    esbuild: {
+        logOverride: { 'this-is-undefined-in-esm': 'silent' }
+    },
     server: {
         port: 3501,
         host: true,

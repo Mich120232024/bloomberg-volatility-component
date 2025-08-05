@@ -3,7 +3,7 @@ import { useTheme } from '../contexts/ThemeContext'
 import { VolatilitySurfaceContainer } from './VolatilitySurfaceContainer'
 import { VolatilityHistoricalTable } from './VolatilityHistoricalTable'
 import { VolatilityAnalysisTab } from './VolatilityAnalysisTab'
-import { YieldCurvesTab } from './YieldCurvesTab'
+import { YieldCurvesTab as RateCurvesTab } from './YieldCurvesTab'
 import { FXForwardCurvesTab } from './FXForwardCurvesTab'
 import { GZCOptionPricerTab } from './GZCOptionPricerTab'
 import { PortfolioTab } from './PortfolioTab'
@@ -152,7 +152,7 @@ export function MainAppContainer() {
         ) : activeTab === 'analysis' ? (
           <VolatilityAnalysisTab />
         ) : activeTab === 'yield' ? (
-          <YieldCurvesTab />
+          <RateCurvesTab />
         ) : activeTab === 'fx' ? (
           <FXForwardCurvesTab />
         ) : activeTab === 'options' ? (
