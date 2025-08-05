@@ -138,6 +138,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",  # Local development
         "http://localhost:3000",  # Alternative dev port
+        "http://localhost:3501",  # Bloomberg volatility component dev port
         "http://62.171.108.4",   # Whitelisted production IP
         "https://62.171.108.4"   # HTTPS variant
     ],

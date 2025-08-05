@@ -66,15 +66,17 @@ export function YieldCurvesTab() {
     d3.select(chartContainerRef.current).select('svg').remove()
 
     // Dimensions
-    const margin = { top: 30, right: 120, bottom: 60, left: 70 }
+    const margin = { top: 20, right: 150, bottom: 50, left: 60 }
+    const containerHeight = Math.max(400, chartContainerRef.current.clientHeight - 20)
     const width = chartContainerRef.current.clientWidth - margin.left - margin.right
-    const height = 500 - margin.top - margin.bottom
+    const height = containerHeight - margin.top - margin.bottom
 
     // Create SVG
     const svg = d3.select(chartContainerRef.current)
       .append('svg')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom)
+      .style('background-color', currentTheme.background)
 
     const g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`)
@@ -130,9 +132,9 @@ export function YieldCurvesTab() {
         .datum(validPoints)
         .attr('fill', 'none')
         .attr('stroke', CURVE_COLORS[curve.currency])
-        .attr('stroke-width', 2)
+        .attr('stroke-width', 2.5)
         .attr('d', line)
-        .style('opacity', 0.8)
+        .style('opacity', 0.9)
 
       // Add points with tooltips
       g.selectAll(`.point-${curve.currency}`)
@@ -141,8 +143,10 @@ export function YieldCurvesTab() {
         .attr('class', `point-${curve.currency}`)
         .attr('cx', d => xScale(d.tenorYears))
         .attr('cy', d => yScale(d.rate!))
-        .attr('r', 3)
-        .attr('fill', CURVE_COLORS[curve.currency])
+        .attr('r', 3.5)
+        .attr('fill', currentTheme.background)
+        .attr('stroke', CURVE_COLORS[curve.currency])
+        .attr('stroke-width', 2)
         .style('cursor', 'pointer')
         .on('mouseover', function(event, d) {
           // Show tooltip
@@ -175,16 +179,48 @@ export function YieldCurvesTab() {
       // Add curve label
       const lastPoint = validPoints[validPoints.length - 1]
       if (lastPoint) {
+        // Background for better readability
+        g.append('rect')
+          .attr('x', xScale(lastPoint.tenorYears) + 8)
+          .attr('y', yScale(lastPoint.rate!) - 10)
+          .attr('width', 40)
+          .attr('height', 20)
+          .attr('fill', currentTheme.background)
+          .attr('rx', 3)
+          .style('opacity', 0.9)
+        
         g.append('text')
-          .attr('x', xScale(lastPoint.tenorYears) + 5)
+          .attr('x', xScale(lastPoint.tenorYears) + 12)
           .attr('y', yScale(lastPoint.rate!))
           .attr('dy', '0.35em')
-          .style('font-size', '12px')
-          .style('font-weight', 'bold')
+          .style('font-size', '11px')
+          .style('font-weight', '600')
           .style('fill', CURVE_COLORS[curve.currency])
           .text(curve.currency)
       }
     })
+
+    // Grid lines
+    g.append('g')
+      .attr('class', 'grid grid-x')
+      .attr('transform', `translate(0,${height})`)
+      .call(d3.axisBottom(xScale)
+        .tickSize(-height)
+        .tickFormat(() => '')
+      )
+      .style('stroke-dasharray', '3,3')
+      .style('opacity', 0.3)
+      .style('stroke', currentTheme.border)
+
+    g.append('g')
+      .attr('class', 'grid grid-y')
+      .call(d3.axisLeft(yScale)
+        .tickSize(-width)
+        .tickFormat(() => '')
+      )
+      .style('stroke-dasharray', '3,3')
+      .style('opacity', 0.3)
+      .style('stroke', currentTheme.border)
 
     // X-axis
     g.append('g')
@@ -192,39 +228,36 @@ export function YieldCurvesTab() {
       .call(d3.axisBottom(xScale)
         .tickFormat(d => d < 1 ? `${Math.round(d * 12)}M` : `${d}Y`)
       )
-      .style('font-size', '12px')
+      .style('font-size', '11px')
+      .style('color', currentTheme.textSecondary)
 
     // Y-axis
     g.append('g')
       .call(d3.axisLeft(yScale)
-        .tickFormat(d => `${d}%`)
+        .tickFormat(d => `${d.toFixed(2)}%`)
       )
-      .style('font-size', '12px')
+      .style('font-size', '11px')
+      .style('color', currentTheme.textSecondary)
 
     // Axis labels
     g.append('text')
       .attr('transform', 'rotate(-90)')
-      .attr('y', 0 - margin.left)
+      .attr('y', 0 - margin.left + 15)
       .attr('x', 0 - (height / 2))
       .attr('dy', '1em')
       .style('text-anchor', 'middle')
-      .style('font-size', '14px')
+      .style('font-size', '12px')
+      .style('fill', currentTheme.textSecondary)
+      .style('font-weight', '500')
       .text('Yield (%)')
 
     g.append('text')
-      .attr('transform', `translate(${width / 2}, ${height + margin.bottom})`)
+      .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
       .style('text-anchor', 'middle')
-      .style('font-size', '14px')
-      .text('Tenor')
-
-    // Title
-    svg.append('text')
-      .attr('x', margin.left + width / 2)
-      .attr('y', 20)
-      .attr('text-anchor', 'middle')
-      .style('font-size', '18px')
-      .style('font-weight', 'bold')
-      .text('OIS Yield Curves (Real Bloomberg Data)')
+      .style('font-size', '12px')
+      .style('fill', currentTheme.textSecondary)
+      .style('font-weight', '500')
+      .text('Maturity')
   }
 
   // Initial fetch
@@ -254,56 +287,71 @@ export function YieldCurvesTab() {
       backgroundColor: currentTheme.surface,
       borderRadius: '8px',
       border: `1px solid ${currentTheme.border}`,
-      padding: '20px',
+      overflow: 'hidden',
       height: '100%',
       display: 'flex',
       flexDirection: 'column'
     }}>
-      {/* Header */}
-      <div style={{ marginBottom: '20px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-          <h3 style={{ margin: 0 }}>OIS Yield Curves</h3>
+      {/* Header Controls */}
+      <div style={{
+        borderBottom: `1px solid ${currentTheme.border}`,
+        backgroundColor: currentTheme.background,
+        padding: '12px 16px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      }}>
+        <h3 style={{ margin: 0, fontSize: '16px', fontWeight: '600' }}>OIS Yield Curves</h3>
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
           <button
             onClick={fetchCurves}
             disabled={loading || selectedCurrencies.length === 0}
             style={{
-              padding: '8px 16px',
-              backgroundColor: currentTheme.primary,
-              color: currentTheme.background,
+              padding: '6px 12px',
+              backgroundColor: loading ? currentTheme.surface : currentTheme.primary,
+              color: loading ? currentTheme.textSecondary : '#ffffff',
               border: 'none',
               borderRadius: '4px',
               cursor: loading || selectedCurrencies.length === 0 ? 'not-allowed' : 'pointer',
-              opacity: loading || selectedCurrencies.length === 0 ? 0.6 : 1
+              fontSize: '13px',
+              fontWeight: '500',
+              transition: 'all 0.2s ease'
             }}
           >
-            {loading ? 'Loading...' : 'Refresh'}
+            {loading ? 'Loading...' : 'Refresh Data'}
           </button>
         </div>
+      </div>
 
-        {/* Currency selector */}
-        <div style={{ marginBottom: '16px' }}>
-          <div style={{ fontSize: '14px', color: currentTheme.textSecondary, marginBottom: '8px' }}>
-            Select currencies to display:
+      {/* Currency Selector Section */}
+      <div style={{ 
+        padding: '16px',
+        borderBottom: `1px solid ${currentTheme.border}`,
+        backgroundColor: currentTheme.background
+      }}>
+        <div style={{ marginBottom: '12px' }}>
+          <div style={{ fontSize: '13px', color: currentTheme.textSecondary, marginBottom: '8px', fontWeight: '500' }}>
+            Select currencies to compare:
           </div>
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
             {G10_CURRENCIES.map(currency => (
               <button
                 key={currency}
                 onClick={() => toggleCurrency(currency)}
                 style={{
-                  padding: '6px 12px',
+                  padding: '4px 10px',
                   borderRadius: '4px',
-                  border: `1px solid ${currentTheme.border}`,
+                  border: `1px solid ${selectedCurrencies.includes(currency) ? CURVE_COLORS[currency] : currentTheme.border}`,
                   backgroundColor: selectedCurrencies.includes(currency) 
                     ? CURVE_COLORS[currency] 
-                    : currentTheme.background,
+                    : currentTheme.surface,
                   color: selectedCurrencies.includes(currency) 
                     ? '#ffffff' 
-                    : currentTheme.text,
+                    : currentTheme.textSecondary,
                   cursor: 'pointer',
-                  fontSize: '14px',
-                  fontWeight: selectedCurrencies.includes(currency) ? 'bold' : 'normal',
-                  transition: 'all 0.2s'
+                  fontSize: '12px',
+                  fontWeight: selectedCurrencies.includes(currency) ? '600' : '400',
+                  transition: 'all 0.2s ease'
                 }}
               >
                 {currency}
@@ -314,36 +362,69 @@ export function YieldCurvesTab() {
 
         {/* Data quality info */}
         {curveData.length > 0 && (
-          <div style={{ fontSize: '14px', color: currentTheme.textSecondary }}>
+          <div style={{ 
+            fontSize: '11px', 
+            color: currentTheme.textSecondary,
+            display: 'flex',
+            gap: '12px',
+            marginTop: '8px'
+          }}>
             {curveData.map(curve => (
-              <span key={curve.currency} style={{ marginRight: '16px' }}>
-                {curve.currency}: {curve.dataQuality.validPoints}/{curve.dataQuality.totalPoints} points 
-                ({curve.dataQuality.coverage.toFixed(0)}% coverage)
+              <span key={curve.currency} style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <span style={{ 
+                  width: '12px', 
+                  height: '3px', 
+                  backgroundColor: CURVE_COLORS[curve.currency],
+                  borderRadius: '2px'
+                }} />
+                <span style={{ fontWeight: '500' }}>
+                  {curve.currency}:
+                </span>
+                <span style={{ color: currentTheme.textTertiary || currentTheme.textSecondary }}>
+                  {curve.dataQuality.validPoints} tenors ({curve.dataQuality.coverage.toFixed(0)}%)
+                </span>
               </span>
             ))}
           </div>
         )}
       </div>
 
-      {/* Error display */}
-      {error && (
-        <div style={{ 
-          color: '#ef4444', 
-          marginBottom: '16px',
-          padding: '12px',
-          backgroundColor: 'rgba(239, 68, 68, 0.1)',
-          borderRadius: '4px'
-        }}>
-          Error: {error}
-        </div>
-      )}
+      {/* Main Content Area */}
+      <div style={{ 
+        flex: 1, 
+        display: 'flex', 
+        flexDirection: 'column',
+        padding: '20px',
+        backgroundColor: currentTheme.surface,
+        position: 'relative'
+      }}>
+        {/* Error display */}
+        {error && (
+          <div style={{ 
+            color: '#ef4444', 
+            marginBottom: '16px',
+            padding: '12px',
+            backgroundColor: 'rgba(239, 68, 68, 0.1)',
+            borderRadius: '4px',
+            fontSize: '13px'
+          }}>
+            Error: {error}
+          </div>
+        )}
 
-      {/* Chart container */}
-      <div ref={chartContainerRef} style={{ flex: 1, minHeight: '500px' }} />
+        {/* Chart container */}
+        <div ref={chartContainerRef} style={{ 
+          flex: 1, 
+          minHeight: '400px',
+          position: 'relative',
+          backgroundColor: currentTheme.background,
+          borderRadius: '6px',
+          border: `1px solid ${currentTheme.border}`
+        }} />
 
-      {/* Data table */}
-      {curveData.length > 0 && (
-        <details style={{ marginTop: '20px' }}>
+        {/* Data table */}
+        {curveData.length > 0 && (
+          <details style={{ marginTop: '20px' }}>
           <summary style={{ cursor: 'pointer', fontWeight: 'bold', marginBottom: '12px' }}>
             View Raw Data
           </summary>
@@ -378,7 +459,8 @@ export function YieldCurvesTab() {
             </table>
           </div>
         </details>
-      )}
+        )}
+      </div>
     </div>
   )
 }
