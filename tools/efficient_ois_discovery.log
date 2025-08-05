@@ -1,0 +1,654 @@
+2025-08-03 11:36:05,947 - INFO - 🚀 Starting efficient OIS ticker discovery
+2025-08-03 11:36:06,377 - INFO - ✅ Bloomberg API connection successful
+2025-08-03 11:36:07,449 - INFO - ✅ Connected to PostgreSQL database
+2025-08-03 11:36:07,858 - INFO - ✅ Ensured ticker_reference table exists
+2025-08-03 11:36:07,858 - INFO - 
+==================================================
+2025-08-03 11:36:07,858 - INFO - Processing USD
+2025-08-03 11:36:07,858 - INFO - ==================================================
+2025-08-03 11:36:07,858 - INFO - 🔍 Discovering OIS tickers for USD
+2025-08-03 11:36:08,259 - INFO -   ✅ Found 4 tickers
+2025-08-03 11:36:09,262 - INFO - ✅ Found 4 total tickers for USD
+2025-08-03 11:36:09,263 - INFO -     OIS: USSO1 Curncy - USD SOFR OIS 1Y
+2025-08-03 11:36:09,263 - INFO -     OIS: USSO2 Curncy - USD SOFR OIS 2Y
+2025-08-03 11:36:09,263 - INFO -     OIS: USSO5 Curncy - USD SOFR OIS 5Y
+2025-08-03 11:36:09,263 - INFO -     OIS: USSO10 Curncy - USD SOFR OIS 10Y
+2025-08-03 11:36:09,263 - INFO - ✅ Filtered to 4 OIS-relevant tickers for USD
+2025-08-03 11:36:09,263 - INFO - 🔍 Validating 4 tickers using reference data
+2025-08-03 11:36:09,996 - INFO -   ✅ USSO1 Curncy - Valid
+2025-08-03 11:36:09,997 - INFO -   ✅ USSO2 Curncy - Valid
+2025-08-03 11:36:09,997 - INFO -   ✅ USSO5 Curncy - Valid
+2025-08-03 11:36:09,997 - INFO -   ✅ USSO10 Curncy - Valid
+2025-08-03 11:36:12,272 - ERROR - ❌ Failed to insert tickers for USD: column "tenor" of relation "ticker_reference" does not exist
+LINE 3: ...cker, currency_code, instrument_type, curve_name, tenor, is_...
+                                                             ^
+
+2025-08-03 11:36:14,412 - INFO - 
+==================================================
+2025-08-03 11:36:14,413 - INFO - Processing EUR
+2025-08-03 11:36:14,413 - INFO - ==================================================
+2025-08-03 11:36:14,413 - INFO - 🔍 Discovering OIS tickers for EUR
+2025-08-03 11:36:14,817 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:36:15,821 - INFO -   Trying manual pattern generation for EUR
+2025-08-03 11:36:15,821 - INFO -   Generated 27 manual patterns for EUR
+2025-08-03 11:36:15,821 - INFO - ✅ Found 27 total tickers for EUR
+2025-08-03 11:36:15,821 - INFO -     OIS: EURSO1 Curncy - EUR OIS 1Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO2 Curncy - EUR OIS 2Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO3 Curncy - EUR OIS 3Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO5 Curncy - EUR OIS 5Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO7 Curncy - EUR OIS 7Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO10 Curncy - EUR OIS 10Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO15 Curncy - EUR OIS 15Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO20 Curncy - EUR OIS 20Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURSO30 Curncy - EUR OIS 30Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURESTR1 Curncy - EUR OIS 1Y
+2025-08-03 11:36:15,822 - INFO -     OIS: EURESTR2 Curncy - EUR OIS 2Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EURESTR3 Curncy - EUR OIS 3Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EURESTR5 Curncy - EUR OIS 5Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EURESTR7 Curncy - EUR OIS 7Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EURESTR10 Curncy - EUR OIS 10Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EURESTR15 Curncy - EUR OIS 15Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EURESTR20 Curncy - EUR OIS 20Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EURESTR30 Curncy - EUR OIS 30Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EUR ESTR1 Curncy - EUR OIS 1Y
+2025-08-03 11:36:15,823 - INFO -     OIS: EUR ESTR2 Curncy - EUR OIS 2Y
+2025-08-03 11:36:15,824 - INFO -     OIS: EUR ESTR3 Curncy - EUR OIS 3Y
+2025-08-03 11:36:15,824 - INFO -     OIS: EUR ESTR5 Curncy - EUR OIS 5Y
+2025-08-03 11:36:15,824 - INFO -     OIS: EUR ESTR7 Curncy - EUR OIS 7Y
+2025-08-03 11:36:15,824 - INFO -     OIS: EUR ESTR10 Curncy - EUR OIS 10Y
+2025-08-03 11:36:15,824 - INFO -     OIS: EUR ESTR15 Curncy - EUR OIS 15Y
+2025-08-03 11:36:15,824 - INFO -     OIS: EUR ESTR20 Curncy - EUR OIS 20Y
+2025-08-03 11:36:15,824 - INFO -     OIS: EUR ESTR30 Curncy - EUR OIS 30Y
+2025-08-03 11:36:15,824 - INFO - ✅ Filtered to 27 OIS-relevant tickers for EUR
+2025-08-03 11:36:15,824 - INFO - 🔍 Validating 27 tickers using reference data
+2025-08-03 11:36:16,486 - WARNING -   ❌ EURSO1 Curncy - Invalid
+2025-08-03 11:36:16,486 - WARNING -   ❌ EURSO2 Curncy - Invalid
+2025-08-03 11:36:16,487 - WARNING -   ❌ EURSO3 Curncy - Invalid
+2025-08-03 11:36:16,487 - WARNING -   ❌ EURSO5 Curncy - Invalid
+2025-08-03 11:36:16,487 - WARNING -   ❌ EURSO7 Curncy - Invalid
+2025-08-03 11:36:16,487 - WARNING -   ❌ EURSO10 Curncy - Invalid
+2025-08-03 11:36:16,487 - WARNING -   ❌ EURSO15 Curncy - Invalid
+2025-08-03 11:36:16,487 - WARNING -   ❌ EURSO20 Curncy - Invalid
+2025-08-03 11:36:16,487 - WARNING -   ❌ EURSO30 Curncy - Invalid
+2025-08-03 11:36:16,488 - WARNING -   ❌ EURESTR1 Curncy - Invalid
+2025-08-03 11:36:19,247 - WARNING -   ❌ EURESTR2 Curncy - Invalid
+2025-08-03 11:36:19,247 - WARNING -   ❌ EURESTR3 Curncy - Invalid
+2025-08-03 11:36:19,247 - WARNING -   ❌ EURESTR5 Curncy - Invalid
+2025-08-03 11:36:19,247 - WARNING -   ❌ EURESTR7 Curncy - Invalid
+2025-08-03 11:36:19,247 - WARNING -   ❌ EURESTR10 Curncy - Invalid
+2025-08-03 11:36:19,247 - WARNING -   ❌ EURESTR15 Curncy - Invalid
+2025-08-03 11:36:19,248 - WARNING -   ❌ EURESTR20 Curncy - Invalid
+2025-08-03 11:36:19,248 - WARNING -   ❌ EURESTR30 Curncy - Invalid
+2025-08-03 11:36:19,248 - WARNING -   ❌ EUR ESTR1 Curncy - Invalid
+2025-08-03 11:36:19,248 - WARNING -   ❌ EUR ESTR2 Curncy - Invalid
+2025-08-03 11:36:21,785 - WARNING -   ❌ EUR ESTR3 Curncy - Invalid
+2025-08-03 11:36:21,786 - WARNING -   ❌ EUR ESTR5 Curncy - Invalid
+2025-08-03 11:36:21,786 - WARNING -   ❌ EUR ESTR7 Curncy - Invalid
+2025-08-03 11:36:21,786 - WARNING -   ❌ EUR ESTR10 Curncy - Invalid
+2025-08-03 11:36:21,786 - WARNING -   ❌ EUR ESTR15 Curncy - Invalid
+2025-08-03 11:36:21,787 - WARNING -   ❌ EUR ESTR20 Curncy - Invalid
+2025-08-03 11:36:21,787 - WARNING -   ❌ EUR ESTR30 Curncy - Invalid
+2025-08-03 11:36:23,792 - INFO - ✅ Inserted/updated 0 tickers for EUR, skipped 27 invalid
+2025-08-03 11:36:25,797 - INFO - 
+==================================================
+2025-08-03 11:36:25,797 - INFO - Processing GBP
+2025-08-03 11:36:25,797 - INFO - ==================================================
+2025-08-03 11:36:25,797 - INFO - 🔍 Discovering OIS tickers for GBP
+2025-08-03 11:36:26,207 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:36:27,210 - INFO -   Trying manual pattern generation for GBP
+2025-08-03 11:36:27,210 - INFO -   Generated 27 manual patterns for GBP
+2025-08-03 11:36:27,210 - INFO - ✅ Found 27 total tickers for GBP
+2025-08-03 11:36:27,210 - INFO -     OIS: GBPSO1 Curncy - GBP OIS 1Y
+2025-08-03 11:36:27,210 - INFO -     OIS: GBPSO2 Curncy - GBP OIS 2Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSO3 Curncy - GBP OIS 3Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSO5 Curncy - GBP OIS 5Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSO7 Curncy - GBP OIS 7Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSO10 Curncy - GBP OIS 10Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSO15 Curncy - GBP OIS 15Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSO20 Curncy - GBP OIS 20Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSO30 Curncy - GBP OIS 30Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSONIA1 Curncy - GBP OIS 1Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSONIA2 Curncy - GBP OIS 2Y
+2025-08-03 11:36:27,211 - INFO -     OIS: GBPSONIA3 Curncy - GBP OIS 3Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBPSONIA5 Curncy - GBP OIS 5Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBPSONIA7 Curncy - GBP OIS 7Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBPSONIA10 Curncy - GBP OIS 10Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBPSONIA15 Curncy - GBP OIS 15Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBPSONIA20 Curncy - GBP OIS 20Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBPSONIA30 Curncy - GBP OIS 30Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBP SONIA1 Curncy - GBP OIS 1Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBP SONIA2 Curncy - GBP OIS 2Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBP SONIA3 Curncy - GBP OIS 3Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBP SONIA5 Curncy - GBP OIS 5Y
+2025-08-03 11:36:27,212 - INFO -     OIS: GBP SONIA7 Curncy - GBP OIS 7Y
+2025-08-03 11:36:27,213 - INFO -     OIS: GBP SONIA10 Curncy - GBP OIS 10Y
+2025-08-03 11:36:27,213 - INFO -     OIS: GBP SONIA15 Curncy - GBP OIS 15Y
+2025-08-03 11:36:27,213 - INFO -     OIS: GBP SONIA20 Curncy - GBP OIS 20Y
+2025-08-03 11:36:27,213 - INFO -     OIS: GBP SONIA30 Curncy - GBP OIS 30Y
+2025-08-03 11:36:27,213 - INFO - ✅ Filtered to 27 OIS-relevant tickers for GBP
+2025-08-03 11:36:27,213 - INFO - 🔍 Validating 27 tickers using reference data
+2025-08-03 11:36:27,913 - WARNING -   ❌ GBPSO1 Curncy - Invalid
+2025-08-03 11:36:27,913 - WARNING -   ❌ GBPSO2 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSO3 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSO5 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSO7 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSO10 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSO15 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSO20 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSO30 Curncy - Invalid
+2025-08-03 11:36:27,914 - WARNING -   ❌ GBPSONIA1 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA2 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA3 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA5 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA7 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA10 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA15 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA20 Curncy - Invalid
+2025-08-03 11:36:30,821 - WARNING -   ❌ GBPSONIA30 Curncy - Invalid
+2025-08-03 11:36:30,822 - WARNING -   ❌ GBP SONIA1 Curncy - Invalid
+2025-08-03 11:36:30,822 - WARNING -   ❌ GBP SONIA2 Curncy - Invalid
+2025-08-03 11:36:33,373 - WARNING -   ❌ GBP SONIA3 Curncy - Invalid
+2025-08-03 11:36:33,374 - WARNING -   ❌ GBP SONIA5 Curncy - Invalid
+2025-08-03 11:36:33,374 - WARNING -   ❌ GBP SONIA7 Curncy - Invalid
+2025-08-03 11:36:33,374 - WARNING -   ❌ GBP SONIA10 Curncy - Invalid
+2025-08-03 11:36:33,374 - WARNING -   ❌ GBP SONIA15 Curncy - Invalid
+2025-08-03 11:36:33,374 - WARNING -   ❌ GBP SONIA20 Curncy - Invalid
+2025-08-03 11:36:33,374 - WARNING -   ❌ GBP SONIA30 Curncy - Invalid
+2025-08-03 11:36:35,375 - INFO - ✅ Inserted/updated 0 tickers for GBP, skipped 27 invalid
+2025-08-03 11:36:37,379 - INFO - 
+==================================================
+2025-08-03 11:36:37,380 - INFO - Processing JPY
+2025-08-03 11:36:37,380 - INFO - ==================================================
+2025-08-03 11:36:37,380 - INFO - 🔍 Discovering OIS tickers for JPY
+2025-08-03 11:36:37,787 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:36:38,789 - INFO -   Trying manual pattern generation for JPY
+2025-08-03 11:36:38,790 - INFO -   Generated 27 manual patterns for JPY
+2025-08-03 11:36:38,790 - INFO - ✅ Found 27 total tickers for JPY
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO1 Curncy - JPY OIS 1Y
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO2 Curncy - JPY OIS 2Y
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO3 Curncy - JPY OIS 3Y
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO5 Curncy - JPY OIS 5Y
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO7 Curncy - JPY OIS 7Y
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO10 Curncy - JPY OIS 10Y
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO15 Curncy - JPY OIS 15Y
+2025-08-03 11:36:38,790 - INFO -     OIS: JPYSO20 Curncy - JPY OIS 20Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYSO30 Curncy - JPY OIS 30Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR1 Curncy - JPY OIS 1Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR2 Curncy - JPY OIS 2Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR3 Curncy - JPY OIS 3Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR5 Curncy - JPY OIS 5Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR7 Curncy - JPY OIS 7Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR10 Curncy - JPY OIS 10Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR15 Curncy - JPY OIS 15Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR20 Curncy - JPY OIS 20Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPYTONAR30 Curncy - JPY OIS 30Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPY TONAR1 Curncy - JPY OIS 1Y
+2025-08-03 11:36:38,791 - INFO -     OIS: JPY TONAR2 Curncy - JPY OIS 2Y
+2025-08-03 11:36:38,792 - INFO -     OIS: JPY TONAR3 Curncy - JPY OIS 3Y
+2025-08-03 11:36:38,792 - INFO -     OIS: JPY TONAR5 Curncy - JPY OIS 5Y
+2025-08-03 11:36:38,792 - INFO -     OIS: JPY TONAR7 Curncy - JPY OIS 7Y
+2025-08-03 11:36:38,792 - INFO -     OIS: JPY TONAR10 Curncy - JPY OIS 10Y
+2025-08-03 11:36:38,792 - INFO -     OIS: JPY TONAR15 Curncy - JPY OIS 15Y
+2025-08-03 11:36:38,792 - INFO -     OIS: JPY TONAR20 Curncy - JPY OIS 20Y
+2025-08-03 11:36:38,792 - INFO -     OIS: JPY TONAR30 Curncy - JPY OIS 30Y
+2025-08-03 11:36:38,792 - INFO - ✅ Filtered to 27 OIS-relevant tickers for JPY
+2025-08-03 11:36:38,792 - INFO - 🔍 Validating 27 tickers using reference data
+2025-08-03 11:36:39,509 - WARNING -   ❌ JPYSO1 Curncy - Invalid
+2025-08-03 11:36:39,509 - WARNING -   ❌ JPYSO2 Curncy - Invalid
+2025-08-03 11:36:39,509 - WARNING -   ❌ JPYSO3 Curncy - Invalid
+2025-08-03 11:36:39,509 - WARNING -   ❌ JPYSO5 Curncy - Invalid
+2025-08-03 11:36:39,510 - WARNING -   ❌ JPYSO7 Curncy - Invalid
+2025-08-03 11:36:39,510 - WARNING -   ❌ JPYSO10 Curncy - Invalid
+2025-08-03 11:36:39,510 - WARNING -   ❌ JPYSO15 Curncy - Invalid
+2025-08-03 11:36:39,510 - WARNING -   ❌ JPYSO20 Curncy - Invalid
+2025-08-03 11:36:39,510 - WARNING -   ❌ JPYSO30 Curncy - Invalid
+2025-08-03 11:36:39,510 - WARNING -   ❌ JPYTONAR1 Curncy - Invalid
+2025-08-03 11:36:42,167 - WARNING -   ❌ JPYTONAR2 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPYTONAR3 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPYTONAR5 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPYTONAR7 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPYTONAR10 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPYTONAR15 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPYTONAR20 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPYTONAR30 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPY TONAR1 Curncy - Invalid
+2025-08-03 11:36:42,168 - WARNING -   ❌ JPY TONAR2 Curncy - Invalid
+2025-08-03 11:36:44,719 - WARNING -   ❌ JPY TONAR3 Curncy - Invalid
+2025-08-03 11:36:44,719 - WARNING -   ❌ JPY TONAR5 Curncy - Invalid
+2025-08-03 11:36:44,720 - WARNING -   ❌ JPY TONAR7 Curncy - Invalid
+2025-08-03 11:36:44,720 - WARNING -   ❌ JPY TONAR10 Curncy - Invalid
+2025-08-03 11:36:44,720 - WARNING -   ❌ JPY TONAR15 Curncy - Invalid
+2025-08-03 11:36:44,720 - WARNING -   ❌ JPY TONAR20 Curncy - Invalid
+2025-08-03 11:36:44,720 - WARNING -   ❌ JPY TONAR30 Curncy - Invalid
+2025-08-03 11:36:46,722 - INFO - ✅ Inserted/updated 0 tickers for JPY, skipped 27 invalid
+2025-08-03 11:36:48,723 - INFO - 
+==================================================
+2025-08-03 11:36:48,723 - INFO - Processing CHF
+2025-08-03 11:36:48,723 - INFO - ==================================================
+2025-08-03 11:36:48,724 - INFO - 🔍 Discovering OIS tickers for CHF
+2025-08-03 11:36:49,115 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:36:50,116 - INFO -   Trying manual pattern generation for CHF
+2025-08-03 11:36:50,116 - INFO -   Generated 18 manual patterns for CHF
+2025-08-03 11:36:50,116 - INFO - ✅ Found 18 total tickers for CHF
+2025-08-03 11:36:50,116 - INFO -     OIS: CHFSO1 Curncy - CHF OIS 1Y
+2025-08-03 11:36:50,116 - INFO -     OIS: CHFSO2 Curncy - CHF OIS 2Y
+2025-08-03 11:36:50,116 - INFO -     OIS: CHFSO3 Curncy - CHF OIS 3Y
+2025-08-03 11:36:50,116 - INFO -     OIS: CHFSO5 Curncy - CHF OIS 5Y
+2025-08-03 11:36:50,116 - INFO -     OIS: CHFSO7 Curncy - CHF OIS 7Y
+2025-08-03 11:36:50,116 - INFO -     OIS: CHFSO10 Curncy - CHF OIS 10Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFSO15 Curncy - CHF OIS 15Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFSO20 Curncy - CHF OIS 20Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFSO30 Curncy - CHF OIS 30Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS1 Curncy - CHF OIS 1Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS2 Curncy - CHF OIS 2Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS3 Curncy - CHF OIS 3Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS5 Curncy - CHF OIS 5Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS7 Curncy - CHF OIS 7Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS10 Curncy - CHF OIS 10Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS15 Curncy - CHF OIS 15Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS20 Curncy - CHF OIS 20Y
+2025-08-03 11:36:50,117 - INFO -     OIS: CHFOIS30 Curncy - CHF OIS 30Y
+2025-08-03 11:36:50,117 - INFO - ✅ Filtered to 18 OIS-relevant tickers for CHF
+2025-08-03 11:36:50,118 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO1 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO2 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO3 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO5 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO7 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO10 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO15 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO20 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFSO30 Curncy - Invalid
+2025-08-03 11:36:50,830 - WARNING -   ❌ CHFOIS1 Curncy - Invalid
+2025-08-03 11:36:53,533 - WARNING -   ❌ CHFOIS2 Curncy - Invalid
+2025-08-03 11:36:53,533 - WARNING -   ❌ CHFOIS3 Curncy - Invalid
+2025-08-03 11:36:53,533 - WARNING -   ❌ CHFOIS5 Curncy - Invalid
+2025-08-03 11:36:53,533 - WARNING -   ❌ CHFOIS7 Curncy - Invalid
+2025-08-03 11:36:53,533 - WARNING -   ❌ CHFOIS10 Curncy - Invalid
+2025-08-03 11:36:53,534 - WARNING -   ❌ CHFOIS15 Curncy - Invalid
+2025-08-03 11:36:53,534 - WARNING -   ❌ CHFOIS20 Curncy - Invalid
+2025-08-03 11:36:53,534 - WARNING -   ❌ CHFOIS30 Curncy - Invalid
+2025-08-03 11:36:55,535 - INFO - ✅ Inserted/updated 0 tickers for CHF, skipped 18 invalid
+2025-08-03 11:36:57,537 - INFO - 
+==================================================
+2025-08-03 11:36:57,538 - INFO - Processing CAD
+2025-08-03 11:36:57,538 - INFO - ==================================================
+2025-08-03 11:36:57,538 - INFO - 🔍 Discovering OIS tickers for CAD
+2025-08-03 11:36:57,948 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:36:58,948 - INFO -   Trying manual pattern generation for CAD
+2025-08-03 11:36:58,948 - INFO -   Generated 18 manual patterns for CAD
+2025-08-03 11:36:58,948 - INFO - ✅ Found 18 total tickers for CAD
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO1 Curncy - CAD OIS 1Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO2 Curncy - CAD OIS 2Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO3 Curncy - CAD OIS 3Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO5 Curncy - CAD OIS 5Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO7 Curncy - CAD OIS 7Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO10 Curncy - CAD OIS 10Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO15 Curncy - CAD OIS 15Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO20 Curncy - CAD OIS 20Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADSO30 Curncy - CAD OIS 30Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS1 Curncy - CAD OIS 1Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS2 Curncy - CAD OIS 2Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS3 Curncy - CAD OIS 3Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS5 Curncy - CAD OIS 5Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS7 Curncy - CAD OIS 7Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS10 Curncy - CAD OIS 10Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS15 Curncy - CAD OIS 15Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS20 Curncy - CAD OIS 20Y
+2025-08-03 11:36:58,949 - INFO -     OIS: CADOIS30 Curncy - CAD OIS 30Y
+2025-08-03 11:36:58,949 - INFO - ✅ Filtered to 18 OIS-relevant tickers for CAD
+2025-08-03 11:36:58,949 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:36:59,616 - WARNING -   ❌ CADSO1 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO2 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO3 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO5 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO7 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO10 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO15 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO20 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADSO30 Curncy - Invalid
+2025-08-03 11:36:59,617 - WARNING -   ❌ CADOIS1 Curncy - Invalid
+2025-08-03 11:37:02,462 - WARNING -   ❌ CADOIS2 Curncy - Invalid
+2025-08-03 11:37:02,463 - WARNING -   ❌ CADOIS3 Curncy - Invalid
+2025-08-03 11:37:02,463 - WARNING -   ❌ CADOIS5 Curncy - Invalid
+2025-08-03 11:37:02,463 - WARNING -   ❌ CADOIS7 Curncy - Invalid
+2025-08-03 11:37:02,463 - WARNING -   ❌ CADOIS10 Curncy - Invalid
+2025-08-03 11:37:02,463 - WARNING -   ❌ CADOIS15 Curncy - Invalid
+2025-08-03 11:37:02,463 - WARNING -   ❌ CADOIS20 Curncy - Invalid
+2025-08-03 11:37:02,463 - WARNING -   ❌ CADOIS30 Curncy - Invalid
+2025-08-03 11:37:04,468 - INFO - ✅ Inserted/updated 0 tickers for CAD, skipped 18 invalid
+2025-08-03 11:37:06,473 - INFO - 
+==================================================
+2025-08-03 11:37:06,474 - INFO - Processing AUD
+2025-08-03 11:37:06,474 - INFO - ==================================================
+2025-08-03 11:37:06,474 - INFO - 🔍 Discovering OIS tickers for AUD
+2025-08-03 11:37:06,879 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:37:07,880 - INFO -   Trying manual pattern generation for AUD
+2025-08-03 11:37:07,880 - INFO -   Generated 18 manual patterns for AUD
+2025-08-03 11:37:07,880 - INFO - ✅ Found 18 total tickers for AUD
+2025-08-03 11:37:07,880 - INFO -     OIS: AUDSO1 Curncy - AUD OIS 1Y
+2025-08-03 11:37:07,880 - INFO -     OIS: AUDSO2 Curncy - AUD OIS 2Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDSO3 Curncy - AUD OIS 3Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDSO5 Curncy - AUD OIS 5Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDSO7 Curncy - AUD OIS 7Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDSO10 Curncy - AUD OIS 10Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDSO15 Curncy - AUD OIS 15Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDSO20 Curncy - AUD OIS 20Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDSO30 Curncy - AUD OIS 30Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDOIS1 Curncy - AUD OIS 1Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDOIS2 Curncy - AUD OIS 2Y
+2025-08-03 11:37:07,881 - INFO -     OIS: AUDOIS3 Curncy - AUD OIS 3Y
+2025-08-03 11:37:07,882 - INFO -     OIS: AUDOIS5 Curncy - AUD OIS 5Y
+2025-08-03 11:37:07,882 - INFO -     OIS: AUDOIS7 Curncy - AUD OIS 7Y
+2025-08-03 11:37:07,882 - INFO -     OIS: AUDOIS10 Curncy - AUD OIS 10Y
+2025-08-03 11:37:07,882 - INFO -     OIS: AUDOIS15 Curncy - AUD OIS 15Y
+2025-08-03 11:37:07,882 - INFO -     OIS: AUDOIS20 Curncy - AUD OIS 20Y
+2025-08-03 11:37:07,882 - INFO -     OIS: AUDOIS30 Curncy - AUD OIS 30Y
+2025-08-03 11:37:07,882 - INFO - ✅ Filtered to 18 OIS-relevant tickers for AUD
+2025-08-03 11:37:07,882 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:37:08,579 - WARNING -   ❌ AUDSO1 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO2 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO3 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO5 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO7 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO10 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO15 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO20 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDSO30 Curncy - Invalid
+2025-08-03 11:37:08,580 - WARNING -   ❌ AUDOIS1 Curncy - Invalid
+2025-08-03 11:37:11,253 - WARNING -   ❌ AUDOIS2 Curncy - Invalid
+2025-08-03 11:37:11,253 - WARNING -   ❌ AUDOIS3 Curncy - Invalid
+2025-08-03 11:37:11,254 - WARNING -   ❌ AUDOIS5 Curncy - Invalid
+2025-08-03 11:37:11,254 - WARNING -   ❌ AUDOIS7 Curncy - Invalid
+2025-08-03 11:37:11,254 - WARNING -   ❌ AUDOIS10 Curncy - Invalid
+2025-08-03 11:37:11,254 - WARNING -   ❌ AUDOIS15 Curncy - Invalid
+2025-08-03 11:37:11,254 - WARNING -   ❌ AUDOIS20 Curncy - Invalid
+2025-08-03 11:37:11,254 - WARNING -   ❌ AUDOIS30 Curncy - Invalid
+2025-08-03 11:37:13,259 - INFO - ✅ Inserted/updated 0 tickers for AUD, skipped 18 invalid
+2025-08-03 11:37:15,260 - INFO - 
+==================================================
+2025-08-03 11:37:15,260 - INFO - Processing NZD
+2025-08-03 11:37:15,260 - INFO - ==================================================
+2025-08-03 11:37:15,261 - INFO - 🔍 Discovering OIS tickers for NZD
+2025-08-03 11:37:15,672 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:37:16,678 - INFO -   Trying manual pattern generation for NZD
+2025-08-03 11:37:16,678 - INFO -   Generated 18 manual patterns for NZD
+2025-08-03 11:37:16,678 - INFO - ✅ Found 18 total tickers for NZD
+2025-08-03 11:37:16,678 - INFO -     OIS: NZDSO1 Curncy - NZD OIS 1Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO2 Curncy - NZD OIS 2Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO3 Curncy - NZD OIS 3Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO5 Curncy - NZD OIS 5Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO7 Curncy - NZD OIS 7Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO10 Curncy - NZD OIS 10Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO15 Curncy - NZD OIS 15Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO20 Curncy - NZD OIS 20Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDSO30 Curncy - NZD OIS 30Y
+2025-08-03 11:37:16,679 - INFO -     OIS: NZDOIS1 Curncy - NZD OIS 1Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS2 Curncy - NZD OIS 2Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS3 Curncy - NZD OIS 3Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS5 Curncy - NZD OIS 5Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS7 Curncy - NZD OIS 7Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS10 Curncy - NZD OIS 10Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS15 Curncy - NZD OIS 15Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS20 Curncy - NZD OIS 20Y
+2025-08-03 11:37:16,680 - INFO -     OIS: NZDOIS30 Curncy - NZD OIS 30Y
+2025-08-03 11:37:16,680 - INFO - ✅ Filtered to 18 OIS-relevant tickers for NZD
+2025-08-03 11:37:16,680 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:37:17,514 - WARNING -   ❌ NZDSO1 Curncy - Invalid
+2025-08-03 11:37:17,514 - WARNING -   ❌ NZDSO2 Curncy - Invalid
+2025-08-03 11:37:17,514 - WARNING -   ❌ NZDSO3 Curncy - Invalid
+2025-08-03 11:37:17,515 - WARNING -   ❌ NZDSO5 Curncy - Invalid
+2025-08-03 11:37:17,515 - WARNING -   ❌ NZDSO7 Curncy - Invalid
+2025-08-03 11:37:17,515 - WARNING -   ❌ NZDSO10 Curncy - Invalid
+2025-08-03 11:37:17,515 - WARNING -   ❌ NZDSO15 Curncy - Invalid
+2025-08-03 11:37:17,515 - WARNING -   ❌ NZDSO20 Curncy - Invalid
+2025-08-03 11:37:17,515 - WARNING -   ❌ NZDSO30 Curncy - Invalid
+2025-08-03 11:37:17,515 - WARNING -   ❌ NZDOIS1 Curncy - Invalid
+2025-08-03 11:37:20,230 - WARNING -   ❌ NZDOIS2 Curncy - Invalid
+2025-08-03 11:37:20,231 - WARNING -   ❌ NZDOIS3 Curncy - Invalid
+2025-08-03 11:37:20,231 - WARNING -   ❌ NZDOIS5 Curncy - Invalid
+2025-08-03 11:37:20,231 - WARNING -   ❌ NZDOIS7 Curncy - Invalid
+2025-08-03 11:37:20,231 - WARNING -   ❌ NZDOIS10 Curncy - Invalid
+2025-08-03 11:37:20,231 - WARNING -   ❌ NZDOIS15 Curncy - Invalid
+2025-08-03 11:37:20,231 - WARNING -   ❌ NZDOIS20 Curncy - Invalid
+2025-08-03 11:37:20,231 - WARNING -   ❌ NZDOIS30 Curncy - Invalid
+2025-08-03 11:37:22,234 - INFO - ✅ Inserted/updated 0 tickers for NZD, skipped 18 invalid
+2025-08-03 11:37:24,235 - INFO - 
+==================================================
+2025-08-03 11:37:24,236 - INFO - Processing SEK
+2025-08-03 11:37:24,236 - INFO - ==================================================
+2025-08-03 11:37:24,236 - INFO - 🔍 Discovering OIS tickers for SEK
+2025-08-03 11:37:24,648 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:37:25,653 - INFO -   Trying manual pattern generation for SEK
+2025-08-03 11:37:25,653 - INFO -   Generated 18 manual patterns for SEK
+2025-08-03 11:37:25,653 - INFO - ✅ Found 18 total tickers for SEK
+2025-08-03 11:37:25,653 - INFO -     OIS: SEKSO1 Curncy - SEK OIS 1Y
+2025-08-03 11:37:25,653 - INFO -     OIS: SEKSO2 Curncy - SEK OIS 2Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKSO3 Curncy - SEK OIS 3Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKSO5 Curncy - SEK OIS 5Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKSO7 Curncy - SEK OIS 7Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKSO10 Curncy - SEK OIS 10Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKSO15 Curncy - SEK OIS 15Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKSO20 Curncy - SEK OIS 20Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKSO30 Curncy - SEK OIS 30Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKOIS1 Curncy - SEK OIS 1Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKOIS2 Curncy - SEK OIS 2Y
+2025-08-03 11:37:25,654 - INFO -     OIS: SEKOIS3 Curncy - SEK OIS 3Y
+2025-08-03 11:37:25,655 - INFO -     OIS: SEKOIS5 Curncy - SEK OIS 5Y
+2025-08-03 11:37:25,655 - INFO -     OIS: SEKOIS7 Curncy - SEK OIS 7Y
+2025-08-03 11:37:25,655 - INFO -     OIS: SEKOIS10 Curncy - SEK OIS 10Y
+2025-08-03 11:37:25,655 - INFO -     OIS: SEKOIS15 Curncy - SEK OIS 15Y
+2025-08-03 11:37:25,655 - INFO -     OIS: SEKOIS20 Curncy - SEK OIS 20Y
+2025-08-03 11:37:25,655 - INFO -     OIS: SEKOIS30 Curncy - SEK OIS 30Y
+2025-08-03 11:37:25,655 - INFO - ✅ Filtered to 18 OIS-relevant tickers for SEK
+2025-08-03 11:37:25,655 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:37:26,739 - WARNING -   ❌ SEKSO1 Curncy - Invalid
+2025-08-03 11:37:26,739 - WARNING -   ❌ SEKSO2 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKSO3 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKSO5 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKSO7 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKSO10 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKSO15 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKSO20 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKSO30 Curncy - Invalid
+2025-08-03 11:37:26,740 - WARNING -   ❌ SEKOIS1 Curncy - Invalid
+2025-08-03 11:37:29,518 - WARNING -   ❌ SEKOIS2 Curncy - Invalid
+2025-08-03 11:37:29,518 - WARNING -   ❌ SEKOIS3 Curncy - Invalid
+2025-08-03 11:37:29,519 - WARNING -   ❌ SEKOIS5 Curncy - Invalid
+2025-08-03 11:37:29,519 - WARNING -   ❌ SEKOIS7 Curncy - Invalid
+2025-08-03 11:37:29,519 - WARNING -   ❌ SEKOIS10 Curncy - Invalid
+2025-08-03 11:37:29,519 - WARNING -   ❌ SEKOIS15 Curncy - Invalid
+2025-08-03 11:37:29,519 - WARNING -   ❌ SEKOIS20 Curncy - Invalid
+2025-08-03 11:37:29,519 - WARNING -   ❌ SEKOIS30 Curncy - Invalid
+2025-08-03 11:37:31,523 - INFO - ✅ Inserted/updated 0 tickers for SEK, skipped 18 invalid
+2025-08-03 11:37:33,528 - INFO - 
+==================================================
+2025-08-03 11:37:33,528 - INFO - Processing NOK
+2025-08-03 11:37:33,529 - INFO - ==================================================
+2025-08-03 11:37:33,529 - INFO - 🔍 Discovering OIS tickers for NOK
+2025-08-03 11:37:33,940 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:37:34,940 - INFO -   Trying manual pattern generation for NOK
+2025-08-03 11:37:34,941 - INFO -   Generated 18 manual patterns for NOK
+2025-08-03 11:37:34,941 - INFO - ✅ Found 18 total tickers for NOK
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO1 Curncy - NOK OIS 1Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO2 Curncy - NOK OIS 2Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO3 Curncy - NOK OIS 3Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO5 Curncy - NOK OIS 5Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO7 Curncy - NOK OIS 7Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO10 Curncy - NOK OIS 10Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO15 Curncy - NOK OIS 15Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO20 Curncy - NOK OIS 20Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKSO30 Curncy - NOK OIS 30Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS1 Curncy - NOK OIS 1Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS2 Curncy - NOK OIS 2Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS3 Curncy - NOK OIS 3Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS5 Curncy - NOK OIS 5Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS7 Curncy - NOK OIS 7Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS10 Curncy - NOK OIS 10Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS15 Curncy - NOK OIS 15Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS20 Curncy - NOK OIS 20Y
+2025-08-03 11:37:34,941 - INFO -     OIS: NOKOIS30 Curncy - NOK OIS 30Y
+2025-08-03 11:37:34,941 - INFO - ✅ Filtered to 18 OIS-relevant tickers for NOK
+2025-08-03 11:37:34,942 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:37:35,709 - WARNING -   ❌ NOKSO1 Curncy - Invalid
+2025-08-03 11:37:35,709 - WARNING -   ❌ NOKSO2 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKSO3 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKSO5 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKSO7 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKSO10 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKSO15 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKSO20 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKSO30 Curncy - Invalid
+2025-08-03 11:37:35,710 - WARNING -   ❌ NOKOIS1 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS2 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS3 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS5 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS7 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS10 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS15 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS20 Curncy - Invalid
+2025-08-03 11:37:38,506 - WARNING -   ❌ NOKOIS30 Curncy - Invalid
+2025-08-03 11:37:40,509 - INFO - ✅ Inserted/updated 0 tickers for NOK, skipped 18 invalid
+2025-08-03 11:37:42,514 - INFO - 
+==================================================
+2025-08-03 11:37:42,514 - INFO - Processing MXN
+2025-08-03 11:37:42,515 - INFO - ==================================================
+2025-08-03 11:37:42,515 - INFO - 🔍 Discovering OIS tickers for MXN
+2025-08-03 11:37:42,921 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:37:43,927 - INFO -   Trying manual pattern generation for MXN
+2025-08-03 11:37:43,927 - INFO -   Generated 18 manual patterns for MXN
+2025-08-03 11:37:43,927 - INFO - ✅ Found 18 total tickers for MXN
+2025-08-03 11:37:43,927 - INFO -     OIS: MXNSO1 Curncy - MXN OIS 1Y
+2025-08-03 11:37:43,927 - INFO -     OIS: MXNSO2 Curncy - MXN OIS 2Y
+2025-08-03 11:37:43,927 - INFO -     OIS: MXNSO3 Curncy - MXN OIS 3Y
+2025-08-03 11:37:43,927 - INFO -     OIS: MXNSO5 Curncy - MXN OIS 5Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNSO7 Curncy - MXN OIS 7Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNSO10 Curncy - MXN OIS 10Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNSO15 Curncy - MXN OIS 15Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNSO20 Curncy - MXN OIS 20Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNSO30 Curncy - MXN OIS 30Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNOIS1 Curncy - MXN OIS 1Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNOIS2 Curncy - MXN OIS 2Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNOIS3 Curncy - MXN OIS 3Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNOIS5 Curncy - MXN OIS 5Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNOIS7 Curncy - MXN OIS 7Y
+2025-08-03 11:37:43,928 - INFO -     OIS: MXNOIS10 Curncy - MXN OIS 10Y
+2025-08-03 11:37:43,929 - INFO -     OIS: MXNOIS15 Curncy - MXN OIS 15Y
+2025-08-03 11:37:43,929 - INFO -     OIS: MXNOIS20 Curncy - MXN OIS 20Y
+2025-08-03 11:37:43,929 - INFO -     OIS: MXNOIS30 Curncy - MXN OIS 30Y
+2025-08-03 11:37:43,929 - INFO - ✅ Filtered to 18 OIS-relevant tickers for MXN
+2025-08-03 11:37:43,929 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:37:44,629 - WARNING -   ❌ MXNSO1 Curncy - Invalid
+2025-08-03 11:37:44,629 - WARNING -   ❌ MXNSO2 Curncy - Invalid
+2025-08-03 11:37:44,629 - WARNING -   ❌ MXNSO3 Curncy - Invalid
+2025-08-03 11:37:44,629 - WARNING -   ❌ MXNSO5 Curncy - Invalid
+2025-08-03 11:37:44,629 - WARNING -   ❌ MXNSO7 Curncy - Invalid
+2025-08-03 11:37:44,630 - WARNING -   ❌ MXNSO10 Curncy - Invalid
+2025-08-03 11:37:44,630 - WARNING -   ❌ MXNSO15 Curncy - Invalid
+2025-08-03 11:37:44,630 - WARNING -   ❌ MXNSO20 Curncy - Invalid
+2025-08-03 11:37:44,630 - WARNING -   ❌ MXNSO30 Curncy - Invalid
+2025-08-03 11:37:44,630 - WARNING -   ❌ MXNOIS1 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS2 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS3 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS5 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS7 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS10 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS15 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS20 Curncy - Invalid
+2025-08-03 11:37:47,299 - WARNING -   ❌ MXNOIS30 Curncy - Invalid
+2025-08-03 11:37:49,300 - INFO - ✅ Inserted/updated 0 tickers for MXN, skipped 18 invalid
+2025-08-03 11:37:51,304 - INFO - 
+==================================================
+2025-08-03 11:37:51,304 - INFO - Processing ZAR
+2025-08-03 11:37:51,304 - INFO - ==================================================
+2025-08-03 11:37:51,304 - INFO - 🔍 Discovering OIS tickers for ZAR
+2025-08-03 11:37:51,693 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:37:52,696 - INFO -   Trying manual pattern generation for ZAR
+2025-08-03 11:37:52,696 - INFO -   Generated 18 manual patterns for ZAR
+2025-08-03 11:37:52,696 - INFO - ✅ Found 18 total tickers for ZAR
+2025-08-03 11:37:52,696 - INFO -     OIS: ZARSO1 Curncy - ZAR OIS 1Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO2 Curncy - ZAR OIS 2Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO3 Curncy - ZAR OIS 3Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO5 Curncy - ZAR OIS 5Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO7 Curncy - ZAR OIS 7Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO10 Curncy - ZAR OIS 10Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO15 Curncy - ZAR OIS 15Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO20 Curncy - ZAR OIS 20Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZARSO30 Curncy - ZAR OIS 30Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZAROIS1 Curncy - ZAR OIS 1Y
+2025-08-03 11:37:52,697 - INFO -     OIS: ZAROIS2 Curncy - ZAR OIS 2Y
+2025-08-03 11:37:52,698 - INFO -     OIS: ZAROIS3 Curncy - ZAR OIS 3Y
+2025-08-03 11:37:52,698 - INFO -     OIS: ZAROIS5 Curncy - ZAR OIS 5Y
+2025-08-03 11:37:52,698 - INFO -     OIS: ZAROIS7 Curncy - ZAR OIS 7Y
+2025-08-03 11:37:52,698 - INFO -     OIS: ZAROIS10 Curncy - ZAR OIS 10Y
+2025-08-03 11:37:52,698 - INFO -     OIS: ZAROIS15 Curncy - ZAR OIS 15Y
+2025-08-03 11:37:52,698 - INFO -     OIS: ZAROIS20 Curncy - ZAR OIS 20Y
+2025-08-03 11:37:52,698 - INFO -     OIS: ZAROIS30 Curncy - ZAR OIS 30Y
+2025-08-03 11:37:52,698 - INFO - ✅ Filtered to 18 OIS-relevant tickers for ZAR
+2025-08-03 11:37:52,698 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:37:53,455 - WARNING -   ❌ ZARSO1 Curncy - Invalid
+2025-08-03 11:37:53,455 - WARNING -   ❌ ZARSO2 Curncy - Invalid
+2025-08-03 11:37:53,455 - WARNING -   ❌ ZARSO3 Curncy - Invalid
+2025-08-03 11:37:53,455 - WARNING -   ❌ ZARSO5 Curncy - Invalid
+2025-08-03 11:37:53,455 - WARNING -   ❌ ZARSO7 Curncy - Invalid
+2025-08-03 11:37:53,455 - WARNING -   ❌ ZARSO10 Curncy - Invalid
+2025-08-03 11:37:53,456 - WARNING -   ❌ ZARSO15 Curncy - Invalid
+2025-08-03 11:37:53,456 - WARNING -   ❌ ZARSO20 Curncy - Invalid
+2025-08-03 11:37:53,456 - WARNING -   ❌ ZARSO30 Curncy - Invalid
+2025-08-03 11:37:53,456 - WARNING -   ❌ ZAROIS1 Curncy - Invalid
+2025-08-03 11:37:56,181 - WARNING -   ❌ ZAROIS2 Curncy - Invalid
+2025-08-03 11:37:56,182 - WARNING -   ❌ ZAROIS3 Curncy - Invalid
+2025-08-03 11:37:56,182 - WARNING -   ❌ ZAROIS5 Curncy - Invalid
+2025-08-03 11:37:56,182 - WARNING -   ❌ ZAROIS7 Curncy - Invalid
+2025-08-03 11:37:56,182 - WARNING -   ❌ ZAROIS10 Curncy - Invalid
+2025-08-03 11:37:56,182 - WARNING -   ❌ ZAROIS15 Curncy - Invalid
+2025-08-03 11:37:56,182 - WARNING -   ❌ ZAROIS20 Curncy - Invalid
+2025-08-03 11:37:56,182 - WARNING -   ❌ ZAROIS30 Curncy - Invalid
+2025-08-03 11:37:58,188 - INFO - ✅ Inserted/updated 0 tickers for ZAR, skipped 18 invalid
+2025-08-03 11:38:00,188 - INFO - 
+==================================================
+2025-08-03 11:38:00,188 - INFO - Processing TRY
+2025-08-03 11:38:00,188 - INFO - ==================================================
+2025-08-03 11:38:00,188 - INFO - 🔍 Discovering OIS tickers for TRY
+2025-08-03 11:38:00,589 - INFO -   ⚠️  No tickers found with OIS search
+2025-08-03 11:38:01,592 - INFO -   Trying manual pattern generation for TRY
+2025-08-03 11:38:01,592 - INFO -   Generated 18 manual patterns for TRY
+2025-08-03 11:38:01,592 - INFO - ✅ Found 18 total tickers for TRY
+2025-08-03 11:38:01,592 - INFO -     OIS: TRYSO1 Curncy - TRY OIS 1Y
+2025-08-03 11:38:01,592 - INFO -     OIS: TRYSO2 Curncy - TRY OIS 2Y
+2025-08-03 11:38:01,592 - INFO -     OIS: TRYSO3 Curncy - TRY OIS 3Y
+2025-08-03 11:38:01,592 - INFO -     OIS: TRYSO5 Curncy - TRY OIS 5Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYSO7 Curncy - TRY OIS 7Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYSO10 Curncy - TRY OIS 10Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYSO15 Curncy - TRY OIS 15Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYSO20 Curncy - TRY OIS 20Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYSO30 Curncy - TRY OIS 30Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYOIS1 Curncy - TRY OIS 1Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYOIS2 Curncy - TRY OIS 2Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYOIS3 Curncy - TRY OIS 3Y
+2025-08-03 11:38:01,593 - INFO -     OIS: TRYOIS5 Curncy - TRY OIS 5Y
+2025-08-03 11:38:01,594 - INFO -     OIS: TRYOIS7 Curncy - TRY OIS 7Y
+2025-08-03 11:38:01,594 - INFO -     OIS: TRYOIS10 Curncy - TRY OIS 10Y
+2025-08-03 11:38:01,594 - INFO -     OIS: TRYOIS15 Curncy - TRY OIS 15Y
+2025-08-03 11:38:01,594 - INFO -     OIS: TRYOIS20 Curncy - TRY OIS 20Y
+2025-08-03 11:38:01,594 - INFO -     OIS: TRYOIS30 Curncy - TRY OIS 30Y
+2025-08-03 11:38:01,594 - INFO - ✅ Filtered to 18 OIS-relevant tickers for TRY
+2025-08-03 11:38:01,595 - INFO - 🔍 Validating 18 tickers using reference data
+2025-08-03 11:38:02,392 - WARNING -   ❌ TRYSO1 Curncy - Invalid
+2025-08-03 11:38:02,392 - WARNING -   ❌ TRYSO2 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYSO3 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYSO5 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYSO7 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYSO10 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYSO15 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYSO20 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYSO30 Curncy - Invalid
+2025-08-03 11:38:02,393 - WARNING -   ❌ TRYOIS1 Curncy - Invalid
+2025-08-03 11:38:05,232 - WARNING -   ❌ TRYOIS2 Curncy - Invalid
+2025-08-03 11:38:05,233 - WARNING -   ❌ TRYOIS3 Curncy - Invalid
+2025-08-03 11:38:05,233 - WARNING -   ❌ TRYOIS5 Curncy - Invalid
+2025-08-03 11:38:05,233 - WARNING -   ❌ TRYOIS7 Curncy - Invalid
+2025-08-03 11:38:05,233 - WARNING -   ❌ TRYOIS10 Curncy - Invalid
+2025-08-03 11:38:05,233 - WARNING -   ❌ TRYOIS15 Curncy - Invalid
+2025-08-03 11:38:05,233 - WARNING -   ❌ TRYOIS20 Curncy - Invalid
+2025-08-03 11:38:05,233 - WARNING -   ❌ TRYOIS30 Curncy - Invalid

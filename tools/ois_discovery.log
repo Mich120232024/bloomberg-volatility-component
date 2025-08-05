@@ -1,0 +1,161 @@
+2025-08-03 11:27:39,839 - INFO - 🚀 Starting comprehensive OIS ticker discovery
+2025-08-03 11:27:40,271 - INFO - ✅ Bloomberg API connection successful
+2025-08-03 11:27:43,497 - ERROR - ❌ Failed to connect to database: connection to server at "gzcdevserver.postgres.database.azure.com" (172.190.204.65), port 5432 failed: FATAL:  password authentication failed for user "gzcdev"
+connection to server at "gzcdevserver.postgres.database.azure.com" (172.190.204.65), port 5432 failed: FATAL:  no pg_hba.conf entry for host "31.217.174.14", user "gzcdev", database "gzc_platform", no encryption
+
+2025-08-03 11:27:43,497 - ERROR - ❌ Cannot proceed without database connection
+2025-08-03 11:31:40,127 - INFO - 🚀 Starting comprehensive OIS ticker discovery
+2025-08-03 11:31:40,556 - INFO - ✅ Bloomberg API connection successful
+2025-08-03 11:31:41,628 - INFO - ✅ Connected to PostgreSQL database
+2025-08-03 11:31:42,021 - INFO - ✅ Ensured ticker_reference table exists
+2025-08-03 11:31:42,021 - INFO - 
+==================================================
+2025-08-03 11:31:42,021 - INFO - Processing USD
+2025-08-03 11:31:42,021 - INFO - ==================================================
+2025-08-03 11:31:42,021 - INFO - 🔍 Discovering OIS tickers for USD
+2025-08-03 11:31:42,021 - INFO -   Trying pattern 1/17: {'search_type': 'ois', 'currency': 'USD', 'max_results': 100}
+2025-08-03 11:31:42,423 - INFO -     ✅ Found 4 tickers
+2025-08-03 11:31:43,928 - INFO -   Trying pattern 2/17: {'search_type': 'swap', 'currency': 'USD', 'subcategory': 'ois', 'max_results': 100}
+2025-08-03 11:31:44,329 - INFO -     ⚠️  No tickers found
+2025-08-03 11:31:45,830 - INFO -   Trying pattern 3/17: {'search_pattern': 'USD OIS', 'max_results': 100}
+2025-08-03 11:31:46,222 - WARNING -     ❌ HTTP 422
+2025-08-03 11:31:47,723 - INFO -   Trying pattern 4/17: {'search_pattern': 'USD Overnight', 'max_results': 100}
+2025-08-03 11:31:48,130 - WARNING -     ❌ HTTP 422
+2025-08-03 11:31:49,635 - INFO -   Trying pattern 5/17: {'search_pattern': 'USD Index Swap', 'max_results': 100}
+2025-08-03 11:31:50,038 - WARNING -     ❌ HTTP 422
+2025-08-03 11:31:51,544 - INFO -   Trying pattern 6/17: {'search_pattern': 'USDSO', 'max_results': 100}
+2025-08-03 11:31:51,937 - WARNING -     ❌ HTTP 422
+2025-08-03 11:31:53,440 - INFO -   Trying pattern 7/17: {'search_pattern': 'USDOIS', 'max_results': 100}
+2025-08-03 11:31:53,840 - WARNING -     ❌ HTTP 422
+2025-08-03 11:31:55,344 - INFO -   Trying pattern 8/17: {'search_pattern': 'USDOISD', 'max_results': 100}
+2025-08-03 11:31:55,744 - WARNING -     ❌ HTTP 422
+2025-08-03 11:31:57,249 - INFO -   Trying pattern 9/17: {'search_pattern': 'USDSW', 'max_results': 100}
+2025-08-03 11:31:57,652 - WARNING -     ❌ HTTP 422
+2025-08-03 11:31:59,153 - INFO -   Trying pattern 10/17: {'search_pattern': 'USDSO1', 'max_results': 50}
+2025-08-03 11:31:59,547 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:01,051 - INFO -   Trying pattern 11/17: {'search_pattern': 'USDSO2', 'max_results': 50}
+2025-08-03 11:32:01,454 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:02,958 - INFO -   Trying pattern 12/17: {'search_pattern': 'USDSO5', 'max_results': 50}
+2025-08-03 11:32:03,361 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:04,864 - INFO -   Trying pattern 13/17: {'search_pattern': 'USDSO10', 'max_results': 50}
+2025-08-03 11:32:05,322 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:06,827 - INFO -   Trying pattern 14/17: {'search_pattern': 'USDON', 'max_results': 50}
+2025-08-03 11:32:07,228 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:08,731 - INFO -   Trying pattern 15/17: {'search_pattern': 'USDIBOR', 'max_results': 50}
+2025-08-03 11:32:09,134 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:10,639 - INFO -   Trying pattern 16/17: {'search_pattern': 'USDIR', 'max_results': 50}
+2025-08-03 11:32:11,054 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:12,556 - INFO -   Trying pattern 17/17: {'search_pattern': 'USD SOFR', 'max_results': 50}
+2025-08-03 11:32:12,956 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:14,460 - INFO - ✅ Found 4 unique tickers for USD
+2025-08-03 11:32:14,460 - INFO -     OIS: USSO1 Curncy - USD SOFR OIS 1Y
+2025-08-03 11:32:14,460 - INFO -     OIS: USSO2 Curncy - USD SOFR OIS 2Y
+2025-08-03 11:32:14,460 - INFO -     OIS: USSO5 Curncy - USD SOFR OIS 5Y
+2025-08-03 11:32:14,460 - INFO -     OIS: USSO10 Curncy - USD SOFR OIS 10Y
+2025-08-03 11:32:14,460 - INFO - ✅ Filtered to 4 OIS-relevant tickers for USD
+2025-08-03 11:32:14,460 - INFO - 🔍 Validating 4 tickers
+2025-08-03 11:32:14,847 - ERROR - Validation API error: 404
+2025-08-03 11:32:16,847 - WARNING - ⚠️  Validation failed for USD
+2025-08-03 11:32:16,848 - INFO - 
+==================================================
+2025-08-03 11:32:16,848 - INFO - Processing EUR
+2025-08-03 11:32:16,848 - INFO - ==================================================
+2025-08-03 11:32:16,848 - INFO - 🔍 Discovering OIS tickers for EUR
+2025-08-03 11:32:16,848 - INFO -   Trying pattern 1/17: {'search_type': 'ois', 'currency': 'EUR', 'max_results': 100}
+2025-08-03 11:32:17,249 - INFO -     ⚠️  No tickers found
+2025-08-03 11:32:18,749 - INFO -   Trying pattern 2/17: {'search_type': 'swap', 'currency': 'EUR', 'subcategory': 'ois', 'max_results': 100}
+2025-08-03 11:32:19,156 - INFO -     ⚠️  No tickers found
+2025-08-03 11:32:20,660 - INFO -   Trying pattern 3/17: {'search_pattern': 'EUR OIS', 'max_results': 100}
+2025-08-03 11:32:21,077 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:22,580 - INFO -   Trying pattern 4/17: {'search_pattern': 'EUR Overnight', 'max_results': 100}
+2025-08-03 11:32:23,002 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:24,508 - INFO -   Trying pattern 5/17: {'search_pattern': 'EUR Index Swap', 'max_results': 100}
+2025-08-03 11:32:24,913 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:26,416 - INFO -   Trying pattern 6/17: {'search_pattern': 'EURSO', 'max_results': 100}
+2025-08-03 11:32:26,828 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:28,333 - INFO -   Trying pattern 7/17: {'search_pattern': 'EUROIS', 'max_results': 100}
+2025-08-03 11:32:28,738 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:30,242 - INFO -   Trying pattern 8/17: {'search_pattern': 'EUROISD', 'max_results': 100}
+2025-08-03 11:32:30,635 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:32,137 - INFO -   Trying pattern 9/17: {'search_pattern': 'EURSW', 'max_results': 100}
+2025-08-03 11:32:32,529 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:34,030 - INFO -   Trying pattern 10/17: {'search_pattern': 'EURSO1', 'max_results': 50}
+2025-08-03 11:32:34,441 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:35,944 - INFO -   Trying pattern 11/17: {'search_pattern': 'EURSO2', 'max_results': 50}
+2025-08-03 11:32:36,343 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:37,848 - INFO -   Trying pattern 12/17: {'search_pattern': 'EURSO5', 'max_results': 50}
+2025-08-03 11:32:38,262 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:39,764 - INFO -   Trying pattern 13/17: {'search_pattern': 'EURSO10', 'max_results': 50}
+2025-08-03 11:32:40,174 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:41,676 - INFO -   Trying pattern 14/17: {'search_pattern': 'EURON', 'max_results': 50}
+2025-08-03 11:32:42,088 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:43,589 - INFO -   Trying pattern 15/17: {'search_pattern': 'EURIBOR', 'max_results': 50}
+2025-08-03 11:32:44,000 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:45,501 - INFO -   Trying pattern 16/17: {'search_pattern': 'EURIR', 'max_results': 50}
+2025-08-03 11:32:45,914 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:47,417 - INFO -   Trying pattern 17/17: {'search_pattern': 'EUR ESTR', 'max_results': 50}
+2025-08-03 11:32:47,818 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:49,324 - INFO - ✅ Found 0 unique tickers for EUR
+2025-08-03 11:32:49,324 - INFO - ✅ Filtered to 0 OIS-relevant tickers for EUR
+2025-08-03 11:32:49,325 - WARNING - ⚠️  No tickers discovered for EUR
+2025-08-03 11:32:49,325 - INFO - 
+==================================================
+2025-08-03 11:32:49,325 - INFO - Processing GBP
+2025-08-03 11:32:49,325 - INFO - ==================================================
+2025-08-03 11:32:49,325 - INFO - 🔍 Discovering OIS tickers for GBP
+2025-08-03 11:32:49,325 - INFO -   Trying pattern 1/17: {'search_type': 'ois', 'currency': 'GBP', 'max_results': 100}
+2025-08-03 11:32:49,715 - INFO -     ⚠️  No tickers found
+2025-08-03 11:32:51,218 - INFO -   Trying pattern 2/17: {'search_type': 'swap', 'currency': 'GBP', 'subcategory': 'ois', 'max_results': 100}
+2025-08-03 11:32:51,620 - INFO -     ⚠️  No tickers found
+2025-08-03 11:32:53,121 - INFO -   Trying pattern 3/17: {'search_pattern': 'GBP OIS', 'max_results': 100}
+2025-08-03 11:32:53,513 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:55,013 - INFO -   Trying pattern 4/17: {'search_pattern': 'GBP Overnight', 'max_results': 100}
+2025-08-03 11:32:55,432 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:56,934 - INFO -   Trying pattern 5/17: {'search_pattern': 'GBP Index Swap', 'max_results': 100}
+2025-08-03 11:32:57,344 - WARNING -     ❌ HTTP 422
+2025-08-03 11:32:58,849 - INFO -   Trying pattern 6/17: {'search_pattern': 'GBPSO', 'max_results': 100}
+2025-08-03 11:32:59,280 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:00,784 - INFO -   Trying pattern 7/17: {'search_pattern': 'GBPOIS', 'max_results': 100}
+2025-08-03 11:33:01,177 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:02,678 - INFO -   Trying pattern 8/17: {'search_pattern': 'GBPOISD', 'max_results': 100}
+2025-08-03 11:33:03,081 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:04,585 - INFO -   Trying pattern 9/17: {'search_pattern': 'GBPSW', 'max_results': 100}
+2025-08-03 11:33:04,990 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:06,494 - INFO -   Trying pattern 10/17: {'search_pattern': 'GBPSO1', 'max_results': 50}
+2025-08-03 11:33:06,894 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:08,398 - INFO -   Trying pattern 11/17: {'search_pattern': 'GBPSO2', 'max_results': 50}
+2025-08-03 11:33:08,808 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:10,314 - INFO -   Trying pattern 12/17: {'search_pattern': 'GBPSO5', 'max_results': 50}
+2025-08-03 11:33:10,728 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:12,231 - INFO -   Trying pattern 13/17: {'search_pattern': 'GBPSO10', 'max_results': 50}
+2025-08-03 11:33:12,637 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:14,139 - INFO -   Trying pattern 14/17: {'search_pattern': 'GBPON', 'max_results': 50}
+2025-08-03 11:33:14,542 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:16,043 - INFO -   Trying pattern 15/17: {'search_pattern': 'GBPIBOR', 'max_results': 50}
+2025-08-03 11:33:16,454 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:17,959 - INFO -   Trying pattern 16/17: {'search_pattern': 'GBPIR', 'max_results': 50}
+2025-08-03 11:33:18,398 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:19,902 - INFO -   Trying pattern 17/17: {'search_pattern': 'GBP SONIA', 'max_results': 50}
+2025-08-03 11:33:20,301 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:21,806 - INFO - ✅ Found 0 unique tickers for GBP
+2025-08-03 11:33:21,806 - INFO - ✅ Filtered to 0 OIS-relevant tickers for GBP
+2025-08-03 11:33:21,807 - WARNING - ⚠️  No tickers discovered for GBP
+2025-08-03 11:33:21,807 - INFO - 
+==================================================
+2025-08-03 11:33:21,807 - INFO - Processing JPY
+2025-08-03 11:33:21,807 - INFO - ==================================================
+2025-08-03 11:33:21,807 - INFO - 🔍 Discovering OIS tickers for JPY
+2025-08-03 11:33:21,807 - INFO -   Trying pattern 1/17: {'search_type': 'ois', 'currency': 'JPY', 'max_results': 100}
+2025-08-03 11:33:22,215 - INFO -     ⚠️  No tickers found
+2025-08-03 11:33:23,716 - INFO -   Trying pattern 2/17: {'search_type': 'swap', 'currency': 'JPY', 'subcategory': 'ois', 'max_results': 100}
+2025-08-03 11:33:24,118 - INFO -     ⚠️  No tickers found
+2025-08-03 11:33:25,619 - INFO -   Trying pattern 3/17: {'search_pattern': 'JPY OIS', 'max_results': 100}
+2025-08-03 11:33:26,034 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:27,539 - INFO -   Trying pattern 4/17: {'search_pattern': 'JPY Overnight', 'max_results': 100}
+2025-08-03 11:33:27,944 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:29,454 - INFO -   Trying pattern 5/17: {'search_pattern': 'JPY Index Swap', 'max_results': 100}
+2025-08-03 11:33:30,460 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:31,961 - INFO -   Trying pattern 6/17: {'search_pattern': 'JPYSO', 'max_results': 100}
+2025-08-03 11:33:32,362 - WARNING -     ❌ HTTP 422
+2025-08-03 11:33:33,865 - INFO -   Trying pattern 7/17: {'search_pattern': 'JPYOIS', 'max_results': 100}
+2025-08-03 11:33:34,267 - WARNING -     ❌ HTTP 422

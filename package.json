@@ -7,6 +7,7 @@
     "dev": "NODE_OPTIONS='--max-old-space-size=8192' vite",
     "dev:debug": "NODE_OPTIONS='--max-old-space-size=8192' vite & sleep 3 && open -a 'Google Chrome' http://localhost:3501 --args --remote-debugging-port=9222",
     "build": "NODE_OPTIONS='--max-old-space-size=8192' tsc -b && vite build",
+    "build:skip-ts": "NODE_OPTIONS='--max-old-space-size=8192' vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

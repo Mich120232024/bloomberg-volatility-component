@@ -1,0 +1,254 @@
+2025-08-03 11:39:32,524 - INFO - 🚀 Starting targeted OIS ticker discovery
+2025-08-03 11:39:32,524 - INFO - Focus: Finding REAL OIS tickers that exist in Bloomberg
+2025-08-03 11:39:32,942 - INFO - ✅ Bloomberg API connection successful
+2025-08-03 11:39:34,112 - INFO - ✅ Connected to PostgreSQL database
+2025-08-03 11:39:34,113 - INFO - Processing 10 currencies: USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD, SEK, NOK
+2025-08-03 11:39:34,113 - INFO - 
+==================================================
+2025-08-03 11:39:34,113 - INFO - Discovering OIS tickers for USD
+2025-08-03 11:39:34,113 - INFO - ==================================================
+2025-08-03 11:39:34,113 - INFO - Generated 82 ticker candidates
+2025-08-03 11:39:34,113 - INFO - 🔍 Validating 82 ticker candidates
+2025-08-03 11:39:34,828 - INFO -   ✅ USSO5 Curncy = 3.35175 ()
+2025-08-03 11:39:34,828 - INFO -   ✅ USSO7 Index = 3.47125 ()
+2025-08-03 11:39:36,500 - INFO -   ✅ USSO1 Curncy = 3.77265 ()
+2025-08-03 11:39:36,500 - INFO -   ✅ USSO20 Curncy = 3.966 ()
+2025-08-03 11:39:36,500 - INFO -   ✅ USSO10 Curncy = 3.65175 ()
+2025-08-03 11:39:36,500 - INFO -   ✅ USSO10 Index = 3.65175 ()
+2025-08-03 11:39:36,500 - INFO -   ✅ USSO2 Curncy = 3.41114 ()
+2025-08-03 11:39:36,500 - INFO -   ✅ USSO30 Curncy = 3.92954 ()
+2025-08-03 11:39:36,500 - INFO -   ✅ USSO3 Curncy = 3.3191 ()
+2025-08-03 11:39:38,205 - INFO -   ✅ USSO15 Index = 3.87475 ()
+2025-08-03 11:39:38,205 - INFO -   ✅ USSO30 Index = 3.92954 ()
+2025-08-03 11:39:38,205 - INFO -   ✅ USSO5 Index = 3.35175 ()
+2025-08-03 11:39:38,205 - INFO -   ✅ USSO3 Index = 3.3191 ()
+2025-08-03 11:39:38,206 - INFO -   ✅ USSO20 Index = 3.966 ()
+2025-08-03 11:39:38,206 - INFO -   ✅ USSO7 Curncy = 3.47125 ()
+2025-08-03 11:39:39,797 - INFO -   ✅ USSO2 Index = 3.41114 ()
+2025-08-03 11:39:39,797 - INFO -   ✅ USSO15 Curncy = 3.87475 ()
+2025-08-03 11:39:39,797 - INFO -   ✅ USSO1 Index = 3.77265 ()
+2025-08-03 11:39:42,312 - INFO - 📊 Validation complete: 18/82 valid
+2025-08-03 11:39:42,313 - INFO - 🎉 Found 18 valid OIS tickers for USD
+2025-08-03 11:39:45,041 - INFO - ✅ Inserted/updated 18 tickers for USD
+2025-08-03 11:39:47,046 - INFO - 
+==================================================
+2025-08-03 11:39:47,047 - INFO - Discovering OIS tickers for EUR
+2025-08-03 11:39:47,047 - INFO - ==================================================
+2025-08-03 11:39:47,047 - INFO - Generated 123 ticker candidates
+2025-08-03 11:39:47,047 - INFO - 🔍 Validating 123 ticker candidates
+2025-08-03 11:39:47,707 - INFO -   ✅ EUR ESTR1W Index = 1.1587 (EURO)
+2025-08-03 11:39:49,325 - INFO -   ✅ EUR ESTR1 Index = 1.1587 (EURO)
+2025-08-03 11:39:49,325 - INFO -   ✅ EUR ESTR2 Index = 1.1587 (EURO)
+2025-08-03 11:39:49,325 - INFO -   ✅ EUR ESTR6M Index = 1.1587 (EURO)
+2025-08-03 11:39:49,325 - INFO -   ✅ EUR ESTRON Index = 1.1587 (EURO)
+2025-08-03 11:39:51,030 - INFO -   ✅ EUR ESTR30 Index = 1.1587 (EURO)
+2025-08-03 11:39:51,030 - INFO -   ✅ EUR ESTR1M Index = 1.1587 (EURO)
+2025-08-03 11:39:51,030 - INFO -   ✅ EUR ESTR9M Index = 1.1587 (EURO)
+2025-08-03 11:39:51,030 - INFO -   ✅ EUR ESTR10 Index = 1.1587 (EURO)
+2025-08-03 11:39:52,634 - INFO -   ✅ EUR ESTR3M Index = 1.1587 (EURO)
+2025-08-03 11:39:54,321 - INFO -   ✅ EUR ESTR20 Index = 1.1587 (EURO)
+2025-08-03 11:39:54,322 - INFO -   ✅ EUR ESTR7 Index = 1.1587 (EURO)
+2025-08-03 11:39:54,322 - INFO -   ✅ EUR ESTR3W Index = 1.1587 (EURO)
+2025-08-03 11:39:54,322 - INFO -   ✅ EUR ESTR3 Index = 1.1587 (EURO)
+2025-08-03 11:39:55,956 - INFO -   ✅ EUR ESTR2W Index = 1.1587 (EURO)
+2025-08-03 11:39:55,956 - INFO -   ✅ EUR ESTR2M Index = 1.1587 (EURO)
+2025-08-03 11:39:55,956 - INFO -   ✅ EUR ESTR5 Index = 1.1587 (EURO)
+2025-08-03 11:39:57,583 - INFO -   ✅ EUR ESTR15 Index = 1.1587 (EURO)
+2025-08-03 11:39:58,588 - INFO - 📊 Validation complete: 18/123 valid
+2025-08-03 11:39:58,588 - INFO - 🎉 Found 18 valid OIS tickers for EUR
+2025-08-03 11:40:01,331 - INFO - ✅ Inserted/updated 18 tickers for EUR
+2025-08-03 11:40:03,336 - INFO - 
+==================================================
+2025-08-03 11:40:03,337 - INFO - Discovering OIS tickers for GBP
+2025-08-03 11:40:03,337 - INFO - ==================================================
+2025-08-03 11:40:03,337 - INFO - Generated 123 ticker candidates
+2025-08-03 11:40:03,337 - INFO - 🔍 Validating 123 ticker candidates
+2025-08-03 11:40:04,003 - INFO -   ✅ GBP SONIA2W Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:04,003 - INFO -   ✅ GBP SONIA6M Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:05,617 - INFO -   ✅ GBP SONIAON Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:07,267 - INFO -   ✅ GBP SONIA5 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:07,267 - INFO -   ✅ GBP SONIA1 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:07,267 - INFO -   ✅ GBP SONIA20 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:07,267 - INFO -   ✅ GBP SONIA10 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:07,267 - INFO -   ✅ GBP SONIA3W Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:08,887 - INFO -   ✅ GBP SONIA3M Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:08,887 - INFO -   ✅ GBP SONIA2M Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:08,887 - INFO -   ✅ GBP SONIA2 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:10,569 - INFO -   ✅ GBP SONIA9M Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:10,569 - INFO -   ✅ GBP SONIA3 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:10,569 - INFO -   ✅ GBP SONIA15 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:10,569 - INFO -   ✅ GBP SONIA30 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:12,228 - INFO -   ✅ GBP SONIA1M Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:12,228 - INFO -   ✅ GBP SONIA7 Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:12,228 - INFO -   ✅ GBP SONIA1W Index = 1.3279 (BRITISH POUND)
+2025-08-03 11:40:14,901 - INFO - 📊 Validation complete: 18/123 valid
+2025-08-03 11:40:14,902 - INFO - 🎉 Found 18 valid OIS tickers for GBP
+2025-08-03 11:40:17,642 - INFO - ✅ Inserted/updated 18 tickers for GBP
+2025-08-03 11:40:19,644 - INFO - 
+==================================================
+2025-08-03 11:40:19,644 - INFO - Discovering OIS tickers for JPY
+2025-08-03 11:40:19,644 - INFO - ==================================================
+2025-08-03 11:40:19,644 - INFO - Generated 123 ticker candidates
+2025-08-03 11:40:19,644 - INFO - 🔍 Validating 123 ticker candidates
+2025-08-03 11:40:20,325 - INFO -   ✅ JYSO7 Index = 1.07375 ()
+2025-08-03 11:40:20,325 - INFO -   ✅ JPY TONAR7 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:20,325 - INFO -   ✅ JPY TONAR2M Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:20,325 - INFO -   ✅ JYSO5 Index = 0.9525 ()
+2025-08-03 11:40:20,325 - INFO -   ✅ JPY TONAR5 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:20,326 - INFO -   ✅ JYSO2 Index = 0.7485 ()
+2025-08-03 11:40:20,326 - INFO -   ✅ JYSO20 Curncy = 2.0275 ()
+2025-08-03 11:40:20,326 - INFO -   ✅ JPY TONAR3M Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:20,326 - INFO -   ✅ JYSO30 Curncy = 2.36525 ()
+2025-08-03 11:40:21,999 - INFO -   ✅ JYSO1 Curncy = 0.6275 ()
+2025-08-03 11:40:21,999 - INFO -   ✅ JYSO10 Curncy = 1.286 ()
+2025-08-03 11:40:21,999 - INFO -   ✅ JPY TONAR15 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:21,999 - INFO -   ✅ JPY TONAR1M Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:21,999 - INFO -   ✅ JPY TONAR20 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:21,999 - INFO -   ✅ JYSO30 Index = 2.36525 ()
+2025-08-03 11:40:21,999 - INFO -   ✅ JYSO2 Curncy = 0.7485 ()
+2025-08-03 11:40:23,705 - INFO -   ✅ JYSO7 Curncy = 1.07375 ()
+2025-08-03 11:40:23,705 - INFO -   ✅ JPY TONAR3W Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:23,705 - INFO -   ✅ JYSO20 Index = 2.0275 ()
+2025-08-03 11:40:23,706 - INFO -   ✅ JYSO1 Index = 0.6275 ()
+2025-08-03 11:40:23,706 - INFO -   ✅ JYSO15 Index = 1.68625 ()
+2025-08-03 11:40:25,322 - INFO -   ✅ JPY TONAR30 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:25,323 - INFO -   ✅ JPY TONAR9M Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:25,323 - INFO -   ✅ JYSO3 Index = 0.8315 ()
+2025-08-03 11:40:25,323 - INFO -   ✅ JPY TONAR10 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:25,323 - INFO -   ✅ JPY TONAR1W Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:26,958 - INFO -   ✅ JPY TONARON Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:26,958 - INFO -   ✅ JYSO10 Index = 1.286 ()
+2025-08-03 11:40:26,958 - INFO -   ✅ JPY TONAR6M Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:26,958 - INFO -   ✅ JYSO5 Curncy = 0.9525 ()
+2025-08-03 11:40:26,958 - INFO -   ✅ JPY TONAR2W Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:26,958 - INFO -   ✅ JYSO3 Curncy = 0.8315 ()
+2025-08-03 11:40:28,623 - INFO -   ✅ JYSO15 Curncy = 1.68625 ()
+2025-08-03 11:40:28,623 - INFO -   ✅ JPY TONAR1 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:28,623 - INFO -   ✅ JPY TONAR3 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:28,623 - INFO -   ✅ JPY TONAR2 Index = 147.4 (JAPANESE YEN)
+2025-08-03 11:40:31,225 - INFO - 📊 Validation complete: 36/123 valid
+2025-08-03 11:40:31,225 - INFO - 🎉 Found 36 valid OIS tickers for JPY
+2025-08-03 11:40:36,431 - INFO - ✅ Inserted/updated 36 tickers for JPY
+2025-08-03 11:40:38,435 - INFO - 
+==================================================
+2025-08-03 11:40:38,435 - INFO - Discovering OIS tickers for CHF
+2025-08-03 11:40:38,435 - INFO - ==================================================
+2025-08-03 11:40:38,435 - INFO - Generated 123 ticker candidates
+2025-08-03 11:40:38,435 - INFO - 🔍 Validating 123 ticker candidates
+2025-08-03 11:40:39,065 - INFO -   ✅ CHF SARON6M Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:39,065 - INFO -   ✅ CHF SARON30 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:39,066 - INFO -   ✅ CHF SARON3W Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:39,066 - INFO -   ✅ CHF SARON5 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:40,683 - INFO -   ✅ CHF SARON7 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:42,387 - INFO -   ✅ CHF SARON3 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:42,387 - INFO -   ✅ CHF SARON2M Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:42,387 - INFO -   ✅ CHF SARON1W Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:42,387 - INFO -   ✅ CHF SARON2W Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:44,026 - INFO -   ✅ CHF SARON15 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:44,027 - INFO -   ✅ CHF SARONON Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:45,720 - INFO -   ✅ CHF SARON1M Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:45,720 - INFO -   ✅ CHF SARON3M Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:45,720 - INFO -   ✅ CHF SARON9M Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:45,720 - INFO -   ✅ CHF SARON20 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:47,317 - INFO -   ✅ CHF SARON1 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:47,318 - INFO -   ✅ CHF SARON10 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:47,318 - INFO -   ✅ CHF SARON2 Index = 0.804 (SWISS FRANC)
+2025-08-03 11:40:49,916 - INFO - 📊 Validation complete: 18/123 valid
+2025-08-03 11:40:49,916 - INFO - 🎉 Found 18 valid OIS tickers for CHF
+2025-08-03 11:40:52,663 - INFO - ✅ Inserted/updated 18 tickers for CHF
+2025-08-03 11:40:54,668 - INFO - 
+==================================================
+2025-08-03 11:40:54,668 - INFO - Discovering OIS tickers for CAD
+2025-08-03 11:40:54,668 - INFO - ==================================================
+2025-08-03 11:40:54,668 - INFO - Generated 123 ticker candidates
+2025-08-03 11:40:54,669 - INFO - 🔍 Validating 123 ticker candidates
+2025-08-03 11:40:55,321 - INFO -   ✅ CAD CORRA9M Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:55,321 - INFO -   ✅ CDSO20 Index = 3.4119 ()
+2025-08-03 11:40:55,321 - INFO -   ✅ CAD CORRA5 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:55,321 - INFO -   ✅ CDSO5 Index = 2.761 ()
+2025-08-03 11:40:56,907 - INFO -   ✅ CDSO2 Index = 2.593 ()
+2025-08-03 11:40:56,907 - INFO -   ✅ CDSO30 Index = 3.339 ()
+2025-08-03 11:40:58,624 - INFO -   ✅ CDSO30 Curncy = 3.339 ()
+2025-08-03 11:40:58,624 - INFO -   ✅ CAD CORRAON Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:58,624 - INFO -   ✅ CDSO3 Index = 2.647 ()
+2025-08-03 11:40:58,624 - INFO -   ✅ CAD CORRA1 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:58,624 - INFO -   ✅ CAD CORRA1W Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:58,624 - INFO -   ✅ CAD CORRA3 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:58,624 - INFO -   ✅ CAD CORRA7 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:58,624 - INFO -   ✅ CDSO3 Curncy = 2.647 ()
+2025-08-03 11:40:58,624 - INFO -   ✅ CAD CORRA6M Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:40:58,624 - INFO -   ✅ CDSO1 Index = 2.59945 ()
+2025-08-03 11:41:00,229 - INFO -   ✅ CAD CORRA20 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:00,229 - INFO -   ✅ CDSO2 Curncy = 2.593 ()
+2025-08-03 11:41:00,229 - INFO -   ✅ CAD CORRA3W Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:00,229 - INFO -   ✅ CDSO15 Curncy = 3.3275 ()
+2025-08-03 11:41:00,229 - INFO -   ✅ CAD CORRA1M Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:00,229 - INFO -   ✅ CAD CORRA2M Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:00,229 - INFO -   ✅ CAD CORRA2 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:01,934 - INFO -   ✅ CAD CORRA30 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:01,935 - INFO -   ✅ CAD CORRA10 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:01,935 - INFO -   ✅ CDSO1 Curncy = 2.59945 ()
+2025-08-03 11:41:01,935 - INFO -   ✅ CDSO15 Index = 3.3275 ()
+2025-08-03 11:41:01,935 - INFO -   ✅ CDSO7 Curncy = 2.903 ()
+2025-08-03 11:41:01,935 - INFO -   ✅ CDSO5 Curncy = 2.761 ()
+2025-08-03 11:41:01,935 - INFO -   ✅ CDSO20 Curncy = 3.4119 ()
+2025-08-03 11:41:03,652 - INFO -   ✅ CAD CORRA3M Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:03,652 - INFO -   ✅ CAD CORRA2W Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:03,652 - INFO -   ✅ CDSO7 Index = 2.903 ()
+2025-08-03 11:41:03,652 - INFO -   ✅ CDSO10 Index = 3.0969 ()
+2025-08-03 11:41:03,653 - INFO -   ✅ CDSO10 Curncy = 3.0969 ()
+2025-08-03 11:41:03,653 - INFO -   ✅ CAD CORRA15 Index = 1.3786 (CANADIAN DOLLAR)
+2025-08-03 11:41:06,265 - INFO - 📊 Validation complete: 36/123 valid
+2025-08-03 11:41:06,266 - INFO - 🎉 Found 36 valid OIS tickers for CAD
+2025-08-03 11:41:11,552 - INFO - ✅ Inserted/updated 36 tickers for CAD
+2025-08-03 11:41:13,553 - INFO - 
+==================================================
+2025-08-03 11:41:13,553 - INFO - Discovering OIS tickers for AUD
+2025-08-03 11:41:13,553 - INFO - ==================================================
+2025-08-03 11:41:13,553 - INFO - Generated 123 ticker candidates
+2025-08-03 11:41:13,553 - INFO - 🔍 Validating 123 ticker candidates
+2025-08-03 11:41:14,236 - INFO -   ✅ AUD AONIA9M Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:14,236 - INFO -   ✅ AUD AONIA5 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:14,236 - INFO -   ✅ ADSO7 Index = 3.635 ()
+2025-08-03 11:41:14,236 - INFO -   ✅ ADSO2 Index = 3.185 ()
+2025-08-03 11:41:14,236 - INFO -   ✅ ADSO1 Index = 3.266 ()
+2025-08-03 11:41:14,237 - INFO -   ✅ AUD AONIA1M Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:14,237 - INFO -   ✅ AUD AONIA1W Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:15,966 - INFO -   ✅ AUD AONIA3 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:15,966 - INFO -   ✅ ADSO10 Curncy = 3.894 ()
+2025-08-03 11:41:15,966 - INFO -   ✅ ADSO5 Curncy = 3.415 ()
+2025-08-03 11:41:15,966 - INFO -   ✅ AUD AONIA1 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:15,967 - INFO -   ✅ ADSO20 Index = 4.213 ()
+2025-08-03 11:41:15,967 - INFO -   ✅ ADSO5 Index = 3.415 ()
+2025-08-03 11:41:15,967 - INFO -   ✅ AUD AONIA15 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:17,616 - INFO -   ✅ AUD AONIA3M Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:17,616 - INFO -   ✅ AUD AONIA3W Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:17,616 - INFO -   ✅ ADSO1 Curncy = 3.266 ()
+2025-08-03 11:41:17,616 - INFO -   ✅ AUD AONIAON Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:17,616 - INFO -   ✅ ADSO7 Curncy = 3.635 ()
+2025-08-03 11:41:17,616 - INFO -   ✅ ADSO3 Curncy = 3.2138 ()
+2025-08-03 11:41:19,262 - INFO -   ✅ ADSO2 Curncy = 3.185 ()
+2025-08-03 11:41:19,262 - INFO -   ✅ AUD AONIA2M Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:19,262 - INFO -   ✅ AUD AONIA10 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:19,262 - INFO -   ✅ AUD AONIA7 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:19,262 - INFO -   ✅ ADSO10 Index = 3.894 ()
+2025-08-03 11:41:20,854 - INFO -   ✅ AUD AONIA6M Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:20,854 - INFO -   ✅ ADSO3 Index = 3.2138 ()
+2025-08-03 11:41:20,854 - INFO -   ✅ AUD AONIA2 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:20,854 - INFO -   ✅ ADSO20 Curncy = 4.213 ()
+2025-08-03 11:41:20,854 - INFO -   ✅ ADSO15 Curncy = 4.126 ()
+2025-08-03 11:41:22,520 - INFO -   ✅ AUD AONIA20 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:22,520 - INFO -   ✅ AUD AONIA2W Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:22,520 - INFO -   ✅ ADSO30 Index = 4.146 ()
+2025-08-03 11:41:22,520 - INFO -   ✅ ADSO30 Curncy = 4.146 ()
+2025-08-03 11:41:24,171 - INFO -   ✅ AUD AONIA30 Index = 0.6474 (AUSTRALIAN DOLLAR)
+2025-08-03 11:41:24,172 - INFO -   ✅ ADSO15 Index = 4.126 ()
+2025-08-03 11:41:25,177 - INFO - 📊 Validation complete: 36/123 valid
+2025-08-03 11:41:25,177 - INFO - 🎉 Found 36 valid OIS tickers for AUD
+2025-08-03 11:41:30,374 - INFO - ✅ Inserted/updated 36 tickers for AUD
+2025-08-03 11:41:32,379 - INFO - 
+==================================================
+2025-08-03 11:41:32,379 - INFO - Discovering OIS tickers for NZD
+2025-08-03 11:41:32,379 - INFO - ==================================================
+2025-08-03 11:41:32,380 - INFO - Generated 123 ticker candidates
+2025-08-03 11:41:32,380 - INFO - 🔍 Validating 123 ticker candidates
